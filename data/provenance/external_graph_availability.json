@@ -1,0 +1,10 @@
+{
+  "source_directory": "/Users/wanweilin/Downloads/data/MolAS/protein_graphs_esmc_600m",
+  "local_destination": "data/external/protein_graphs_esmc_600m",
+  "files": 3179,
+  "logical_bytes": 14985036224,
+  "cloud_placeholders": 0,
+  "status": "available_local_clone_not_publicly_uploaded",
+  "verification_scope": "parent packaging confirmed exact filenames and logical sizes; full payload hashes tracked by parent manifest",
+  "historical_restart_inventory": "data/provenance/protein_graph_inventory.csv"
+}

@@ -1,0 +1,43 @@
+{
+  "checked_files": 2073,
+  "integrity_passed": true,
+  "errors": [],
+  "publication_ready": true,
+  "full_reproduction_ready": false,
+  "remaining_items": [
+    "Publish the large structural dataset separately and add its verified, versioned download reference. This does not block the current GitHub code and archived-results release."
+  ],
+  "scope": "Frozen GitHub publication package integrity; prior large-graph verification is retained separately. No scientific experiments were rerun.",
+  "git_scope_files": 2073,
+  "git_scope_bytes": 461846902,
+  "python_source_files_parsed": 69,
+  "python_syntax_errors": 0,
+  "credential_signature_scan_matches": 0,
+  "broken_relative_markdown_links": 0,
+  "largest_git_scope_file": {
+    "path": "results/downstream/plain_mean_ucb_seed0.zip",
+    "bytes": 13496129,
+    "sha256": "708b311303e00ea8c76891a62c422d504fbc2f892bedb5d22ebc51fe2d17b0d0"
+  },
+  "ignored_structural_files": 3179,
+  "ignored_structural_bytes": 14985036224,
+  "acquisition_unit_tests_passed": 12,
+  "acquisition_validated_source_hashes_unchanged": 8,
+  "acquisition_original_csvs_verified": 27000,
+  "full_acquisition_runs_alignment_checked": 90,
+  "downstream_original_csvs_verified": 4508,
+  "downstream_original_csvs_missing": 0,
+  "downstream_summary_mirrors_verified": 1771,
+  "graphs_copied_and_source_hash_compared": 3179,
+  "large_graph_payloads_rehashed_in_final_check": 3179,
+  "original_software_license": "MIT",
+  "local_assembly_complete": true,
+  "new_scientific_experiments": 0,
+  "historical_provenance_limitations": [
+    "Per-run training configurations were not recovered for every historical downstream output; recovered launcher settings are not asserted to prove every invocation.",
+    "Source correspondence is documented for all eight paper figures, but not every final export/layout command has an exact recovered identity.",
+    "The native evaluation target is explicitly reconstructed and independently checked against saved outputs; the original server-side CSV byte stream was not recovered."
+  ],
+  "author_redistribution_terms_confirmed": true,
+  "github_repository": "https://github.com/SeanWan514/MolAS_Active_Learning"
+}

@@ -1,0 +1,67 @@
+{
+  "source_directory": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper",
+  "historical_run_code_revision": "not established",
+  "files": [
+    {
+      "path": "EXPERIMENT_REPORT.md",
+      "sha256": "5be35be167d6bac8fd882f0345373fee38a11b6ce2dbb667a6808a7c5c9e0504",
+      "bytes": 2987
+    },
+    {
+      "path": "README.md",
+      "sha256": "2a4ddfc22e953e4377bced95f96e2d290b6ff5a3ab0c8827187818f76bfb4251",
+      "bytes": 1496
+    },
+    {
+      "path": "audit_inputs.py",
+      "sha256": "82712cac7d2cfa7157def6256a95109836b159658e7c6f86cf3ec1532bed67f7",
+      "bytes": 2006
+    },
+    {
+      "path": "audit_tests.py",
+      "sha256": "dc9969fec9f16c228d044c55cb1e1f9dc1e912fd5ee84c4836d8cf6221de60c8",
+      "bytes": 1750
+    },
+    {
+      "path": "finalize_audit.py",
+      "sha256": "a2c8201ded15e798f41a79a1da71a2ab743c2317d64e6bc1de54660b8af93734",
+      "bytes": 1690
+    },
+    {
+      "path": "formula_tests.py",
+      "sha256": "ce8f88d712276a97c0577c04730a176efe888a4e63aa0815cdcc3315f3a0c9cc",
+      "bytes": 1194
+    },
+    {
+      "path": "launch_all 2.py",
+      "sha256": "9b003c97106e577004f2e7a4cda0d1e68c28f6d3f18b074c62c9bd41563ac84e",
+      "bytes": 1316
+    },
+    {
+      "path": "launch_all.py",
+      "sha256": "fb676cf281ebbc183cff39c03e510e2446a8467243ec1c6b5fb9941201a2d586",
+      "bytes": 2366
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f77b28d06b5105fe538a015717ea29df0c404adc25a2a8060c0b5f4e1f395db6",
+      "bytes": 42
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "45bc315d0ed2cae4045ca8405d1a4aa709222ec26dce837ea300c023ccfaefbc",
+      "bytes": 32777
+    },
+    {
+      "path": "runtime_feature_ablation.py",
+      "sha256": "fc400f4d833dc4432e428cb9bf51832e6b51efc90f92a8c3fc8f9316bc4bcff3",
+      "bytes": 3017
+    },
+    {
+      "path": "summarize_results.py",
+      "sha256": "2744fa59f3f56f57159e730b15ba00a961ee818d021db20587fe52c8b3d8cb6f",
+      "bytes": 3040
+    }
+  ],
+  "unavailable_files": []
+}

@@ -1,0 +1,15 @@
+{
+  "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_structures/data/MolAS/ligand_chemberta_moad3179.pt",
+  "destination": "data/features/ligand_chemberta_moad3179.pt",
+  "bytes": 4960502,
+  "sha256": "ad74c18a2560f0c4577a045c22582ce37a1d1827ec05bce48bd1cd1111c54b0c",
+  "validation": "ZIP entries and pickle opcodes inspected without unpickling or executing torch; explicit ligand_ids match raw matrix order; single FloatStorage finite and shape/storage metadata consistent",
+  "embedding_shape": [
+    3179,
+    384
+  ],
+  "embedded_ids_in_raw_order": true,
+  "finite_float_values": 1220736,
+  "combined_256d_feature_cache_alignment_not_established": false,
+  "separate_combined_cache_alignment_evidence": "data/provenance/feature_cache_comparison.json"
+}

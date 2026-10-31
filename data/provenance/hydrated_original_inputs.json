@@ -1,0 +1,52 @@
+{
+  "note": "Supersedes bounded_source_reads.json availability outcomes; historical failed attempts preserved.",
+  "files": [
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_5fold_split_seed42.csv",
+      "destination": "data/splits/moad_5fold_split_seed42.csv",
+      "bytes": 117682,
+      "sha256": "af717b403bc9e31ec9ca37bca86a57ef4ea46af0b4e75feeeb4e531ba13814b8",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration",
+      "original_recovered_membership_identical": true,
+      "raw_id_order_identical": true
+    },
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_physical_descriptors_filtered.csv",
+      "destination": "data/descriptors/moad_physical_descriptors_filtered.csv",
+      "bytes": 90348,
+      "sha256": "cd7062f2242fcc930ff7073310e00d891bcb1be797e23fdd712ea39906ae9530",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration",
+      "raw_id_order_identical": true
+    },
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/cost_aware_design2/outputs/cache/complex_features_ligand_protein_d256_seed0.npy",
+      "destination": "data/features/complex_features_ligand_protein_d256_seed0.npy",
+      "bytes": 3255424,
+      "sha256": "10b4a50f5cfc3de000ab06d0b8112146486e63571ad9db252455dd5af3976a91",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration",
+      "combined_feature_alignment_verified": true,
+      "alignment_evidence": "data/provenance/feature_cache_comparison.json"
+    },
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/input_audit.json",
+      "destination": "data/provenance/original_input_audit.json",
+      "bytes": 1758,
+      "sha256": "18e0b05d2189d254ba3add83b9a9bfadf55e8c798155a59b300140cf426fb750",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration"
+    },
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/experiment_manifest.json",
+      "destination": "data/provenance/original_experiment_manifest.json",
+      "bytes": 2833,
+      "sha256": "ff3b2a79b48281076936499f29f6619a3e684abbf8c9b0925d2d8cc18660317a",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration"
+    },
+    {
+      "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/ground_truth/full_strict_score_matrix.csv",
+      "destination": "data/targets/full_strict_score_matrix.csv",
+      "bytes": 366953,
+      "sha256": "ec1d30a49d87c1d492801f5cee4393b9283ca11feab08e2ce5392a2dc32dac27",
+      "status": "exact_original_bytes_recovered_after_cloud_hydration"
+    }
+  ]
+}

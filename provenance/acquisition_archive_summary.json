@@ -1,0 +1,14 @@
+{
+  "scope": "Workspace artifact coverage after recovery from original ZIP and pinned Git tree",
+  "status_counts": {
+    "missing_cloud_contents": 26637,
+    "included_unchanged": 9558,
+    "included_original_pinned_git": 27000,
+    "excluded_redundant_resume_state": 90
+  },
+  "primary_csv_archive_complete": true,
+  "pinned_csv_files": 27000,
+  "auxiliary_workspace_artifacts_complete": false,
+  "details": "pinned_acquisition_summary.json",
+  "note": "Missing auxiliary workspace diagnostics are not missing primary matrices/query ledgers. Original resume JSON state is redundant and excluded; no experiments were run."
+}

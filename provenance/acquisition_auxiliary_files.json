@@ -1,0 +1,122 @@
+[
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/completeness.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "audits/completeness.csv",
+    "bytes": 3815,
+    "status": "included_unchanged",
+    "sha256": "c5760bf9c192b4db1ee16a338570cf02435ff1b007f6489154e78388127eed78"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/completeness_summary.json",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "audits/completeness_summary.json",
+    "bytes": 90,
+    "status": "included_unchanged",
+    "sha256": "6da49cddcdeb9f84f9200bbb82a90ce1516f32ca702ff4432807d025c17fa7c1"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/input_audit.json",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "audits/input_audit.json",
+    "bytes": 1758,
+    "status": "included_unchanged",
+    "sha256": "18e0b05d2189d254ba3add83b9a9bfadf55e8c798155a59b300140cf426fb750"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/query_integrity.json",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "audits/query_integrity.json",
+    "bytes": 109,
+    "status": "included_unchanged",
+    "sha256": "d158c518aca4b2ae311017b94f528f1db47b08b373ed5cbb0b40736a235c7915"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/audits/seed0_key_checkpoints.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "audits/seed0_key_checkpoints.csv",
+    "bytes": 11557,
+    "status": "included_unchanged",
+    "sha256": "31eaa6a7f34de004cdc21389357cbe42bf840f46869643142431269bb83a9562"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/experiment_manifest.json",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "experiment_manifest.json",
+    "bytes": 2833,
+    "status": "included_unchanged",
+    "sha256": "ff3b2a79b48281076936499f29f6619a3e684abbf8c9b0925d2d8cc18660317a"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/launcher_status.jsonl",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "launcher_status.jsonl",
+    "bytes": 6316,
+    "status": "included_unchanged",
+    "sha256": "b27052e0cac1410c958b0f6556b64192e5dfaf456300dded4e16b41ffbb2e64f"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/ra_handoff_manifest.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "ra_handoff_manifest.csv",
+    "bytes": 195426,
+    "status": "included_unchanged",
+    "sha256": "f97f994cee0e7876df07f23a1ad2881c1e8fe94c94cb065c6d9ea06f884c2c1f"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/runtime_feature_ablation/complete.json",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "runtime_feature_ablation/complete.json",
+    "bytes": 40,
+    "status": "included_unchanged",
+    "sha256": "0e814cc74a680d0b2e8d256921c11c565a463b070249c2148baed7c4de8394a0"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/runtime_feature_ablation/fold_metrics.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "runtime_feature_ablation/fold_metrics.csv",
+    "bytes": 2156,
+    "status": "included_unchanged",
+    "sha256": "0f0eed426349975e089e4722cb0371de32fcd1eff55d17c882d56ea17518c354"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/runtime_feature_ablation/summary.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "runtime_feature_ablation/summary.csv",
+    "bytes": 1063,
+    "status": "included_unchanged",
+    "sha256": "324495826e7c2aadb1d8f493f001382ae7bbd69166d3b99d7db8ddff8fc562e5"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/summary/algorithm_share_key_checkpoints.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "summary/algorithm_share_key_checkpoints.csv",
+    "bytes": 16707,
+    "status": "included_unchanged",
+    "sha256": "25020206ca5c0e8ecb6d688b5239c49ff53a3b1ebe2c20c10932bd0c49d2b4bf"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/summary/all_checkpoint_metrics.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "summary/all_checkpoint_metrics.csv",
+    "bytes": 2563418,
+    "status": "included_unchanged",
+    "sha256": "9b65015f8c402f4367c97db8ca898df7b8210c316acfed81800a0d8635a332c7"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/summary/method_checkpoint_summary.csv",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "summary/method_checkpoint_summary.csv",
+    "bytes": 161474,
+    "status": "included_unchanged",
+    "sha256": "0c5eade9c8afbd2ef033101b67b06598c55555d466fc4995f992c5fc33284e58"
+  },
+  {
+    "source": "MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/outputs/summary_console.txt",
+    "archive": "results/acquisition/historical_summaries.zip",
+    "member": "summary_console.txt",
+    "bytes": 6250,
+    "status": "included_unchanged",
+    "sha256": "2d76f0c46698fa4e07484ad6842d6beb9a0a920ab58b7d10d34c014ea5582d86"
+  }
+]

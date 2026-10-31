@@ -1,0 +1,138 @@
+{
+  "scope": "pixel integrity comparison of existing assets only; no plotting or scientific analysis",
+  "components": [
+    {
+      "figure": 1,
+      "asset_component": "Fig1.png",
+      "dimensions": [
+        2494,
+        899
+      ],
+      "rgb_pixel_sha256": "e83f36f65d2337ab6ce976028d7efe318da824b7574026f8d4eb3a14a2e7f5b2",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 2,
+      "asset_component": "Fig2.png",
+      "dimensions": [
+        2494,
+        891
+      ],
+      "rgb_pixel_sha256": "91127a3eadc6e64c90e3936e52ce6caf2279f793b330adfc30436b6570f4f984",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 3,
+      "asset_component": "runtime_distribution-REV.png",
+      "dimensions": [
+        1893,
+        1024
+      ],
+      "rgb_pixel_sha256": "582b0c73dc64663c64ec469919dc8d1345d4482f1cecba6cfee66122bf82dd29",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 4,
+      "asset_component": "X4.png",
+      "dimensions": [
+        945,
+        490
+      ],
+      "rgb_pixel_sha256": "2cca8ebab4504278f1fefc13b6775bbfa9d9b376de41130ddcca099bc564c271",
+      "exact_notebook_pixel_matches": [
+        {
+          "notebook": "moad_runtime_physical_and_embedding_analysis.ipynb",
+          "cell": 26,
+          "output": 0
+        }
+      ],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 5,
+      "asset_component": "X4.png",
+      "dimensions": [
+        2988,
+        1433
+      ],
+      "rgb_pixel_sha256": "be6b55f9b85634b5379e5c810a97a04a4aad1766492feb65d71b1e6c3d64cc9f",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 5,
+      "asset_component": "X6.png",
+      "dimensions": [
+        2994,
+        1125
+      ],
+      "rgb_pixel_sha256": "6e9d3757aacc91d5e50e29c04fd41ce7b41db03e76e12f3f59495abc5307976b",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 5,
+      "asset_component": "X7.png",
+      "dimensions": [
+        1796,
+        1076
+      ],
+      "rgb_pixel_sha256": "faa03ac3edbbb36e49590b3275aa62a8375b6e9cbe3179bd71297aa9a645f54d",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": [
+        "results/downstream/recovered_analysis_figures/acquisition_runtime_signed_calibration.png"
+      ]
+    },
+    {
+      "figure": 6,
+      "asset_component": "X4.png",
+      "dimensions": [
+        3325,
+        1829
+      ],
+      "rgb_pixel_sha256": "882619ee10ca4a6c886fda6468d2c9236e26b60213314320dcc3f53d82de8f65",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": [
+        "results/downstream/recovered_analysis_figures/cumulative_cost_share.png"
+      ]
+    },
+    {
+      "figure": 6,
+      "asset_component": "X6.png",
+      "dimensions": [
+        3324,
+        1719
+      ],
+      "rgb_pixel_sha256": "9644e93422ffc10c439c7fbfbdd95bfe1e52169ba7fb31ec96a3219914b4e680",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    },
+    {
+      "figure": 7,
+      "asset_component": "queried_cells_vs_cost.png",
+      "dimensions": [
+        2049,
+        1169
+      ],
+      "rgb_pixel_sha256": "e4d20197daedbc89315ecefe5e0a0c626b7e6f47c7c7cfe227bf5ed4c955c029",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": [
+        "results/downstream/recovered_analysis_figures/queried_cells_vs_cost.png"
+      ]
+    },
+    {
+      "figure": 8,
+      "asset_component": "zoomed_early_downstream_performance_vs_cost.png",
+      "dimensions": [
+        3809,
+        1373
+      ],
+      "rgb_pixel_sha256": "55371a5804e8e3bcb4b524ef6f8f681a534ce5e20e627a80a105849dc3a64d11",
+      "exact_notebook_pixel_matches": [],
+      "exact_saved_analysis_png_pixel_matches": []
+    }
+  ]
+}

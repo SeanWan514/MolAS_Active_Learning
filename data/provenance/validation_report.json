@@ -1,0 +1,122 @@
+{
+  "scope": "file integrity and existing-data consistency; no scientific experiments",
+  "checks": {
+    "rmsd": {
+      "rows": 3179,
+      "algorithm_columns": 7,
+      "finite_values": 22253,
+      "minimum": 0.0870949221844109,
+      "maximum": 1.596424275443737e+17,
+      "values_above_1000_angstrom": 211
+    },
+    "pb_ratio": {
+      "rows": 3179,
+      "algorithm_columns": 7,
+      "finite_values": 22253,
+      "minimum": 0.2,
+      "maximum": 1.0
+    },
+    "runtime": {
+      "rows": 3179,
+      "algorithm_columns": 7,
+      "finite_values": 22253,
+      "minimum": 0.32164494507,
+      "maximum": 3547.96552935
+    },
+    "raw_matrix_id_order": "identical across all three matrices and raw ID index",
+    "strict_score": {
+      "maximum_absolute_formula_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "lambda": 3.0,
+      "pb_valid": "pb_ratio == 1.0"
+    },
+    "original_strict_score": {
+      "maximum_absolute_formula_error": 0.0,
+      "tolerance": 1e-12
+    },
+    "native_evaluation_target": {
+      "status": "reconstructed, not recovered original CSV",
+      "maximum_absolute_formula_error": 0.0,
+      "saved_engine_values_independently_checked": 22253,
+      "maximum_saved_engine_value_difference": 1.1102230246251565e-16,
+      "distinct_from_acquisition_target": true
+    },
+    "moad_5fold_split_seed42.csv": {
+      "id_column": "instance_id",
+      "fold_column": "test_fold",
+      "counts": {
+        "0": 636,
+        "1": 636,
+        "2": 636,
+        "3": 636,
+        "4": 635
+      },
+      "normalization_offset": 0
+    },
+    "recovered_heldout_folds_from_downstream.csv": {
+      "id_column": "PDB_CCD_ID",
+      "fold_column": "fold",
+      "counts": {
+        "0": 636,
+        "1": 636,
+        "2": 636,
+        "3": 636,
+        "4": 635
+      },
+      "normalization_offset": 0
+    },
+    "original_recovered_folds_agree": true,
+    "physical_descriptors": {
+      "id_column": "PDB_CCD_ID",
+      "numeric_columns": [
+        "ligand_heavy_atoms",
+        "ligand_rotatable_bonds",
+        "protein_residues",
+        "pocket_heavy_atoms_r6"
+      ],
+      "rows": 3179
+    },
+    "combined_feature_numeric_payload": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "shape": [
+        3179,
+        256
+      ]
+    },
+    "combined_feature_ids": {
+      "ordered_ids": 3179,
+      "independently_compared_cache_values": 813824,
+      "maximum_absolute_difference": 2.193450927734375e-05,
+      "absolute_tolerance": 2e-05,
+      "relative_tolerance": 2e-05
+    },
+    "ligand_embeddings": {
+      "embedded_ordered_ids": 3179,
+      "finite_float_values": 1220736,
+      "inspection": "ZIP/pickle opcodes only; no object deserialization"
+    },
+    "external_protein_graphs": {
+      "files": 3179,
+      "logical_bytes": 14985036224,
+      "cloud_placeholders": 0,
+      "check_scope": "filenames and filesystem metadata, not payload deserialization"
+    },
+    "original_input_audit_hashes": {
+      "matching_inputs": 6,
+      "note": "Comparison to preserved historical hashes; historical experiments were not rerun."
+    },
+    "checksums": {
+      "verified_files": 33
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "Raw RMSD contains 211 values above 1000 Angstrom; preserved unchanged. Failure/sentinel semantics are not established."
+  ],
+  "missing_acquisition_inputs": [],
+  "available_data_integrity_passed": true,
+  "acquisition_inputs_complete": true,
+  "full_downstream_reproduction_verified": false,
+  "license_clearance_verified": false
+}

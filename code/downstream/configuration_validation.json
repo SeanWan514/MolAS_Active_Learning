@@ -1,0 +1,11 @@
+{
+  "scope": "configuration preparation using temporary placeholder files only; no tensor loading, model fitting, or notebook execution",
+  "configured_copy_created": true,
+  "dataset_scientific_definitions_ast_unchanged": true,
+  "ligand_loader_alias_correct": true,
+  "configured_notebook_outputs_cleared": true,
+  "original_sources_unchanged": true,
+  "existing_output_refused": true,
+  "unmaterialized_acquisition_root_refused": true,
+  "utility_sha256": "3feb1eb2c77b29caf2edcd069904012802d03d9544f4e641c7ffcbf1c4065163"
+}

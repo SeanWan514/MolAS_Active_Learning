@@ -1,0 +1,1126 @@
+[
+  {
+    "notebook": "code/downstream/historical_molas/analyses/moad_runtime_physical_and_embedding_analysis.ipynb",
+    "cells": [
+      {
+        "cell": 0,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 2027,
+        "images": []
+      },
+      {
+        "cell": 1,
+        "type": "code",
+        "execution_count": 1,
+        "source_first_line": "",
+        "source_characters": 790,
+        "images": []
+      },
+      {
+        "cell": 2,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 449,
+        "images": []
+      },
+      {
+        "cell": 3,
+        "type": "code",
+        "execution_count": 2,
+        "source_first_line": "",
+        "source_characters": 3988,
+        "images": []
+      },
+      {
+        "cell": 4,
+        "type": "code",
+        "execution_count": 21,
+        "source_first_line": "descriptors_filtered = descriptors[[\"PDB_CCD_ID\", \"ligand_heavy_atoms\", \"ligand_rotatable_bonds\", \"protein_residues\", \"pocket_heavy_atoms_r6\"]]",
+        "source_characters": 239,
+        "images": []
+      },
+      {
+        "cell": 5,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 460,
+        "images": []
+      },
+      {
+        "cell": 6,
+        "type": "code",
+        "execution_count": 3,
+        "source_first_line": "",
+        "source_characters": 585,
+        "images": []
+      },
+      {
+        "cell": 7,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 2. Descriptor and runtime distributions",
+        "source_characters": 42,
+        "images": []
+      },
+      {
+        "cell": 8,
+        "type": "code",
+        "execution_count": 4,
+        "source_first_line": "",
+        "source_characters": 243,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 14959,
+            "sha256": "529fe519965750ba8973305f8a8871b52c7656cae7622b0c39a6ef091016c81b",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 15431,
+            "sha256": "0711fa07beea1273f649872e6e73b2370692b8fb1ff10a9552d441186773ec31",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 2,
+            "mime": "image/png",
+            "bytes": 14700,
+            "sha256": "9c7dc6f94f2c77362fac376f1da9046b5463b5bd2b2b2257adf7ee4a701fa4c4",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 3,
+            "mime": "image/png",
+            "bytes": 16325,
+            "sha256": "f672daa706baa64d680516da931eed74b0ea1c6d1f44cd37304411e9801a03ac",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 9,
+        "type": "code",
+        "execution_count": 5,
+        "source_first_line": "",
+        "source_characters": 551,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 22304,
+            "sha256": "6c8aa84169df401cc7065e3bf25ca1aad4ab634349b78d0ec6ee44487cc25e1a",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 10,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 374,
+        "images": []
+      },
+      {
+        "cell": 11,
+        "type": "code",
+        "execution_count": 6,
+        "source_first_line": "",
+        "source_characters": 782,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 50967,
+            "sha256": "fbfae39202cfd76fcbf20d17e6610ea3cb8bafa8c1f1cb8048a30e3dccf4e24d",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 12,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "The descriptor-only heatmap checks redundancy among the proposed physical variables before interpreting multivariate coefficients.",
+        "source_characters": 130,
+        "images": []
+      },
+      {
+        "cell": 13,
+        "type": "code",
+        "execution_count": 7,
+        "source_first_line": "",
+        "source_characters": 564,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 48303,
+            "sha256": "5b77891c12e4bacfc9856d8bc6dcace9b913aa064d09bac8cd3086fefaaaf8f0",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 14,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 687,
+        "images": []
+      },
+      {
+        "cell": 15,
+        "type": "code",
+        "execution_count": 8,
+        "source_first_line": "",
+        "source_characters": 1800,
+        "images": []
+      },
+      {
+        "cell": 16,
+        "type": "code",
+        "execution_count": 9,
+        "source_first_line": "",
+        "source_characters": 464,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 64509,
+            "sha256": "2eb6aabfb0bb66ddbb652889ea964c26f0e162f4acb47a1fe406a9fdb119c4e4",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 17,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 326,
+        "images": []
+      },
+      {
+        "cell": 18,
+        "type": "code",
+        "execution_count": 10,
+        "source_first_line": "",
+        "source_characters": 925,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 49495,
+            "sha256": "5c52bbecac21a02348d2e78639e954e3b33e1416c246c97e09b5fae8869f5eab",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 19,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 214,
+        "images": []
+      },
+      {
+        "cell": 20,
+        "type": "code",
+        "execution_count": 11,
+        "source_first_line": "",
+        "source_characters": 512,
+        "images": []
+      },
+      {
+        "cell": 21,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 1207,
+        "images": []
+      },
+      {
+        "cell": 22,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 1037,
+        "images": []
+      },
+      {
+        "cell": 23,
+        "type": "code",
+        "execution_count": 12,
+        "source_first_line": "",
+        "source_characters": 3312,
+        "images": []
+      },
+      {
+        "cell": 24,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 760,
+        "images": []
+      },
+      {
+        "cell": 25,
+        "type": "code",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 1704,
+        "images": []
+      },
+      {
+        "cell": 26,
+        "type": "code",
+        "execution_count": 14,
+        "source_first_line": "",
+        "source_characters": 545,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 60949,
+            "sha256": "d65e6ae8015c6bfd660b398701d46c11d93e7cd43649c2bb22f32f4892b87421",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 27,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 344,
+        "images": []
+      },
+      {
+        "cell": 28,
+        "type": "code",
+        "execution_count": 15,
+        "source_first_line": "",
+        "source_characters": 588,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 25090,
+            "sha256": "b512f87d85d7282540a41f10579adf3974a0cf24af6817754614230cd1167a50",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 29,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 605,
+        "images": []
+      },
+      {
+        "cell": 30,
+        "type": "code",
+        "execution_count": 16,
+        "source_first_line": "",
+        "source_characters": 1817,
+        "images": [
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 41538,
+            "sha256": "13f33af43835f68c249d61408d2477e2c8049b446713a11f15cae788bb435c35",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 31,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 798,
+        "images": []
+      },
+      {
+        "cell": 32,
+        "type": "code",
+        "execution_count": 17,
+        "source_first_line": "",
+        "source_characters": 2273,
+        "images": []
+      },
+      {
+        "cell": 33,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "",
+        "source_characters": 1713,
+        "images": []
+      }
+    ]
+  },
+  {
+    "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+    "cells": [
+      {
+        "cell": 0,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "# Fold-aware analysis of PORT-AS acquisition matrices",
+        "source_characters": 836,
+        "images": []
+      },
+      {
+        "cell": 1,
+        "type": "code",
+        "execution_count": 92,
+        "source_first_line": "from __future__ import annotations",
+        "source_characters": 5298,
+        "images": []
+      },
+      {
+        "cell": 2,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 1. Data contract and fold estimand",
+        "source_characters": 487,
+        "images": []
+      },
+      {
+        "cell": 3,
+        "type": "code",
+        "execution_count": 93,
+        "source_first_line": "def normalise_algorithm(value):",
+        "source_characters": 3223,
+        "images": []
+      },
+      {
+        "cell": 4,
+        "type": "code",
+        "execution_count": 94,
+        "source_first_line": "def last_query_order(path):",
+        "source_characters": 3603,
+        "images": []
+      },
+      {
+        "cell": 5,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 2. Query histories and realised cost",
+        "source_characters": 343,
+        "images": []
+      },
+      {
+        "cell": 6,
+        "type": "code",
+        "execution_count": 95,
+        "source_first_line": "def load_query_run(method, fold):",
+        "source_characters": 6871,
+        "images": []
+      },
+      {
+        "cell": 7,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 3. Reconstruction and decision metrics",
+        "source_characters": 323,
+        "images": []
+      },
+      {
+        "cell": 8,
+        "type": "code",
+        "execution_count": 96,
+        "source_first_line": "PAIR_I, PAIR_J = np.triu_indices(len(ALGORITHMS), 1)",
+        "source_characters": 8859,
+        "images": []
+      },
+      {
+        "cell": 9,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 4. Held-out MolAS outcomes",
+        "source_characters": 338,
+        "images": []
+      },
+      {
+        "cell": 10,
+        "type": "code",
+        "execution_count": 97,
+        "source_first_line": "DOWNSTREAM_ROW_NAMES = {",
+        "source_characters": 4541,
+        "images": []
+      },
+      {
+        "cell": 11,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 5. Extract or load the tidy analysis tables",
+        "source_characters": 244,
+        "images": []
+      },
+      {
+        "cell": 12,
+        "type": "code",
+        "execution_count": 98,
+        "source_first_line": "tasks = [(method, percentage) for method in METHODS for percentage in PERCENTAGES]",
+        "source_characters": 4770,
+        "images": []
+      },
+      {
+        "cell": 13,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 6. Integrity report",
+        "source_characters": 258,
+        "images": []
+      },
+      {
+        "cell": 14,
+        "type": "code",
+        "execution_count": 99,
+        "source_first_line": "audit_summary = audits.groupby([\"stage\", \"status\"]).size().unstack(fill_value=0)",
+        "source_characters": 7194,
+        "images": []
+      },
+      {
+        "cell": 15,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 7. Cost landscape and acquisition allocation",
+        "source_characters": 299,
+        "images": []
+      },
+      {
+        "cell": 16,
+        "type": "code",
+        "execution_count": 100,
+        "source_first_line": "runtime_long = (",
+        "source_characters": 805,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 34343,
+            "sha256": "8b93403814edd68cf48986248a6442b90bc608eed621c5f66958cd18b4176f59",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 17,
+        "type": "code",
+        "execution_count": 101,
+        "source_first_line": "def common_curve_grid(data, x, y, points=120, required_folds=FOLDS):",
+        "source_characters": 3729,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 118091,
+            "sha256": "67448a4598e8e00dd24110524b2fed016416dfcb6ef365c220afde2b4453b4fa",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 99714,
+            "sha256": "460c184402a29db6dd8fe932eaa562259494c0cc109267b34da301a38819b0ce",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 18,
+        "type": "code",
+        "execution_count": 102,
+        "source_first_line": "def mean_composition(data, value, points=100):",
+        "source_characters": 3411,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 163052,
+            "sha256": "879a58a8019aecd4932943a481047f466e51d9533043df3c4f835fb246f77cce",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 171676,
+            "sha256": "c158f27b9dd0b7aebaa7a8e2cea2f4597ec5d9ff9a6c6b0176af3960ddc70cf3",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 19,
+        "type": "code",
+        "execution_count": 103,
+        "source_first_line": "marginal = allocation_with_cost.copy()",
+        "source_characters": 1171,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 63477,
+            "sha256": "f739de6120e02a31beeac1cd4de47da67f9de079be0738dc78b7924359d777da",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 20,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 8. Completed-matrix quality",
+        "source_characters": 246,
+        "images": []
+      },
+      {
+        "cell": 21,
+        "type": "code",
+        "execution_count": 104,
+        "source_first_line": "for metric, (title, y_label, _) in UPSTREAM_METRICS.items():",
+        "source_characters": 429,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 137295,
+            "sha256": "c4c2f34eebc989403c84481d28a69989a04b4cc40a2c3a8a38d73b3c4bd36f5d",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 135785,
+            "sha256": "d1413c1c97e6e14f1a9b8badbde9fdfd9ff94a00278f90f2b7797d589fc3b7a9",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 2,
+            "mime": "image/png",
+            "bytes": 146528,
+            "sha256": "bd7e28f604a1f2c3dd05745f9cbd16f85ad1bd8c6316d4cb6737631bf4221588",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 3,
+            "mime": "image/png",
+            "bytes": 122486,
+            "sha256": "87eda0c55fc45a8371ac2476f3cb0acdbff845cdad2241928ec80ca9fd50f78e",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 4,
+            "mime": "image/png",
+            "bytes": 118113,
+            "sha256": "bccbabeb62ad1a52e687060018a95fa91155a35ba52b62f804f90f55c812258d",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 5,
+            "mime": "image/png",
+            "bytes": 158342,
+            "sha256": "a60906c2ee83a5364296cce323882d49620c5f9c301125ace30beac9ab8d2ca5",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 22,
+        "type": "code",
+        "execution_count": 105,
+        "source_first_line": "algorithm_metrics_complete = algorithm_metrics.merge(matrix_complete_keys, on=[\"method\", \"percentage\"], how=\"inner\", validate=\"many_to_one\")",
+        "source_characters": 1129,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 156859,
+            "sha256": "a44a42d0d105ca6bb2624ad6133d641dc6bcf6d6cc40df60ca16015da65f0bae",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 23,
+        "type": "code",
+        "execution_count": 106,
+        "source_first_line": "regret_summary = fold_metrics_complete.melt(",
+        "source_characters": 1404,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 99837,
+            "sha256": "ea832f904a72ef4046bbab01078c0e585671da31905ad1810f91537154b3d907",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 24,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 9. Sensitivity to the available training pool",
+        "source_characters": 327,
+        "images": []
+      },
+      {
+        "cell": 25,
+        "type": "code",
+        "execution_count": 107,
+        "source_first_line": "stability_curve = (",
+        "source_characters": 1419,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 178587,
+            "sha256": "b620bbbb5231fad9c292ca4402c7c82183965052cfe961ece26b1371de158077",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 26,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 10. Downstream MolAS performance",
+        "source_characters": 1178,
+        "images": []
+      },
+      {
+        "cell": 27,
+        "type": "code",
+        "execution_count": null,
+        "source_first_line": "paired_all = fold_metrics.merge(",
+        "source_characters": 9946,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 590194,
+            "sha256": "0dd618730c6f0f32cdfe77e20f0ee86b26e7523e555e0d8d549284924c176b82",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 92124,
+            "sha256": "fff67884178ae8531ab6f5b7db4ee25fc1610a093a2bd81585663343a90aa56c",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 28,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 11. Downstream mechanism diagnostics",
+        "source_characters": 744,
+        "images": []
+      },
+      {
+        "cell": 29,
+        "type": "code",
+        "execution_count": 109,
+        "source_first_line": "if str(MOLAS_REPO_ROOT) not in sys.path:",
+        "source_characters": 7905,
+        "images": []
+      },
+      {
+        "cell": 30,
+        "type": "code",
+        "execution_count": 110,
+        "source_first_line": "matched_allocation = pairwise_cost_matches.merge(",
+        "source_characters": 1628,
+        "images": []
+      },
+      {
+        "cell": 31,
+        "type": "code",
+        "execution_count": 111,
+        "source_first_line": "comparison_columns = [",
+        "source_characters": 5309,
+        "images": []
+      },
+      {
+        "cell": 32,
+        "type": "code",
+        "execution_count": 112,
+        "source_first_line": "PAIRED_METRICS = {",
+        "source_characters": 2868,
+        "images": []
+      },
+      {
+        "cell": 33,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 12. Do upstream metrics explain downstream performance?",
+        "source_characters": 702,
+        "images": []
+      },
+      {
+        "cell": 34,
+        "type": "code",
+        "execution_count": 113,
+        "source_first_line": "def align_paired_curves(data, columns, points=80, reference_method=REFERENCE_METHOD):",
+        "source_characters": 2539,
+        "images": []
+      },
+      {
+        "cell": 35,
+        "type": "code",
+        "execution_count": 114,
+        "source_first_line": "association_colours = sns.color_palette(\"colorblind\", len(upstream_columns))",
+        "source_characters": 1649,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 633350,
+            "sha256": "8c561e69a9b5aa22e9d637dcf8aa8dbaf4f58ca4d742c373a57f2c0d1c77adfc",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 36,
+        "type": "code",
+        "execution_count": 115,
+        "source_first_line": "association_tables = []",
+        "source_characters": 1160,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 61514,
+            "sha256": "2ebda14d3315f04878cd2ca678260f4cab69f449c1f7a27f60d3569daf2ed1d9",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 37,
+        "type": "code",
+        "execution_count": 116,
+        "source_first_line": "trajectory_correlations = []",
+        "source_characters": 2220,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 54262,
+            "sha256": "306ab38f01be85d66b3bf0f05c8cc8578299dc61c0f5cba904ce22302dc13186",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 38,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 13. Fixed-horizon efficiency summaries",
+        "source_characters": 453,
+        "images": []
+      },
+      {
+        "cell": 39,
+        "type": "code",
+        "execution_count": 117,
+        "source_first_line": "integrate_curve = np.trapezoid if hasattr(np, \"trapezoid\") else np.trapz",
+        "source_characters": 6928,
+        "images": [
+          {
+            "output": 4,
+            "mime": "image/png",
+            "bytes": 163632,
+            "sha256": "b7c4004ff261205a262a47f12f1d9017ebdf57a20da41f61579c036c1c7eec1f",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 40,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 14. Compact audit summary",
+        "source_characters": 277,
+        "images": []
+      },
+      {
+        "cell": 41,
+        "type": "code",
+        "execution_count": 118,
+        "source_first_line": "reference_percentage = 10 if 10 in set(downstream_overall[\"percentage\"]) else int(downstream_overall[\"percentage\"].min())",
+        "source_characters": 1767,
+        "images": []
+      },
+      {
+        "cell": 42,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 15. Export",
+        "source_characters": 174,
+        "images": []
+      },
+      {
+        "cell": 43,
+        "type": "code",
+        "execution_count": 119,
+        "source_first_line": "tables = {",
+        "source_characters": 2590,
+        "images": []
+      },
+      {
+        "cell": 44,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 16. Acquisition internals: utility, predicted cost, and realised cost",
+        "source_characters": 486,
+        "images": []
+      },
+      {
+        "cell": 45,
+        "type": "code",
+        "execution_count": 120,
+        "source_first_line": "ACQUISITION_COLUMNS = [\"query_order\", \"round\", \"algorithm\", \"utility\", \"predicted_runtime_mean\", \"predicted_runtime_sd\", \"runtime\"]",
+        "source_characters": 1297,
+        "images": []
+      },
+      {
+        "cell": 46,
+        "type": "code",
+        "execution_count": 121,
+        "source_first_line": "from matplotlib.colors import LogNorm",
+        "source_characters": 5791,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 78576,
+            "sha256": "e939718c342a473847ca38ae06dcf84e65001536882c6713fe7cc2f0d0155531",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 84098,
+            "sha256": "5648075a913a12f77520ff504494d9df04edcbc322f167434600145d7a7ba7f9",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 47,
+        "type": "code",
+        "execution_count": 122,
+        "source_first_line": "def cost_discrimination_by_algorithm(data, n_bins=30, min_bin_size=15):",
+        "source_characters": 1517,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 94264,
+            "sha256": "016eef80c0c0575f536b85f87cd2e2b7ba0444bda74a9b847e6a729033f01998",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 48,
+        "type": "code",
+        "execution_count": 123,
+        "source_first_line": "def signed_calibration_by_algorithm(data, n_bins=30, min_bin_size=15):",
+        "source_characters": 1785,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 69495,
+            "sha256": "f33f0f271f55de7015f8710bdd0f4ec31d2c6185f1274ad275f9c8cc97b2f6a7",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 49,
+        "type": "code",
+        "execution_count": 124,
+        "source_first_line": "def bin_by_cost(data, value_column, n_bins=40):",
+        "source_characters": 1995,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 283858,
+            "sha256": "ccf8519d6643a63744773f3c0577a2c3f5f6c2a7719420b2aa43ec208885d792",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 50,
+        "type": "code",
+        "execution_count": 125,
+        "source_first_line": "runtime = pd.read_csv(\"/data1/home/jw1017/AS_Dock/data/MolAS/moad_runtime_trimmed.csv\")",
+        "source_characters": 107,
+        "images": []
+      },
+      {
+        "cell": 51,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 17. Reconstructed-matrix stability as a retrospective stopping proxy",
+        "source_characters": 2081,
+        "images": []
+      },
+      {
+        "cell": 52,
+        "type": "code",
+        "execution_count": 126,
+        "source_first_line": "from analyses.port_as_stopping import (",
+        "source_characters": 3306,
+        "images": []
+      },
+      {
+        "cell": 53,
+        "type": "code",
+        "execution_count": 127,
+        "source_first_line": "STABILITY_LABELS = {",
+        "source_characters": 1921,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 390333,
+            "sha256": "d592a9e9c8c679ff53627f91ad40b721bcffa8ff6a30c36da6d75c5e8a8b9e03",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 415641,
+            "sha256": "32bbaf723b5ab218dcb2af5b79bf89be030e1575f598763711d1c5ef3a21e5ac",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 54,
+        "type": "code",
+        "execution_count": 128,
+        "source_first_line": "stopping_points = downstream_gain_table(",
+        "source_characters": 2221,
+        "images": [
+          {
+            "output": 2,
+            "mime": "image/png",
+            "bytes": 555139,
+            "sha256": "178df4cd5fe36f12c866d8b744f9904e8b0e8254d8fa867782e64b6b6aad370d",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 55,
+        "type": "code",
+        "execution_count": 129,
+        "source_first_line": "stopping_simulations = simulate_rules(",
+        "source_characters": 2074,
+        "images": [
+          {
+            "output": 2,
+            "mime": "image/png",
+            "bytes": 104593,
+            "sha256": "cc23d7f20c558908afa72c1310b59f70c91a0a9f9960c9cf6ec2c4a5631eb8d6",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 56,
+        "type": "code",
+        "execution_count": 130,
+        "source_first_line": "stability_tables = {",
+        "source_characters": 940,
+        "images": []
+      },
+      {
+        "cell": 57,
+        "type": "markdown",
+        "execution_count": null,
+        "source_first_line": "## 18. Work A robustness checks: unresolved frontier and progress control",
+        "source_characters": 1530,
+        "images": []
+      },
+      {
+        "cell": 58,
+        "type": "code",
+        "execution_count": 131,
+        "source_first_line": "from analyses.port_as_stopping import masked_pair_stability, progress_controlled_associations",
+        "source_characters": 6310,
+        "images": []
+      },
+      {
+        "cell": 59,
+        "type": "code",
+        "execution_count": 132,
+        "source_first_line": "full_scope_rolling = stability_rolling.copy()",
+        "source_characters": 3989,
+        "images": [
+          {
+            "output": 0,
+            "mime": "image/png",
+            "bytes": 648197,
+            "sha256": "c26c8dc184c25091ce36c9024a6d4e1d643805fe2c59d9915dfe61a9375a8d82",
+            "exact_paper_asset_match": null
+          },
+          {
+            "output": 1,
+            "mime": "image/png",
+            "bytes": 271725,
+            "sha256": "35a01ee4ce725536b97c030682f8145c2aebce15af88a663046aa89834944d6f",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 60,
+        "type": "code",
+        "execution_count": 133,
+        "source_first_line": "work_a_point_parts = []",
+        "source_characters": 3644,
+        "images": [
+          {
+            "output": 2,
+            "mime": "image/png",
+            "bytes": 73537,
+            "sha256": "93977ee17d9a35e1b155d34af94e68b5f960ddb88f584e85a5cc6514d7080e33",
+            "exact_paper_asset_match": null
+          }
+        ]
+      },
+      {
+        "cell": 61,
+        "type": "code",
+        "execution_count": 134,
+        "source_first_line": "work_a_tables = {",
+        "source_characters": 1160,
+        "images": []
+      }
+    ]
+  }
+]

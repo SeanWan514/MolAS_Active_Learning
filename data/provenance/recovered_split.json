@@ -1,0 +1,111 @@
+{
+  "status": "recovered_existing_test_membership_not_a_new_random_split",
+  "destination": "data/splits/recovered_heldout_folds_from_downstream.csv",
+  "sha256": "065d7af94693bd9ba067e377357fa10f99c8b6f508a8d78b1378c6876e5abf84",
+  "counts": {
+    "0": 636,
+    "1": 636,
+    "2": 636,
+    "3": 636,
+    "4": 635
+  },
+  "primary_sources": [
+    {
+      "fold": 0,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_0/best-epoch=005-val_loss=0.5432-val_as_acc=0.9970_descriptive.csv",
+      "sha256": "74431702b8d33ca230618ffbd1e3e96ba61c55d7312f077001a6568508db2691",
+      "rows": 636
+    },
+    {
+      "fold": 1,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_1/best-epoch=016-val_loss=0.5322-val_as_acc=0.9951_descriptive.csv",
+      "sha256": "2365740f607b93bbe9a26db6372d76d344bd34a968c429ec51cbb84f9f8e6dcb",
+      "rows": 636
+    },
+    {
+      "fold": 2,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_2/best-epoch=004-val_loss=0.5346-val_as_acc=0.9943_descriptive.csv",
+      "sha256": "5e490fd81946724b1cc6c3d0d964265da99e7a15ac037ceed58d625f80876cc5",
+      "rows": 636
+    },
+    {
+      "fold": 3,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_3/best-epoch=011-val_loss=0.5446-val_as_acc=0.9928_descriptive.csv",
+      "sha256": "e2337e4fd050319acbcf08cd206b1beaca2f0418c903d00c58296bc7daf16020",
+      "rows": 636
+    },
+    {
+      "fold": 4,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_4/best-epoch=025-val_loss=0.5457-val_as_acc=0.9944_descriptive.csv",
+      "sha256": "3590ed472e8e625aac5d4274dea1eeeaa877f0dcaae93bbf12ff1012ba21ab7c",
+      "rows": 635
+    }
+  ],
+  "independent_checkpoint_cross_checks": [
+    {
+      "fold": 0,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b015_pct/test_composite/default/fold_0/best-epoch=057-val_loss=0.5885-val_as_acc=0.9246_descriptive.csv",
+      "sha256": "9eb1e6463b9380a7d4248ae6edf9537b1e6fa74b5ec774b9b846d77c06c6b759",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 0,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/plain_mean_ucb/seed0/b100_pct/test_composite/default/fold_0/best-epoch=017-val_loss=0.4679-val_as_acc=0.8005_descriptive.csv",
+      "sha256": "30ddf525134fc51f6a5b3e52b9199d41cb01160ab71da2ee9cf754de5fb18ab2",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 1,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b015_pct/test_composite/default/fold_1/best-epoch=027-val_loss=0.5630-val_as_acc=0.9367_descriptive.csv",
+      "sha256": "00548b7ee18078aeb235a78dc3c3c5685964ef26ea75aa25d070360e70dab15f",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 1,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/direct_cost_uc/seed0/b100_pct/test_composite/default/fold_1/best-epoch=057-val_loss=0.5583-val_as_acc=0.8160_descriptive.csv",
+      "sha256": "a96d49da423c82a095e1c947c98ac8f490a965679795ee07b47db34fc7952d49",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 2,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b015_pct/test_composite/default/fold_2/best-epoch=053-val_loss=0.5567-val_as_acc=0.9072_descriptive.csv",
+      "sha256": "9a503654a43bc399fa346cad359a9f5a30f25b7982407bfca9d1e3fd1b1ee828",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 2,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/direct_cost_uc/seed0/b100_pct/test_composite/default/fold_2/best-epoch=071-val_loss=0.6546-val_as_acc=0.7596_descriptive.csv",
+      "sha256": "a91b356dbd638fc8d228100b2f7355e586a9a4461ed1fbfad7e27c4ea10abfe7",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 3,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b015_pct/test_composite/default/fold_3/best-epoch=031-val_loss=0.5403-val_as_acc=0.9095_descriptive.csv",
+      "sha256": "da43237aa19212b8f4fc15681e4023b65e05601cf60dc7a0ab281df27e671b02",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 3,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/direct_cost_uc/seed0/b100_pct/test_composite/default/fold_3/best-epoch=027-val_loss=0.4591-val_as_acc=0.8117_descriptive.csv",
+      "sha256": "05e285cf6245bf6bd5748ed23d00e70f427e8e80049e5420509eaabd13c2ff93",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 4,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b015_pct/test_composite/default/fold_4/best-epoch=025-val_loss=0.5716-val_as_acc=0.8920_descriptive.csv",
+      "sha256": "bf7c76df6ea9e8b504299e90a9ce5d1c5b13a2fc19c6a1833fba7c88c7c29f10",
+      "identical_ordered_test_ids": true
+    },
+    {
+      "fold": 4,
+      "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/direct_cost_uc/seed0/b100_pct/test_composite/default/fold_4/best-epoch=055-val_loss=0.5330-val_as_acc=0.7758_descriptive.csv",
+      "sha256": "7b8824c848e3666d71df49f4f174a621ceab672dd209cd74be8b382fbefa8ac3",
+      "identical_ordered_test_ids": true
+    }
+  ],
+  "original_split_file_not_recovered": false,
+  "seed42_not_inferred_from_membership": true,
+  "original_split_now_available": "data/splits/moad_5fold_split_seed42.csv",
+  "original_and_recovered_memberships_identical": true,
+  "original_normalization_offset": 0
+}

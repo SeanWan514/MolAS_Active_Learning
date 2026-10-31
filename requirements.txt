@@ -1,0 +1,2 @@
+# Acquisition and validation dependencies; not a recovered historical lock.
+-r code/acquisition/requirements.txt

@@ -1,0 +1,30 @@
+[
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL/data/raw/moad_rmsd_trimmed.csv",
+    "destination": "data/raw/moad_rmsd_trimmed.csv",
+    "bytes": 458442,
+    "sha256": "ef6eb247fa499fd11072ef966a265b76e3c06903cbb1339ce58f4cd8cc2de92c",
+    "status": "copied_exact_bytes",
+    "restart_copy_sha256": "ef6eb247fa499fd11072ef966a265b76e3c06903cbb1339ce58f4cd8cc2de92c",
+    "restart_copy_identical": true,
+    "restart_copy_recovered_after_cloud_hydration": true
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL/data/raw/moad_pb_ratio_trimmed.csv",
+    "destination": "data/raw/moad_pb_ratio_trimmed.csv",
+    "bytes": 155874,
+    "sha256": "b73d1a864675e2f30b2be2261981b50df3af050dae51d455b2f5fc9e638f7500",
+    "status": "copied_exact_bytes",
+    "restart_copy_sha256": "b73d1a864675e2f30b2be2261981b50df3af050dae51d455b2f5fc9e638f7500",
+    "restart_copy_identical": true
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL/data/raw/moad_runtime_trimmed.csv",
+    "destination": "data/raw/moad_runtime_trimmed.csv",
+    "bytes": 332754,
+    "sha256": "f0df14e2ef6e3596516353b6ce534487d2d8b9ea99bf7e376246a3a9aa83febf",
+    "status": "copied_exact_bytes",
+    "restart_copy_sha256": "f0df14e2ef6e3596516353b6ce534487d2d8b9ea99bf7e376246a3a9aa83febf",
+    "restart_copy_identical": true
+  }
+]

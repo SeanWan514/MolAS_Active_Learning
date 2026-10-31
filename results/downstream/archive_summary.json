@@ -1,0 +1,98 @@
+{
+  "packaging_date": "2026-10-31",
+  "operation": "catalog_and_copy_existing_outputs_only",
+  "artifact_type": "historical saved-output CSV archives",
+  "archives_contain_training_or_plotting_source": false,
+  "source_directory_name": "port_as_results_260829",
+  "acquisition_seed_labels": [
+    0
+  ],
+  "selector_training_seed": "not established by these files",
+  "fold_directory_labels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoint_unit": "percentage of acquired cells; not realized hours",
+  "policies": [
+    {
+      "policy": "plain_mean_ucb",
+      "source_files": 840,
+      "source_bytes": 44842007,
+      "packaged_files": 840,
+      "packaged_bytes": 44842007,
+      "archive_bytes": 13496129,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "plain_mean_ucb_seed0.zip",
+      "archive_sha256": "708b311303e00ea8c76891a62c422d504fbc2f892bedb5d22ebc51fe2d17b0d0"
+    },
+    {
+      "policy": "direct_cost_uc",
+      "source_files": 756,
+      "source_bytes": 40286008,
+      "packaged_files": 756,
+      "packaged_bytes": 40286008,
+      "archive_bytes": 12133704,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "direct_cost_uc_seed0.zip",
+      "archive_sha256": "d697b2f8d857a4979ff89838c99be72500f790de378ccf5bafb8c451528d219e"
+    },
+    {
+      "policy": "relaxed_cost_power_05",
+      "source_files": 756,
+      "source_bytes": 40313638,
+      "packaged_files": 756,
+      "packaged_bytes": 40313638,
+      "archive_bytes": 12154945,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "relaxed_cost_power_05_seed0.zip",
+      "archive_sha256": "1b74a00380d3fab11601d46df89a2c98dd5bbea25268311712919e93c9a49447"
+    },
+    {
+      "policy": "log_cost",
+      "source_files": 756,
+      "source_bytes": 40300777,
+      "packaged_files": 756,
+      "packaged_bytes": 40300777,
+      "archive_bytes": 12127054,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "log_cost_seed0.zip",
+      "archive_sha256": "9455f433a8356e403574450e1e3d24cc8eb3a328aee3471de639cd0be84a5ae4"
+    },
+    {
+      "policy": "cost_tiers_5",
+      "source_files": 756,
+      "source_bytes": 40337075,
+      "packaged_files": 756,
+      "packaged_bytes": 40337075,
+      "archive_bytes": 12156695,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "cost_tiers_5_seed0.zip",
+      "archive_sha256": "a265be1f9b5357d8c3afbbbc54fb62028e199c7340f62e2906beddcb168f7ee9"
+    },
+    {
+      "policy": "runtime_uncertainty",
+      "source_files": 644,
+      "source_bytes": 34391588,
+      "packaged_files": 644,
+      "packaged_bytes": 34391588,
+      "archive_bytes": 10330642,
+      "missing_files": 0,
+      "missing_bytes": 0,
+      "archive": "runtime_uncertainty_seed0.zip",
+      "archive_sha256": "0c32c4b46b19bce61b342fee3ebbcbcc3736abe9de3950ab004c0ac3d456f96a"
+    }
+  ],
+  "excluded_nonpaper_directories": [],
+  "all_saved_files_packaged": true,
+  "cloud_policy": "Dataless placeholders are inventoried but not read; rerun after hydration",
+  "scientific_results_modified": false,
+  "new_scientific_experiments": false
+}

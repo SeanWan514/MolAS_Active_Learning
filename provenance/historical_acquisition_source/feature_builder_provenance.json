@@ -1,0 +1,56 @@
+{
+  "source": "MolAS_AL_restart/AL_MolAS/dal_toolbox_design2/run_dal_toolbox_design2.py",
+  "source_sha256": "2267368056a02d44726dfe82e998edb650ba4f92708845739ffc4ecb58622e1e",
+  "excerpt_sha256": "d7c228e168f169eaf6916eb0c969b2d2d2df379e1e60390a8a7b2c7d514e314c",
+  "functions": [
+    {
+      "name": "normalize_features",
+      "start_line": 520,
+      "end_line": 525
+    },
+    {
+      "name": "random_project",
+      "start_line": 528,
+      "end_line": 533
+    },
+    {
+      "name": "tensor_to_numpy",
+      "start_line": 536,
+      "end_line": 547
+    },
+    {
+      "name": "load_ligand_features",
+      "start_line": 550,
+      "end_line": 581
+    },
+    {
+      "name": "pooled_graph_feature",
+      "start_line": 584,
+      "end_line": 597
+    },
+    {
+      "name": "load_protein_features",
+      "start_line": 600,
+      "end_line": 629
+    },
+    {
+      "name": "build_complex_features",
+      "start_line": 632,
+      "end_line": 655
+    }
+  ],
+  "status": "Read-only provenance excerpt, not a standalone executable or a historical cache reconstruction.",
+  "dependencies": [
+    "NumPy",
+    "math",
+    "json",
+    "PyTorch",
+    "trusted serialized molecular feature files; PyG graph objects may require torch-geometric"
+  ],
+  "limitations": [
+    "The original array has no embedded IDs; publication alignment was independently verified against existing source feature artifacts, as recorded in data/provenance/combined_feature_alignment.json and data/provenance/feature_cache_comparison.json.",
+    "Source normalizes across the IDs supplied to build_complex_features before projection.",
+    "Raw tensor formats can be accepted based only on row count by this historical builder.",
+    "The existing historical cache was retained unchanged; validation recomputation was not substituted for it."
+  ]
+}

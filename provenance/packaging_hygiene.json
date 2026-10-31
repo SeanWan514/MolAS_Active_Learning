@@ -1,0 +1,10 @@
+{
+  "python_source_files_parsed": 69,
+  "python_syntax_errors": [],
+  "credential_signature_scan_matches": [],
+  "broken_relative_markdown_links": [],
+  "unchanged_validated_acquisition_sources": 8,
+  "validated_source_hash_mismatches": [],
+  "scan_scope": "Git-visible source, documentation, provenance, and notebook source/text outputs; binary outputs excluded.",
+  "publication_check_date": "2026-10-31"
+}

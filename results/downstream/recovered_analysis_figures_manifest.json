@@ -1,0 +1,132 @@
+{
+  "source": "/Users/wanweilin/Downloads/main_results",
+  "files": [
+    {
+      "path": "results/downstream/recovered_analysis_figures/acquisition_operating_point.png",
+      "source": "/Users/wanweilin/Downloads/main_results/acquisition_operating_point.png",
+      "bytes": 877230,
+      "sha256": "24a13a428cbea9b93e694cd2e95dfe2ddfda6fb43f794ccd8337f64fd3710677",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/acquisition_runtime_calibration.png",
+      "source": "/Users/wanweilin/Downloads/main_results/acquisition_runtime_calibration.png",
+      "bytes": 830751,
+      "sha256": "2edaeef13669852051134c2d44a6eeab6de1c5d0412267eb8a34ec4cedd4f231",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/acquisition_runtime_discrimination.png",
+      "source": "/Users/wanweilin/Downloads/main_results/acquisition_runtime_discrimination.png",
+      "bytes": 235683,
+      "sha256": "d9038f89a22132668711070b3532c073bb91752b941d124bfcc28442b549414c",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/acquisition_runtime_signed_calibration.png",
+      "source": "/Users/wanweilin/Downloads/main_results/acquisition_runtime_signed_calibration.png",
+      "bytes": 174213,
+      "sha256": "725c13c65356ea1999daec7c6be6bfc3766ede4f8fef5c80218e60aaca975955",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/coverage_and_allocation_entropy.png",
+      "source": "/Users/wanweilin/Downloads/main_results/coverage_and_allocation_entropy.png",
+      "bytes": 256460,
+      "sha256": "57430c0bd14d9065f126196fb7007ba0ce65016c7894d36c528173f7db158e18",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/cumulative_cost_share.png",
+      "source": "/Users/wanweilin/Downloads/main_results/cumulative_cost_share.png",
+      "bytes": 417931,
+      "sha256": "c01a4de5b63c089d833c516a38765290d4f5ce9f8ed6b50b75a65f9eecefaee4",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/cumulative_query_share.png",
+      "source": "/Users/wanweilin/Downloads/main_results/cumulative_query_share.png",
+      "bytes": 404260,
+      "sha256": "8555b235b52ad43a1493f7a746e046eea08aa9ac5f82a4c0c2298349113f0106",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/downstream_attainment_cost.png",
+      "source": "/Users/wanweilin/Downloads/main_results/downstream_attainment_cost.png",
+      "bytes": 239882,
+      "sha256": "65ee532dcc2f6c60942ee120037e5b520d28b917a9670c58158b16662a332123",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/downstream_performance_vs_cost.png",
+      "source": "/Users/wanweilin/Downloads/main_results/downstream_performance_vs_cost.png",
+      "bytes": 1469638,
+      "sha256": "834de460622e34cbeb56a24452ceb5c717c0dd042881087a0f586f6e5cd824e5",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/matched_cost_primary_association.png",
+      "source": "/Users/wanweilin/Downloads/main_results/matched_cost_primary_association.png",
+      "bytes": 891986,
+      "sha256": "53cea9d82ffd789eb0bf6d74c3d0be1f25775b175a48a7a553bea8e68b1e4ea2",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/queried_cells_vs_cost.png",
+      "source": "/Users/wanweilin/Downloads/main_results/queried_cells_vs_cost.png",
+      "bytes": 349796,
+      "sha256": "bec8fc5fe661a1c71d515a78c7ea4fde8568e0387964ec2454eaad521f7eedad",
+      "exact_final_figure_match": 7
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/runtime_distribution.png",
+      "source": "/Users/wanweilin/Downloads/main_results/runtime_distribution.png",
+      "bytes": 86213,
+      "sha256": "84f20ef932aede3e8ef067e18ae1e53ebdf470ca5af80da36232c6d0ab47a6d7",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/unqueried_cell_mae.png",
+      "source": "/Users/wanweilin/Downloads/main_results/unqueried_cell_mae.png",
+      "bytes": 484292,
+      "sha256": "b3d8078dbf757f1c6a03dea3947cb337727d37e1206541d3b8919c2460eb6e2d",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/upstream_decision_regret_mean.png",
+      "source": "/Users/wanweilin/Downloads/main_results/upstream_decision_regret_mean.png",
+      "bytes": 355080,
+      "sha256": "462b9b7405b08354ef83e4e1c99d24d2e4ca8116f46387836c46df7715353738",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/upstream_mae.png",
+      "source": "/Users/wanweilin/Downloads/main_results/upstream_mae.png",
+      "bytes": 421108,
+      "sha256": "d2d774c65e7e496262beb7b53ebabee3eccd1d215e1383878ef17d223a230f04",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/upstream_ndcg_at_3.png",
+      "source": "/Users/wanweilin/Downloads/main_results/upstream_ndcg_at_3.png",
+      "bytes": 374746,
+      "sha256": "310566d1e264b28fcb0216df1136e60fde08cb6025a677ee26ec43c7086555ee",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/upstream_pairwise_concordance.png",
+      "source": "/Users/wanweilin/Downloads/main_results/upstream_pairwise_concordance.png",
+      "bytes": 448395,
+      "sha256": "328867c0bef5bad17d486c35cc90a6f8fe1290b42383fd3cb13d5f69643f694f",
+      "exact_final_figure_match": null
+    },
+    {
+      "path": "results/downstream/recovered_analysis_figures/upstream_row_spearman.png",
+      "source": "/Users/wanweilin/Downloads/main_results/upstream_row_spearman.png",
+      "bytes": 414875,
+      "sha256": "29ed350668c99e32d5966f73b8ca0bdf15ea5f1b3375c35a1ea05c9bc700a044",
+      "exact_final_figure_match": null
+    }
+  ],
+  "regenerated": false
+}

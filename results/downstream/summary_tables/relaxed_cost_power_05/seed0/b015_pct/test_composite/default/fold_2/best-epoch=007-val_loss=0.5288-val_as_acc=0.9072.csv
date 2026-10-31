@@ -1,0 +1,7 @@
+,SBS: unimol,AS,oracle,VBS_SBS_Gap_Closed_by_AS(%)
+Percent RMSD < 1,55.5,55.5,80.35,0.0
+Percent RMSD < 2,92.77,92.77,98.43,0.0
+Percent RMSD < 5,98.27,98.27,100.0,0.0
+Median RMSD,0.943,0.943,0.607,-0.0
+Percent RMSD < 1 (Valid Poses),44.34,44.34,79.72,0.0
+Percent RMSD < 2 (Valid Poses),72.01,72.01,97.8,0.0

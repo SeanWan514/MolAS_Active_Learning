@@ -1,0 +1,32 @@
+# Operating-system and Python build/cache files
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# New runs are separate from the immutable archived results shipped here.
+/outputs/
+/scratch/
+/tmp/
+
+# Local structural data (about 15 GB); publish separately with verified terms.
+/data/external/*
+!/data/external/README.md
+
+# Local credentials must never be published.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# LaTeX build products; the frozen paper PDF is deliberately included.
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz

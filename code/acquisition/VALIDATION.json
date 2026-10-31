@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "validated_utc": "2026-10-31T05:20:35.239078+00:00",
+  "scope": "Publication packaging verification; not a reproduction of scientific experiments",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0",
+      "cloudpickle": "3.1.2",
+      "narwhals": "2.28.0"
+    }
+  },
+  "historical_training_environment_recovered": false,
+  "synthetic_tests": {
+    "command": "python -m unittest discover -s code/acquisition/tests -v",
+    "passed": 12,
+    "failed": 0,
+    "fits_or_acquisition_loops": 0
+  },
+  "real_input_audit": {
+    "command": "python code/acquisition/audit_inputs.py",
+    "status": "pass",
+    "complexes": 3179,
+    "algorithms": 7,
+    "combined_features": 260,
+    "held_out_fold_sizes": [
+      636,
+      636,
+      636,
+      636,
+      635
+    ],
+    "feature_id_validation": "Exact ordered match to the independently verified ID file packaged by the data audit"
+  },
+  "cli_help_checks": [
+    {
+      "script": "run_experiment.py",
+      "status": "pass"
+    },
+    {
+      "script": "launch_all.py",
+      "status": "pass"
+    },
+    {
+      "script": "audit_inputs.py",
+      "status": "pass"
+    },
+    {
+      "script": "finalize_audit.py",
+      "status": "pass"
+    },
+    {
+      "script": "summarize_results.py",
+      "status": "pass"
+    }
+  ],
+  "new_experiments_executed": false,
+  "source_sha256": {
+    "audit_inputs.py": "5000f720e70da4fb0f7ad224e8f62ab59385a5945be897e67e8b025a0ce908ad",
+    "finalize_audit.py": "62fb897e79b428caafccb743196fc67ff273d8f4eb3ce86b8305e545782df3a5",
+    "formula_tests.py": "ce8f88d712276a97c0577c04730a176efe888a4e63aa0815cdcc3315f3a0c9cc",
+    "launch_all.py": "a7c343c6179dd1d88ef7faaa2b504f4718d85efd055da82a14e9f1503635bc48",
+    "release_support.py": "f99a153f723361635b870ba541af61e48e2cb74fd9c6a80d4ca7a09802853c47",
+    "run_experiment.py": "b4aae3bf68b13f19e6255ea24d6c39d375da01c8c7fcfce5e3eb58c3bc9bd682",
+    "summarize_results.py": "993934b442882b2f44d4867602b095742e91a06f994cffce3b427d2d84fa7d6d",
+    "tests/test_release.py": "93f3928d6fc17b114decc12159073eb21fa401d932c4e1edee73f13d140588eb"
+  }
+}

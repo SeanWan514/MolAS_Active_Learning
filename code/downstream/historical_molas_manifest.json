@@ -1,0 +1,202 @@
+{
+  "source_directory": "/Users/wanweilin/Downloads/MolAS_AL-main",
+  "recovered_on": "2026-10-31",
+  "status": "recovered completed-matrix MolAS adapter and analysis notebooks; per-run execution configuration still requires artifact corroboration",
+  "files_modified": false,
+  "source_commit": "not yet established",
+  "license": "Original MIT LICENSE preserved",
+  "excluded": "Python bytecode caches only",
+  "files": [
+    {
+      "path": "LICENSE",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/LICENSE",
+      "bytes": 1073,
+      "sha256": "33f037265e2bad90af34079cbee68538db96193a25db41d0e227b085fcb6177c",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "README.md",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/README.md",
+      "bytes": 7163,
+      "sha256": "60f1b6a7113a55d73c93146d0f360bfbbec4479ee9e03228b0ef8797d77741f8",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "analyses/moad_runtime_physical_and_embedding_analysis.ipynb",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/analyses/moad_runtime_physical_and_embedding_analysis.ipynb",
+      "bytes": 655035,
+      "sha256": "d5bed5a23d827483e7f2d41bb39257b054ab5b6b8082884ef8030fa872eff8c0",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "analyses/port_as_analysis.ipynb",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/analyses/port_as_analysis.ipynb",
+      "bytes": 9183215,
+      "sha256": "ed4b537f4ff882b7087614e1bcef45cffd71dd9cd640e063251f78c834cec11c",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "analyses/port_as_stopping.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/analyses/port_as_stopping.py",
+      "bytes": 15952,
+      "sha256": "b90fe6aaabd2374c9f117d8071e8edcdee89453bf2a3b1770ccb3dda05412444",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "analyses/run_port_as_notebook.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/analyses/run_port_as_notebook.py",
+      "bytes": 1710,
+      "sha256": "034e1ec14842da57b9b216e516dd1fa82a77550c400f83c2b0b105de6b765378",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "data/__init__.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/data/__init__.py",
+      "bytes": 38,
+      "sha256": "ecabfc1cf9f72e08f5e5e48e7b8394a43b78411d2fb6b98e6ff1488d97bde65a",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "data/data_interface.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/data/data_interface.py",
+      "bytes": 6240,
+      "sha256": "cb057d5b4bccbc009606e64af1cd5011e8e5052b641cf805c791314c7a73c679",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "data/dataset.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/data/dataset.py",
+      "bytes": 14859,
+      "sha256": "f48f62990388448dcfc89a996776bae5409f0aa7c50cb7438f3d0825d055d74a",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "embedding_generation/data/cache_manager.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/embedding_generation/data/cache_manager.py",
+      "bytes": 13481,
+      "sha256": "b291c77c7f5452b83abfe13b0fbbebc89651c30585b766d57eb3ee3ca2a0587c",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "embedding_generation/data/pdb_processor.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/embedding_generation/data/pdb_processor.py",
+      "bytes": 51990,
+      "sha256": "f9f25afc726b46a94c5ebc550d0bfe17dd2d3b783efb6ae54d85536574ba9b55",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "embedding_generation/data/protein_dataset.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/embedding_generation/data/protein_dataset.py",
+      "bytes": 30481,
+      "sha256": "9147a41eb41341afa2c833261521fa3f4938ce710598fc2cb33de8620590fd8a",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "embedding_generation/ligand_chemberta_generation.ipynb",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/embedding_generation/ligand_chemberta_generation.ipynb",
+      "bytes": 35263,
+      "sha256": "0e4bc5226a6a567a71d50e56daadc1ca289c9b120eb7f8536fa76d70d3ba3791",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "embedding_generation/protein_graph_generation_parallel.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/embedding_generation/protein_graph_generation_parallel.py",
+      "bytes": 7095,
+      "sha256": "c7be84615130ebfb4d306fdcd151f61ab71a3287b0a1172218ca03912ce7f631",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "environment.yaml",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/environment.yaml",
+      "bytes": 517,
+      "sha256": "8be62f8e2d4aaa82af799bb8b00adbb96197deea0f977fb37d69dfb4ff1c2be8",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "main.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/main.py",
+      "bytes": 28499,
+      "sha256": "3a214271cedb8838f8f8c5c0f0d663177ca8682ad95c5f73784a0cd4dd72ee44",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "main.sh",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/main.sh",
+      "bytes": 14821,
+      "sha256": "4a431f69f6b81d35bfde17ddbda56d0065b6f17a41eb1d458cf630d6b328d75e",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/__init__.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/__init__.py",
+      "bytes": 39,
+      "sha256": "42d0d3cd9f5886b9e224a62a38224e034d779ab6f4a59b3261cac34b0467b5d6",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/additive_loss.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/additive_loss.py",
+      "bytes": 6694,
+      "sha256": "1e8d1f1aab2ab5255ad6c49f8951ec689ca7d7bfcf32914c3c6f3b5122964086",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/inspect_tools.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/inspect_tools.py",
+      "bytes": 1963,
+      "sha256": "0312d2b72cfe375ad50d5248f6d68ab8a614f55044a5a35526798301b185b9be",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/model_interface.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/model_interface.py",
+      "bytes": 14653,
+      "sha256": "c9074cefbeae23a766b543bf7360a0e69090279af3df71a0fef74b21a4e3d245",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/molas.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/molas.py",
+      "bytes": 14286,
+      "sha256": "f1e351cf3e76b7ede2084b5490bbb2040ae4470fe6d938a516bef695be2c2c33",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/molas_blocks.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/molas_blocks.py",
+      "bytes": 19738,
+      "sha256": "799b44de77d872b19b5cd55d2c7c2ebad585d80cf031c3e33e956552520f07cb",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "model/ndcg_loss.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/model/ndcg_loss.py",
+      "bytes": 10847,
+      "sha256": "92805fafab24d377daa3438251f24dbeff6e5a159de5b542dae2f29fa2eaa264",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "requirements.txt",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/requirements.txt",
+      "bytes": 617,
+      "sha256": "4de1f4ab8e70fc5d51f2ae283cbd66a7a1de7ff33564f6d479717e69f37ba9a4",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "stats_test.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/stats_test.py",
+      "bytes": 9867,
+      "sha256": "d743dab1f80b83b2aa9cd26c9a43b2e516be8a2c2f176451192ef4b27abb52c6",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    },
+    {
+      "path": "utils.py",
+      "source": "/Users/wanweilin/Downloads/MolAS_AL-main/utils.py",
+      "bytes": 10267,
+      "sha256": "c6fa4ffd7e304aafa8f38c6ce910b638e458bb2b4b2f7092642d48aa65862480",
+      "source_mtime_utc": "2026-08-28T20:30:40+00:00"
+    }
+  ],
+  "notebooks_executed": false,
+  "new_scientific_experiments": false
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cost_aware_relaxed_six_methods.zip",
+  "bytes": 3722623693,
+  "sha256": "68511301982c26d93de555b49883869a5c3ad4a16d135cff7ce780a42072f310",
+  "original_csv_files_recovered": 27000,
+  "verification": "Every logical CSV matches its content identity in pinned Git commit f11931c704650b8ecf5ad86a0ae69d87c82a89ec.",
+  "not_included_as_duplicate": "Canonical tar.xz archives preserve all CSVs with lossless cumulative-prefix deduplication."
+}

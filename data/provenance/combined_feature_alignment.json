@@ -1,0 +1,12 @@
+{
+  "producer_verified": true,
+  "verification_kind": "existing producer transformation independently checked against every cached row",
+  "evidence": "data/provenance/feature_cache_comparison.json",
+  "cache_sha256": "10b4a50f5cfc3de000ab06d0b8112146486e63571ad9db252455dd5af3976a91",
+  "feature_ids_sha256": "7e265af1318119a7c8e2086fbf4bc2786143d825b68479e6bd83ede46e4bf294",
+  "absolute_tolerance": 2e-05,
+  "relative_tolerance": 2e-05,
+  "verified_rows": 3179,
+  "verified_values": 813824,
+  "not_a_claim_of_byte_identical_regeneration": true
+}

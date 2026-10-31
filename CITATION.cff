@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Please cite the associated AI4DD paper when using these research artifacts."
+title: "Active Learning for Molecular-Docking Algorithm Selection under Heterogeneous Runtime"
+type: software
+repository-code: "https://github.com/SeanWan514/MolAS_Active_Learning"
+url: "https://github.com/SeanWan514/MolAS_Active_Learning"
+version: "1.0.0"
+date-released: "2026-10-31"
+# Applies to project software only; see NOTICE.md for other artifact terms.
+license: MIT
+authors:
+  - family-names: Wan
+    given-names: Sean
+    affiliation: Duke Kunshan University
+  - family-names: Wang
+    given-names: Jiabao Brad
+    affiliation: Duke Kunshan University
+  - family-names: Misir
+    given-names: Mustafa
+    affiliation: Duke Kunshan University
+preferred-citation:
+  type: conference-paper
+  title: "Active Learning for Molecular-Docking Algorithm Selection under Heterogeneous Runtime"
+  authors:
+    - family-names: Wan
+      given-names: Sean
+    - family-names: Wang
+      given-names: Jiabao Brad
+    - family-names: Misir
+      given-names: Mustafa
+  year: 2026
+  collection-title: "NeurIPS Workshop on AI for Drug Discovery"
+  url: "https://openreview.net/forum?id=tSz3wBLABm"

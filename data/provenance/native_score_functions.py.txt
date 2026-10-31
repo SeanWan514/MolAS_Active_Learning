@@ -1,0 +1,10 @@
+def pb_score(x):
+    
+    # binary score
+    return 1 if x == 1 else 0
+
+def rmsd_score(x, lambda_rmsd=3):
+    M = 2
+    if x > 5 or x < 0:
+        return 0
+    return (1 + math.exp(-lambda_rmsd * M)) / (1 + math.exp(lambda_rmsd * (x - M)))

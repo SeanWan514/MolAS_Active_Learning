@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-31",
+  "confirmed_by": "Sean Wan (SeanWan514)",
+  "evidence": "Direct author instruction in the project conversation: \"Terms confirmed.\" The author then explicitly authorized pushing all related code to SeanWan514/MolAS_Active_Learning.",
+  "scope": "The prepared GitHub release, including original software, preserved third-party software with notices, small research inputs/features, paper assets, and archived research results. Large structural graph files remain excluded from Git for a separate dataset release.",
+  "original_software_license": "MIT",
+  "blanket_dataset_license_assigned": false,
+  "interpretation": "Records author confirmation and publication authorization; does not represent an independent legal audit or change the applicable terms of third-party artifacts."
+}

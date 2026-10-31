@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-31",
+  "purpose": "Map preserved figures to candidate source artifacts and explicitly unresolved historical transformations; not a claim of regenerated results.",
+  "downstream_coverage_manifest": "results/downstream/file_manifest.csv.gz",
+  "downstream_checkpoint_coverage": "results/downstream/checkpoint_coverage.csv",
+  "acquisition_coverage_inventory": "provenance/pinned_acquisition_files.jsonl.gz",
+  "source_audit": {
+    "local_scopes": [
+      "MolAS_AL",
+      "MolAS_AL_restart",
+      "PORT-AS_cost_aware and upload/Git copies",
+      "port_as_results_260829",
+      "camera-ready manuscript/revision directories"
+    ],
+    "excluded_from_plain_file_code_search": [
+      "vendor environments",
+      "node_modules",
+      "Git object stores"
+    ],
+    "read_only_remote_snapshot": {
+      "repository": "git@github.com:SeanWan514/26SRS_P5_MolAS_AL.git",
+      "commit": "9f77c5e5b40463d169742456beefb7dbbb044620",
+      "tree_paths": 192,
+      "finding": "Early matrix-AL/ChemBERTa/active-BERT work; no final MolAS downstream adapter, saved downstream directory, or eight-figure plotting pipeline found in this snapshot."
+    },
+    "official_upstream_reference": {
+      "repository": "https://github.com/BradWangW/MolAS",
+      "commit": "a6c417216ddb992f7dc513d511d0429aece4bd61",
+      "packaged_manifest": "code/downstream/upstream_molas_manifest.json",
+      "finding": "Official architecture/training/evaluation source provided as a reference; historical AI4DD completed-matrix adapter/configuration and eight-figure plotting pipeline not established. Upstream analysis.ipynb was inspected but excluded from the compact source copy."
+    },
+    "subsequent_source_recovery": {
+      "path": "/Users/wanweilin/Downloads/MolAS_AL-main",
+      "manifest": "code/downstream/historical_molas_manifest.json",
+      "finding": "Recovered completed-matrix training/evaluation adapter, launcher, model/loss sources, primary PORT-AS analysis notebook and runtime ridge-probe notebook. Supersedes initial workspace-only missing-source conclusions."
+    },
+    "saved_figure_recovery": {
+      "path": "/Users/wanweilin/Downloads/main_results",
+      "manifest": "results/downstream/recovered_analysis_figures_manifest.json",
+      "png_files": 18
+    },
+    "saved_results_recovery": {
+      "source_archive_filename": "port_as_results_260829.zip",
+      "source_archive_sha256": "03631126b7b0b80c55558142c561b7a969f4165f50f760041b07f621b5edc944",
+      "manifest": "provenance/downstream_original_archive_recovery.json",
+      "finding": "All 4,508 paper-policy CSVs recovered; all 3,386 readable workspace CSVs matched byte for byte and 1,122 cloud-only payloads were recovered from the original archive. The 144 nonpaper hybrid CSVs were excluded."
+    }
+  },
+  "interpretation": {
+    "acquisition_seed_for_downstream_archive": 0,
+    "downstream_selector_training_seed": "Recovered main.sh configures42; per-run executed configuration for every archived result is not independently established.",
+    "outer_fold_labels": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "checkpoint_labels": "acquired-cell percentage, not realized hours",
+    "missing_payloads": "All 4,508 saved CSV payloads for the six paper policies are packaged; completeness is relative to existing saved checkpoint directories, not all possible checkpoints.",
+    "fold_dependence": "Training folds overlap and checkpoints are repeated measurements; files/records are not independent replications.",
+    "source_code_status": "Historical completed-matrix MolAS adapter and relevant notebooks recovered and preserved. Packaging/configuration utilities are new release tools; no experiments or notebook analyses executed.",
+    "raw_data_lineage": "See data/provenance/hydrated_original_inputs.json, combined_feature_alignment.json, and other data manifests for separately established original-input and feature-alignment evidence.",
+    "acquisition_cumulative_access": "Use scripts/read_acquisition_artifact.py and the acquisition provenance inventory for cumulative checkpoints represented as verified prefixes of the preserved complete ledger; consult that utility's documented interface.",
+    "target_roles": "Native MolAS evaluation target truncates RMSD>5 or<0; acquisition strict target is continuous sigmoid clipped[0,1]. They are distinct path roles, with independent data provenance.",
+    "artifact_identity": "Exact image/file/pixel matches establish preserved output identity, not a rerun or proof that every later-edited notebook cell matches its stored output."
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "asset": "paper/source/Fig1.png",
+      "asset_sha256": "0114ddd96454d1bc99ec03279c09f70262c8c370bdf50a673cfa2fff7a568fcf",
+      "asset_bytes": 1336105,
+      "description_from_manuscript": "Held-out MolAS SBS\u2013VBS gap closure versus cumulative realized runtime",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "plot_family_source_recovered_final_export_not_exactly_matched",
+      "candidate_inputs": [
+        "results/downstream/*_seed0.zip: fold-level selected-endpoint and per-complex tables",
+        "results/acquisition/*/fold*_seed0.tar.xz: cumulative queried-cell ledgers"
+      ],
+      "established_evidence_and_boundaries": [
+        "Recovered source reads fold-level full/descriptive tables, computes fold-normalized gaps, interpolates each method on its common five-fold cost support, and plots downstream_performance_vs_cost.",
+        "Cell27 currently has a null execution counter; saved output/source revision identity is not assumed."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact final Fig1.png rendering/export revision",
+        "Per-run executed MolAS configuration for all saved checkpoints"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          10,
+          17,
+          27
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 2,
+      "asset": "paper/source/Fig2.png",
+      "asset_sha256": "696bea98d02672e5a8e06079e2a9137fb1be9f384ef3b73ddd49ac8e202471d3",
+      "asset_bytes": 1179709,
+      "description_from_manuscript": "Within-fold Spearman associations between matrix diagnostics and held-out MolAS gap closure",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "association_source_recovered_final_export_not_exactly_matched",
+      "candidate_inputs": [
+        "results/acquisition/*/fold*_seed0.tar.xz: completed strict matrices and cumulative query logs",
+        "data/targets/full_strict_score_matrix.csv: separately documented acquisition target",
+        "results/downstream/*_seed0.zip: fold-level full/descriptive endpoint tables"
+      ],
+      "established_evidence_and_boundaries": [
+        "Recovered source computes matrix diagnostics against acquisition_ground_truth, aligns to an 80-point Mean-UCB reference cost grid within support, orients metrics, and computes within-fold Spearman correlations across at least four available policies.",
+        "The final Fig2.png is not byte/pixel matched to the recovered saved images."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact final Fig2.png rendering/export revision",
+        "Exact cached-table/executed-source snapshot used for that final export"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          8,
+          34,
+          35
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 3,
+      "asset": "paper/source/figures/runtime_distribution-REV.png",
+      "asset_sha256": "1e26e8b9619a5f5079b3410570ad5377606b9da3d96896535bbcc80bfe6fdb77",
+      "asset_bytes": 93280,
+      "description_from_manuscript": "Per-cell runtime distributions across 3,179 MOAD-curated complexes",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "distribution_source_recovered_revised_asset_not_exactly_matched",
+      "candidate_inputs": [
+        "data/raw/moad_runtime_trimmed.csv",
+        "data/provenance/raw_sources.json"
+      ],
+      "established_evidence_and_boundaries": [
+        "Recovered cell 16 plots per-engine runtime distributions from the raw runtime table.",
+        "An older runtime_distribution.png analysis export is preserved; the final runtime_distribution-REV.png is a distinct asset."
+      ],
+      "missing_for_exact_regeneration": [
+        "Revision procedure from the earlier distribution export to final -REV asset"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          16
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 4,
+      "asset": "paper/source/figures/cost_predictability.pdf",
+      "asset_sha256": "55eb59e9132c237240ff61687c07898828f9dc5bc78f6fbfaaec47848dcd5a13",
+      "asset_bytes": 58692,
+      "description_from_manuscript": "Mean five-fold cross-validation R-squared from engine-specific ridge probes on log runtime",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "final_pdf_raster_exactly_matches_saved_notebook_output_pixels",
+      "candidate_inputs": [
+        "data/raw/moad_runtime_trimmed.csv",
+        "data/descriptors/moad_physical_descriptors_filtered.csv",
+        "data/features/ligand_chemberta_moad3179.pt",
+        "data/external/protein_graphs_esmc_600m",
+        "Saved source/result cells23,25,26 in the runtime-probe notebook"
+      ],
+      "established_evidence_and_boundaries": [
+        "The final PDF embedded raster has exactly the same RGB pixels as cell 26, output 0; see notebook_figure_pixel_comparison.json.",
+        "Recovered probe source uses y=log(runtime), KFold(n_splits=5,shuffle=True,random_state=42), training-fold StandardScaler plus RidgeCV with 13 log-spaced alphas from 1e-3 to 1e3.",
+        "The diagnostic uses full protein/ligand representations (combined 1,536 dimensions), with physical/protein/ligand/combined/combined+physical feature sets. It is distinct from the projected 256-dimensional acquisition cache.",
+        "Saved probe-result values remain inside the original notebook; no probe was rerun."
+      ],
+      "missing_for_exact_regeneration": [
+        "Executed probe-source/environment identity beyond the preserved notebook and matching saved raster"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/moad_runtime_physical_and_embedding_analysis.ipynb",
+        "zero_based_cells": [
+          23,
+          25,
+          26
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 5,
+      "asset": "paper/source/figures/cost_prediction.pdf",
+      "asset_sha256": "040a10963a5df6a9e981b65780fc611ce7fbe9913e5f62fe74da4839cf53123d",
+      "asset_bytes": 550755,
+      "description_from_manuscript": "Online runtime prediction error and calibration diagnostics",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "calibration_source_recovered_bottom_component_exactly_pixel_matched",
+      "candidate_inputs": [
+        "results/acquisition/{direct_cost_uc,relaxed_cost_power_05,log_cost,cost_tiers_5,runtime_uncertainty}/fold*_seed0.tar.xz: complete cumulative ledgers",
+        "results/downstream/recovered_analysis_figures/acquisition_runtime_signed_calibration.png"
+      ],
+      "established_evidence_and_boundaries": [
+        "The source reads the highest available cumulative query log per method/fold, computes cumulative cost, excludes round 0, and excludes unavailable predictions. It does not read incremental checkpoint logs.",
+        "Saved cell 46 table reports 88,117 calibration records for each of five cost-aware policies, totaling 440,585.",
+        "The final PDF bottom raster exactly matches saved acquisition_runtime_signed_calibration.png.",
+        "Signed-error curves pool policies/folds into realized-cost quantile bins (30 requested, minimum 15 records), reporting within-bin median log1p(actual)-log1p(predicted)."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact top/middle calibration raster versions",
+        "Final PDF component assembly script"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          45,
+          46,
+          48
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 6,
+      "asset": "paper/source/figures/algorithm_proportion.pdf",
+      "asset_sha256": "39484d5f3d689facd7e172ef9c74ffd7f06007cff4094436511fe577ecb44c89",
+      "asset_bytes": 603401,
+      "description_from_manuscript": "Engine-level realized-cost shares and query shares by cost phase",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "allocation_source_recovered_top_component_exactly_pixel_matched",
+      "candidate_inputs": [
+        "results/acquisition/*/fold*_seed0.tar.xz: cumulative queried-cell ledgers and algorithm_query_distributions"
+      ],
+      "established_evidence_and_boundaries": [
+        "Final PDF top raster exactly matches saved cumulative_cost_share.png.",
+        "Recovered source interpolates engine shares on common fold support then averages/renormalizes shares.",
+        "The marginal-allocation code assigns checkpoint increments to the decile of checkpoint cumulative cost fraction, then averages counts over folds and normalizes shares."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact final lower heatmap version",
+        "Final PDF component assembly script"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          18,
+          19
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 7,
+      "asset": "paper/source/figures/queried_cells_vs_cost.png",
+      "asset_sha256": "bec8fc5fe661a1c71d515a78c7ea4fde8568e0387964ec2454eaad521f7eedad",
+      "asset_bytes": 349796,
+      "description_from_manuscript": "Cumulative queried cells versus realized runtime, acquisition seed 0",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "final_asset_byte_identical_to_saved_analysis_export",
+      "candidate_inputs": [
+        "results/acquisition/*/fold*_seed0.tar.xz: cumulative queried-cell ledgers"
+      ],
+      "established_evidence_and_boundaries": [
+        "Final image SHA256 is identical to Downloads/main_results/queried_cells_vs_cost.png, preserved under results/downstream/recovered_analysis_figures.",
+        "Recovered source plots cumulative queried counts with five-fold macro means on a 120-point common-cost grid per method."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact executed environment/source revision beyond the preserved source and matching export"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          17
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    },
+    {
+      "figure": 8,
+      "asset": "paper/source/figures/zoomed_early_downstream_performance_vs_cost.png",
+      "asset_sha256": "7c3fc08411db94c0e77154036f933d76f7f35285a8783952747331b1dfb5318d",
+      "asset_bytes": 1983605,
+      "description_from_manuscript": "Held-out SBS\u2013VBS gap closure over the first 20 realized hours",
+      "asset_status": "preserved_rendered_asset",
+      "source_to_figure_status": "downstream_plot_family_recovered_precise_early_export_not_found",
+      "candidate_inputs": [
+        "results/downstream/*_seed0.zip: fold-level selected-endpoint and per-complex tables",
+        "results/acquisition/*/fold*_seed0.tar.xz: cumulative queried-cell ledgers"
+      ],
+      "established_evidence_and_boundaries": [
+        "The recovered primary notebook contains the downstream gap-closure plot family and common-cost summaries used for the same endpoints."
+      ],
+      "missing_for_exact_regeneration": [
+        "Exact first-20-hours window/export/layout command",
+        "Final image-to-executed-cell identity"
+      ],
+      "regenerated_during_packaging": false,
+      "recovered_source": {
+        "notebook": "code/downstream/historical_molas/analyses/port_as_analysis.ipynb",
+        "zero_based_cells": [
+          17,
+          27
+        ]
+      },
+      "relevant_historical_analysis_code_recovered": true
+    }
+  ],
+  "notebook_source_and_output_index": "provenance/downstream_notebook_index.json",
+  "pixel_match_evidence": "provenance/notebook_figure_pixel_comparison.json",
+  "downstream_available_data": {
+    "original_csv_files": 4508,
+    "packaged_csv_files": 4508,
+    "all_saved_files_packaged": true,
+    "complete_saved_policy_directories": [
+      "plain_mean_ucb",
+      "direct_cost_uc",
+      "relaxed_cost_power_05",
+      "log_cost",
+      "cost_tiers_5",
+      "runtime_uncertainty"
+    ],
+    "scope": "Completeness is relative to existing saved checkpoint directories; not all possible checkpoints were evaluated.",
+    "coverage_manifest": "results/downstream/checkpoint_coverage.csv",
+    "original_inventory": "results/downstream/file_manifest.csv.gz",
+    "unpackaged_original_csv_payloads": 0,
+    "archive_bytes": 72399169,
+    "original_csv_payload_bytes": 240471093,
+    "source_archive_recovery": "provenance/downstream_original_archive_recovery.json",
+    "verified_archive_integrity": "results/downstream/verification.json"
+  },
+  "downstream_original_archive_recovery": "provenance/downstream_original_archive_recovery.json"
+}

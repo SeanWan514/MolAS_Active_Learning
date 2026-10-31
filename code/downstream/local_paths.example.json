@@ -1,0 +1,11 @@
+{
+  "raw_data_dir": "../../data/raw",
+  "protein_graphs": "../../data/external/protein_graphs_esmc_600m",
+  "ligand_features": "../../data/features/ligand_chemberta_moad3179.pt",
+  "fold_split": "../../data/splits/moad_5fold_split_seed42.csv",
+  "acquisition_dir": "/absolute/path/to/expanded/acquisition/root",
+  "downstream_dir": "/absolute/path/to/expanded/downstream/root",
+  "molas_score_matrix": null,
+  "acquisition_score_matrix": null,
+  "training_python": "/absolute/path/to/prepared/molas/environment/bin/python"
+}

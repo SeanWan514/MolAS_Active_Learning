@@ -1,0 +1,130 @@
+def normalize_features(features: np.ndarray) -> np.ndarray:
+    features = np.asarray(features, dtype=np.float32)
+    mean = np.nanmean(features, axis=0, keepdims=True)
+    std = np.nanstd(features, axis=0, keepdims=True)
+    std[std < 1e-8] = 1.0
+    return np.nan_to_num((features - mean) / std).astype(np.float32)
+
+def random_project(features: np.ndarray, out_dim: int, seed: int) -> np.ndarray:
+    if out_dim <= 0 or features.shape[1] <= out_dim:
+        return features.astype(np.float32)
+    rng = np.random.default_rng(seed)
+    projection = rng.normal(0.0, 1.0 / math.sqrt(out_dim), size=(features.shape[1], out_dim)).astype(np.float32)
+    return (features @ projection).astype(np.float32)
+
+def tensor_to_numpy(value) -> np.ndarray | None:
+    try:
+        import torch
+    except Exception:
+        return None
+    if isinstance(value, torch.Tensor):
+        arr = value.detach().cpu().float()
+        if arr.ndim == 1:
+            return arr.numpy()
+        if arr.ndim >= 2:
+            return arr.reshape(arr.shape[0], -1).mean(dim=0).numpy()
+    return None
+
+def load_ligand_features(torch, ids: np.ndarray) -> np.ndarray:
+    path = STRUCTURE_DIR / "ligand_chemberta_moad3179.pt"
+    require(path.exists(), f"Missing ligand ChemBERTa file: {path}")
+    obj = torch.load(path, map_location="cpu")
+    if isinstance(obj, torch.Tensor):
+        arr = obj.detach().cpu().float().numpy()
+        require(arr.shape[0] == len(ids), f"Ligand tensor first dimension {arr.shape[0]} != {len(ids)}")
+        return arr.astype(np.float32)
+    if isinstance(obj, dict):
+        if all(x in obj for x in ids):
+            return np.stack([tensor_to_numpy(obj[x]) for x in ids]).astype(np.float32)
+        if "ligand_ids" in obj and "embeddings" in obj:
+            embeddings = obj["embeddings"]
+            if isinstance(embeddings, torch.Tensor):
+                embeddings = embeddings.detach().cpu().float().numpy()
+            ligand_ids = [str(x) for x in obj["ligand_ids"]]
+            require(embeddings.shape[0] == len(ligand_ids), "ligand_ids and embeddings length mismatch")
+            lookup = {ligand_id: idx for idx, ligand_id in enumerate(ligand_ids)}
+            missing = [complex_id for complex_id in ids if complex_id not in lookup]
+            require(not missing, f"Ligand embeddings missing IDs: {missing[:5]}")
+            order = [lookup[complex_id] for complex_id in ids]
+            return embeddings[order].astype(np.float32)
+        for key in ["embeddings", "features", "ligand_features", "chemberta"]:
+            if key in obj:
+                value = obj[key]
+                if isinstance(value, torch.Tensor):
+                    arr = value.detach().cpu().float().numpy()
+                else:
+                    arr = np.asarray(value)
+                if arr.ndim == 2 and arr.shape[0] == len(ids):
+                    return arr.astype(np.float32)
+    raise ValueError(f"Unsupported ligand feature format in {path}; type={type(obj)}")
+
+def pooled_graph_feature(graph) -> np.ndarray:
+    candidates = []
+    if isinstance(graph, dict):
+        items = graph.items()
+    else:
+        keys = ["x", "node_s", "node_features", "esm", "emb", "features"]
+        items = [(key, getattr(graph, key)) for key in keys if hasattr(graph, key)]
+    for _, value in items:
+        arr = tensor_to_numpy(value)
+        if arr is not None and arr.ndim == 1 and arr.size > 0:
+            candidates.append(arr.astype(np.float32))
+    if not candidates:
+        raise ValueError(f"No tensor-like node/graph feature found in object of type {type(graph)}")
+    return max(candidates, key=lambda x: x.size)
+
+def load_protein_features(torch, ids: np.ndarray, allow_missing: bool) -> np.ndarray:
+    protein_dir = STRUCTURE_DIR / "protein_graphs_esmc_600m"
+    require(protein_dir.exists(), f"Missing protein graph directory: {protein_dir}")
+    features = []
+    failures = []
+    fallback_dim = None
+    for complex_id in ids:
+        path = protein_dir / f"pyg_graph_{complex_id}_esmc_600m.pt"
+        if not path.exists():
+            failures.append(f"{complex_id}: missing file")
+            features.append(None)
+            continue
+        try:
+            # Trusted local PyG graph files from the MolAS structural package.
+            # PyTorch 2.6+ defaults to weights_only=True, which cannot unpickle
+            # torch_geometric.data.Data objects.
+            graph = torch.load(path, map_location="cpu", weights_only=False)
+            feat = pooled_graph_feature(graph)
+            fallback_dim = fallback_dim or feat.size
+            features.append(feat)
+        except Exception as exc:
+            failures.append(f"{complex_id}: {type(exc).__name__}: {exc}")
+            features.append(None)
+    if failures and not allow_missing:
+        preview = "; ".join(failures[:5])
+        raise RuntimeError(f"Could not load {len(failures)} protein graph features. First failures: {preview}")
+    if fallback_dim is None:
+        raise RuntimeError("No protein graph feature could be loaded")
+    repaired = [feat if feat is not None else np.zeros(fallback_dim, dtype=np.float32) for feat in features]
+    return np.stack(repaired).astype(np.float32)
+
+def build_complex_features(args, torch, ids: np.ndarray) -> np.ndarray:
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_name = f"complex_features_{args.feature_mode}_d{args.max_complex_feature_dim}_seed{args.seed}.npy"
+    cache_path = CACHE_DIR / cache_name
+    if cache_path.exists() and not args.rebuild_feature_cache:
+        return np.load(cache_path)
+    ligand = load_ligand_features(torch, ids)
+    parts = [ligand]
+    if args.feature_mode == "ligand_protein":
+        protein = load_protein_features(torch, ids, allow_missing=args.allow_missing_protein_features)
+        parts.append(protein)
+    elif args.feature_mode != "ligand_only":
+        raise ValueError(f"Unsupported feature mode: {args.feature_mode}")
+    features = normalize_features(np.concatenate(parts, axis=1))
+    features = random_project(features, args.max_complex_feature_dim, args.seed)
+    np.save(cache_path, features.astype(np.float32))
+    metadata = {
+        "feature_mode": args.feature_mode,
+        "shape": list(features.shape),
+        "cache_path": str(cache_path),
+        "max_complex_feature_dim": args.max_complex_feature_dim,
+    }
+    (CACHE_DIR / f"{cache_path.stem}.json").write_text(json.dumps(metadata, indent=2))
+    return features.astype(np.float32)

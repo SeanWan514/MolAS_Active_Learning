@@ -1,0 +1,14 @@
+{
+  "scope": "release_archive_integrity_only_not_scientific_reproduction",
+  "original_csv_files_in_manifest": 4508,
+  "verified_zip_members": 4508,
+  "verified_summary_mirrors": 1771,
+  "zip_crc_ok": true,
+  "all_packaged_member_sha256_matches": true,
+  "archive_sha256_matches": true,
+  "stale_summary_mirrors": 0,
+  "missing_original_csv_payloads": 0,
+  "all_original_csv_payloads_packaged": true,
+  "verified_original_archive_member_hashes": 4508,
+  "new_scientific_experiments": false
+}

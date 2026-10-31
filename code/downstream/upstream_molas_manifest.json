@@ -1,0 +1,187 @@
+{
+  "repository": "https://github.com/BradWangW/MolAS",
+  "commit": "a6c417216ddb992f7dc513d511d0429aece4bd61",
+  "retrieved_on": "2026-10-31",
+  "role": "official upstream reference; not established as the historical AI4DD training/evaluation adapter or configuration",
+  "license": "MIT; unchanged LICENSE included",
+  "files_modified": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/.gitignore",
+      "bytes": 469,
+      "git_blob_sha1": "37eea1c0611954fc923f286361426406b870823f",
+      "sha256": "50674ec9d14f5d90a92b34c68706b2309f3d47e8ac0929a4d4183d4757a9f8c3"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/LICENSE",
+      "bytes": 1073,
+      "git_blob_sha1": "4873322314cbb720927eccb6462090e62e2b3ab7",
+      "sha256": "33f037265e2bad90af34079cbee68538db96193a25db41d0e227b085fcb6177c"
+    },
+    {
+      "path": "README.md",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/README.md",
+      "bytes": 6223,
+      "git_blob_sha1": "3058f2dd4d134fb148b373d141dd9d7f5a108ad6",
+      "sha256": "b7a057042375a8c796278242b1b89d8ff7a1cd99203ff2fe31e7d1df9226256e"
+    },
+    {
+      "path": "data/__init__.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/data/__init__.py",
+      "bytes": 38,
+      "git_blob_sha1": "5e73ce4eb11a46ffc193ad2f74bb4888519b8e8f",
+      "sha256": "ecabfc1cf9f72e08f5e5e48e7b8394a43b78411d2fb6b98e6ff1488d97bde65a"
+    },
+    {
+      "path": "data/data_interface.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/data/data_interface.py",
+      "bytes": 4672,
+      "git_blob_sha1": "d526e664e126957a3107bd4b3a7587424697f988",
+      "sha256": "048159dc0f850d9c3d4a8be3a372a59956868edce8a8387cac28db35f99207e1"
+    },
+    {
+      "path": "data/dataset.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/data/dataset.py",
+      "bytes": 11861,
+      "git_blob_sha1": "04005acf14f8379db7bf578bb2c0d30da3d91731",
+      "sha256": "7db945b3f7c8f89513e986baf3bb14e4a5080e15dbabb75c268936de8bdb0dfb"
+    },
+    {
+      "path": "embedding_generation/data/cache_manager.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/embedding_generation/data/cache_manager.py",
+      "bytes": 13481,
+      "git_blob_sha1": "c767dacd4b934a3dd52e49a433233f284f2eb8c5",
+      "sha256": "b291c77c7f5452b83abfe13b0fbbebc89651c30585b766d57eb3ee3ca2a0587c"
+    },
+    {
+      "path": "embedding_generation/data/pdb_processor.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/embedding_generation/data/pdb_processor.py",
+      "bytes": 51990,
+      "git_blob_sha1": "e8782196081c50b98801266e984682661489150f",
+      "sha256": "f9f25afc726b46a94c5ebc550d0bfe17dd2d3b783efb6ae54d85536574ba9b55"
+    },
+    {
+      "path": "embedding_generation/data/protein_dataset.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/embedding_generation/data/protein_dataset.py",
+      "bytes": 30481,
+      "git_blob_sha1": "d974e0d963202858ef8d85ec845ffe86f63db81c",
+      "sha256": "9147a41eb41341afa2c833261521fa3f4938ce710598fc2cb33de8620590fd8a"
+    },
+    {
+      "path": "embedding_generation/ligand_chemberta_generation.ipynb",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/embedding_generation/ligand_chemberta_generation.ipynb",
+      "bytes": 35263,
+      "git_blob_sha1": "627f7f79f266fff92645313fddc65bc2757b6bc0",
+      "sha256": "0e4bc5226a6a567a71d50e56daadc1ca289c9b120eb7f8536fa76d70d3ba3791"
+    },
+    {
+      "path": "embedding_generation/protein_graph_generation_parallel.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/embedding_generation/protein_graph_generation_parallel.py",
+      "bytes": 7095,
+      "git_blob_sha1": "1eb974eacb45dc37636fe879ac24b2fb12e2eb87",
+      "sha256": "c7be84615130ebfb4d306fdcd151f61ab71a3287b0a1172218ca03912ce7f631"
+    },
+    {
+      "path": "environment.yaml",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/environment.yaml",
+      "bytes": 517,
+      "git_blob_sha1": "a3435123fdf389062e1421275b23061bdb6c146e",
+      "sha256": "8be62f8e2d4aaa82af799bb8b00adbb96197deea0f977fb37d69dfb4ff1c2be8"
+    },
+    {
+      "path": "main.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/main.py",
+      "bytes": 26300,
+      "git_blob_sha1": "f476b6ed37eaa14da2cbe4851c55c74dfb648711",
+      "sha256": "130e140ae479736052cd3194beca31b09d74dbec9bb743f6e9da519da549fea4"
+    },
+    {
+      "path": "main.sh",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/main.sh",
+      "bytes": 6308,
+      "git_blob_sha1": "093ca79cd6369e956410f115b14e4601534e8c80",
+      "sha256": "eb23aefae89dcc3fb7b2a82dd0e3d3d96ca9378bd274a82fd32909f58616ddc3"
+    },
+    {
+      "path": "model/__init__.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/__init__.py",
+      "bytes": 39,
+      "git_blob_sha1": "dc6e407c3312fb29872a9a4e364ed15f91707cf7",
+      "sha256": "42d0d3cd9f5886b9e224a62a38224e034d779ab6f4a59b3261cac34b0467b5d6"
+    },
+    {
+      "path": "model/additive_loss.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/additive_loss.py",
+      "bytes": 6694,
+      "git_blob_sha1": "e6994a1d36443e4f8941a2b0b110145bdb2f56c2",
+      "sha256": "1e8d1f1aab2ab5255ad6c49f8951ec689ca7d7bfcf32914c3c6f3b5122964086"
+    },
+    {
+      "path": "model/inspect_tools.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/inspect_tools.py",
+      "bytes": 1963,
+      "git_blob_sha1": "efb63704f58782cc92ce9e3f28ac5900f5ee0608",
+      "sha256": "0312d2b72cfe375ad50d5248f6d68ab8a614f55044a5a35526798301b185b9be"
+    },
+    {
+      "path": "model/model_interface.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/model_interface.py",
+      "bytes": 17060,
+      "git_blob_sha1": "92ca719eb029b31fbc7693c757ee75244cc1eb7b",
+      "sha256": "38780fa0c1064532ea8acdca0139034e1443132d0c23045087202be2c50f6a4f"
+    },
+    {
+      "path": "model/molas.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/molas.py",
+      "bytes": 14286,
+      "git_blob_sha1": "290a061aafa434a73346d5a2c8db6e1031bec862",
+      "sha256": "f1e351cf3e76b7ede2084b5490bbb2040ae4470fe6d938a516bef695be2c2c33"
+    },
+    {
+      "path": "model/molas_blocks.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/molas_blocks.py",
+      "bytes": 19738,
+      "git_blob_sha1": "74e91a3df1525b938cd1a6c5a5fb4a353347c667",
+      "sha256": "799b44de77d872b19b5cd55d2c7c2ebad585d80cf031c3e33e956552520f07cb"
+    },
+    {
+      "path": "model/ndcg_loss.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/model/ndcg_loss.py",
+      "bytes": 10847,
+      "git_blob_sha1": "d027d34a0e71cf154ce721b8009f489bd1b9559d",
+      "sha256": "92805fafab24d377daa3438251f24dbeff6e5a159de5b542dae2f29fa2eaa264"
+    },
+    {
+      "path": "requirements.txt",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/requirements.txt",
+      "bytes": 617,
+      "git_blob_sha1": "3000269fe3eaaca54a9a08b9a964b7c9292aa513",
+      "sha256": "4de1f4ab8e70fc5d51f2ae283cbd66a7a1de7ff33564f6d479717e69f37ba9a4"
+    },
+    {
+      "path": "stats_test.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/stats_test.py",
+      "bytes": 8916,
+      "git_blob_sha1": "19c13039fe4396e102408783adf23c210229dcb6",
+      "sha256": "ea528eb5dc7a613d4fd731098aaf4377ce48fe58053643fe7ae8e287c2ece2a3"
+    },
+    {
+      "path": "utils.py",
+      "source_url": "https://raw.githubusercontent.com/BradWangW/MolAS/a6c417216ddb992f7dc513d511d0429aece4bd61/utils.py",
+      "bytes": 10267,
+      "git_blob_sha1": "d3ef844499a7de8c9762b48b2f5b4231da4ce4a5",
+      "sha256": "c6fa4ffd7e304aafa8f38c6ce910b638e458bb2b4b2f7092642d48aa65862480"
+    }
+  ],
+  "excluded_files": [
+    {
+      "path": "analysis.ipynb",
+      "bytes": 3771844,
+      "reason": "excluded large analysis notebook with rendered outputs"
+    }
+  ],
+  "new_scientific_experiments": false,
+  "upstream_tests_or_training_executed": false
+}

@@ -1,0 +1,70 @@
+{
+  "note": "User-supplied PDF. Source copy has matching normalized substantive PDF text in the prior audit; exact source used for the user recompilation is not separately attested. No new abstract edit applied.",
+  "files": [
+    {
+      "source": "camera_ready_final_2026-10-31/[AI4DD]main.tex",
+      "destination": "paper/source/[AI4DD]main.tex",
+      "sha256": "0ef4e207413e0014dfbaad5eabd8056fd9f5ea71532ce168e9023d1c9ad6147d"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/neurips_2026.sty",
+      "destination": "paper/source/neurips_2026.sty",
+      "sha256": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/citations.bib",
+      "destination": "paper/source/citations.bib",
+      "sha256": "f8b2a0d66f36e77d9a686218cc39027cc522c1f7d243f90c3a340a34f0d7ae81"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/sections/appendix.tex",
+      "destination": "paper/source/sections/appendix.tex",
+      "sha256": "61f39d83ec4c035db061d33f69ffe796d7fa1adf138187f1e3a6791b22257b8f"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/runtime_distribution-REV.png",
+      "destination": "paper/source/figures/runtime_distribution-REV.png",
+      "sha256": "1e26e8b9619a5f5079b3410570ad5377606b9da3d96896535bbcc80bfe6fdb77"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/algorithm_proportion.pdf",
+      "destination": "paper/source/figures/algorithm_proportion.pdf",
+      "sha256": "39484d5f3d689facd7e172ef9c74ffd7f06007cff4094436511fe577ecb44c89"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/cost_predictability.pdf",
+      "destination": "paper/source/figures/cost_predictability.pdf",
+      "sha256": "55eb59e9132c237240ff61687c07898828f9dc5bc78f6fbfaaec47848dcd5a13"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/queried_cells_vs_cost.png",
+      "destination": "paper/source/figures/queried_cells_vs_cost.png",
+      "sha256": "bec8fc5fe661a1c71d515a78c7ea4fde8568e0387964ec2454eaad521f7eedad"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/cost_prediction.pdf",
+      "destination": "paper/source/figures/cost_prediction.pdf",
+      "sha256": "040a10963a5df6a9e981b65780fc611ce7fbe9913e5f62fe74da4839cf53123d"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/figures/zoomed_early_downstream_performance_vs_cost.png",
+      "destination": "paper/source/figures/zoomed_early_downstream_performance_vs_cost.png",
+      "sha256": "7c3fc08411db94c0e77154036f933d76f7f35285a8783952747331b1dfb5318d"
+    },
+    {
+      "source": "user-supplied SRS_2026_AL_MolAS_Docking-8.pdf",
+      "destination": "paper/AI4DD52_camera_ready.pdf",
+      "sha256": "bf1cbf5f3533a3ec07c09817c035fbbc532ff3c47facd0e00b92c1a46cb79a11"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/Fig1.png",
+      "destination": "paper/source/Fig1.png",
+      "sha256": "0114ddd96454d1bc99ec03279c09f70262c8c370bdf50a673cfa2fff7a568fcf"
+    },
+    {
+      "source": "camera_ready_final_2026-10-31/Fig2.png",
+      "destination": "paper/source/Fig2.png",
+      "sha256": "696bea98d02672e5a8e06079e2a9137fb1be9f384ef3b73ddd49ac8e202471d3"
+    }
+  ]
+}

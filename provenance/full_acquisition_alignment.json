@@ -1,0 +1,732 @@
+{
+  "status": "pass",
+  "runs_checked": 90,
+  "full_matrices_match_existing_strict_targets": true,
+  "final_ledgers_cover_training_cells_exactly_once": true,
+  "held_out_cells_in_acquisition_ledgers": 0,
+  "recorded_scores_and_runtimes_match_inputs_at_export_precision": true,
+  "warm_starts_match_across_six_policies_for_every_fold_seed": true,
+  "new_experiments_executed": false,
+  "details": [
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/cost_tiers_5/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/direct_cost_uc/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/log_cost/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/plain_mean_ucb/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/relaxed_cost_power_05/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold0_seed0.tar.xz",
+      "fold": 0,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold0_seed1.tar.xz",
+      "fold": 0,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold0_seed2.tar.xz",
+      "fold": 0,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold1_seed0.tar.xz",
+      "fold": 1,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold1_seed1.tar.xz",
+      "fold": 1,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold1_seed2.tar.xz",
+      "fold": 1,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold2_seed0.tar.xz",
+      "fold": 2,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold2_seed1.tar.xz",
+      "fold": 2,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold2_seed2.tar.xz",
+      "fold": 2,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold3_seed0.tar.xz",
+      "fold": 3,
+      "seed": 0,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold3_seed1.tar.xz",
+      "fold": 3,
+      "seed": 1,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold3_seed2.tar.xz",
+      "fold": 3,
+      "seed": 2,
+      "training_complexes": 2543,
+      "observed_cells": 17801,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold4_seed0.tar.xz",
+      "fold": 4,
+      "seed": 0,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold4_seed1.tar.xz",
+      "fold": 4,
+      "seed": 1,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    },
+    {
+      "archive": "results/acquisition/runtime_uncertainty/fold4_seed2.tar.xz",
+      "fold": 4,
+      "seed": 2,
+      "training_complexes": 2544,
+      "observed_cells": 17808,
+      "warm_start_cells": 179
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "complexes": 3179,
+  "algorithms": [
+    "surfdock",
+    "unimol",
+    "diffdock",
+    "diffdock_l",
+    "gnina",
+    "autodock",
+    "smina"
+  ],
+  "score_shape": [
+    3179,
+    7
+  ],
+  "runtime_shape": [
+    3179,
+    7
+  ],
+  "combined_feature_shape": [
+    3179,
+    260
+  ],
+  "fold_counts": {
+    "0": 636,
+    "1": 636,
+    "2": 636,
+    "3": 636,
+    "4": 635
+  },
+  "training_counts": {
+    "0": 2543,
+    "1": 2543,
+    "2": 2543,
+    "3": 2543,
+    "4": 2544
+  },
+  "finite": {
+    "scores": true,
+    "runtimes": true,
+    "features": true
+  },
+  "positive_runtime": true,
+  "sha256": {
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_rmsd_trimmed.csv": "ef6eb247fa499fd11072ef966a265b76e3c06903cbb1339ce58f4cd8cc2de92c",
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_pb_ratio_trimmed.csv": "b73d1a864675e2f30b2be2261981b50df3af050dae51d455b2f5fc9e638f7500",
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_runtime_trimmed.csv": "f0df14e2ef6e3596516353b6ce534487d2d8b9ea99bf7e376246a3a9aa83febf",
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/cost_aware_design2/outputs/cache/complex_features_ligand_protein_d256_seed0.npy": "10b4a50f5cfc3de000ab06d0b8112146486e63571ad9db252455dd5af3976a91",
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_physical_descriptors_filtered.csv": "cd7062f2242fcc930ff7073310e00d891bcb1be797e23fdd712ea39906ae9530",
+    "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_5fold_split_seed42.csv": "af717b403bc9e31ec9ca37bca86a57ef4ea46af0b4e75feeeb4e531ba13814b8"
+  }
+}

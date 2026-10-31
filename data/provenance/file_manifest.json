@@ -1,0 +1,165 @@
+{
+  "scope": "small data and provenance files, excluding external graphs and generated validation report",
+  "files": [
+    {
+      "path": "data/README.md",
+      "bytes": 3902,
+      "sha256": "59d58051cfc715be1c94d8dfe35019a6812f2c1f55d948fb3bec8467f2dadebb"
+    },
+    {
+      "path": "data/descriptors/moad_physical_descriptors_filtered.csv",
+      "bytes": 90348,
+      "sha256": "cd7062f2242fcc930ff7073310e00d891bcb1be797e23fdd712ea39906ae9530"
+    },
+    {
+      "path": "data/features/complex_feature_ids.csv",
+      "bytes": 51437,
+      "sha256": "7e265af1318119a7c8e2086fbf4bc2786143d825b68479e6bd83ede46e4bf294"
+    },
+    {
+      "path": "data/features/complex_features_ligand_protein_d256_seed0.npy",
+      "bytes": 3255424,
+      "sha256": "10b4a50f5cfc3de000ab06d0b8112146486e63571ad9db252455dd5af3976a91"
+    },
+    {
+      "path": "data/features/ligand_chemberta_moad3179.pt",
+      "bytes": 4960502,
+      "sha256": "ad74c18a2560f0c4577a045c22582ce37a1d1827ec05bce48bd1cd1111c54b0c"
+    },
+    {
+      "path": "data/features/ligand_feature_ids.csv",
+      "bytes": 51437,
+      "sha256": "7e265af1318119a7c8e2086fbf4bc2786143d825b68479e6bd83ede46e4bf294"
+    },
+    {
+      "path": "data/ordered_complex_ids.csv",
+      "bytes": 51437,
+      "sha256": "7e265af1318119a7c8e2086fbf4bc2786143d825b68479e6bd83ede46e4bf294"
+    },
+    {
+      "path": "data/provenance/bounded_source_reads.json",
+      "bytes": 1584,
+      "sha256": "e5d113b0040b46b12d46776b7191d6482d9ab2ff768bc94b216a568c238ebca5"
+    },
+    {
+      "path": "data/provenance/combined_feature_alignment.json",
+      "bytes": 549,
+      "sha256": "3ec7a87bf373e5de4d5038a6dfb9c31804eae3594885deb138ea6b242d31111e"
+    },
+    {
+      "path": "data/provenance/external_graph_availability.json",
+      "bytes": 508,
+      "sha256": "7cc0eaf077fa76d6e36270cccbcb9b78ddb21e65fd77391e53bb5a6bfde9eb44"
+    },
+    {
+      "path": "data/provenance/feature_cache_comparison.json",
+      "bytes": 1372,
+      "sha256": "576c1b232ec23513c37bf0fafcf52cd605e922d5784d4bef477a5aef6305a6d3"
+    },
+    {
+      "path": "data/provenance/hydrated_original_inputs.json",
+      "bytes": 2819,
+      "sha256": "60e395c53deb3cbe72a9df8d9beed1da4490abb5e72fde4c59a95aac676aef79"
+    },
+    {
+      "path": "data/provenance/ligand_features.json",
+      "bytes": 795,
+      "sha256": "bca3908481202fdcdcb978a0e8035d4efbd801b73f9f60b4d9cf9c47ef9f6aab"
+    },
+    {
+      "path": "data/provenance/missing_inputs.json",
+      "bytes": 329,
+      "sha256": "5fb2fac2394455f1c54378487ac87c41029f2a71fadd05ea365575586c42a561"
+    },
+    {
+      "path": "data/provenance/native_evaluation_target.json",
+      "bytes": 3639,
+      "sha256": "7b6e67172dce372c8ddced1a8db452a11d3a59908631bfdff4cc7464631ad28e"
+    },
+    {
+      "path": "data/provenance/native_score_functions.py.txt",
+      "bytes": 240,
+      "sha256": "39d2a6fc9d2fbe475b3528cb2c40a1038c1f1329766439aa030ef211df731678"
+    },
+    {
+      "path": "data/provenance/original_experiment_manifest.json",
+      "bytes": 2833,
+      "sha256": "ff3b2a79b48281076936499f29f6619a3e684abbf8c9b0925d2d8cc18660317a"
+    },
+    {
+      "path": "data/provenance/original_input_audit.json",
+      "bytes": 1758,
+      "sha256": "18e0b05d2189d254ba3add83b9a9bfadf55e8c798155a59b300140cf426fb750"
+    },
+    {
+      "path": "data/provenance/protein_graph_inventory.csv",
+      "bytes": 204852,
+      "sha256": "8db45cdafb11d5eb2ece27ece9942ee1ae2134cdc6f085e3a5138445d892e3e6"
+    },
+    {
+      "path": "data/provenance/protein_graph_summary.json",
+      "bytes": 431,
+      "sha256": "775bc98ba4206f8a253eb38503e4a8d1ffdf63bc233d767a9dc68af41df55328"
+    },
+    {
+      "path": "data/provenance/raw_sources.json",
+      "bytes": 1344,
+      "sha256": "2f3df2c47c63a54ddeb0e3217802cedb17b77af6acdc4f77715d1249eea252e5"
+    },
+    {
+      "path": "data/provenance/recovered_split.json",
+      "bytes": 5878,
+      "sha256": "4169b1124642d69b728f57d977b3af30ea628e63b609f9e29cca1f97ee8a3c6b"
+    },
+    {
+      "path": "data/provenance/rmsd_values_above_1000.csv",
+      "bytes": 9572,
+      "sha256": "9159d9c5065be87a5561b3ee272e23b0f74f2738d83c8342fa984ffddb766acc"
+    },
+    {
+      "path": "data/provenance/target_source.json",
+      "bytes": 574,
+      "sha256": "23cfb304a23121532168f5da29e37f09a0066995caf7497e1b1790ca5a3387ae"
+    },
+    {
+      "path": "data/raw/moad_pb_ratio_trimmed.csv",
+      "bytes": 155874,
+      "sha256": "b73d1a864675e2f30b2be2261981b50df3af050dae51d455b2f5fc9e638f7500"
+    },
+    {
+      "path": "data/raw/moad_rmsd_trimmed.csv",
+      "bytes": 458442,
+      "sha256": "ef6eb247fa499fd11072ef966a265b76e3c06903cbb1339ce58f4cd8cc2de92c"
+    },
+    {
+      "path": "data/raw/moad_runtime_trimmed.csv",
+      "bytes": 332754,
+      "sha256": "f0df14e2ef6e3596516353b6ce534487d2d8b9ea99bf7e376246a3a9aa83febf"
+    },
+    {
+      "path": "data/splits/moad_5fold_split_seed42.csv",
+      "bytes": 117682,
+      "sha256": "af717b403bc9e31ec9ca37bca86a57ef4ea46af0b4e75feeeb4e531ba13814b8"
+    },
+    {
+      "path": "data/splits/recovered_heldout_folds_from_downstream.csv",
+      "bytes": 57800,
+      "sha256": "065d7af94693bd9ba067e377357fa10f99c8b6f508a8d78b1378c6876e5abf84"
+    },
+    {
+      "path": "data/targets/full_strict_score_matrix.csv",
+      "bytes": 366953,
+      "sha256": "ec1d30a49d87c1d492801f5cee4393b9283ca11feab08e2ce5392a2dc32dac27"
+    },
+    {
+      "path": "data/targets/moad_score_native_reconstructed.csv",
+      "bytes": 297014,
+      "sha256": "90a9c27006c2b7ab59a93b0452a14b54a6aef9c60e369cac6ad4ed19ae51cb83"
+    },
+    {
+      "path": "data/targets/strict_score_matrix.csv",
+      "bytes": 361227,
+      "sha256": "a420521fe5fcd3cf646f4b3c5742d809ec454ea291e62c70e7200620eb6283fa"
+    }
+  ]
+}

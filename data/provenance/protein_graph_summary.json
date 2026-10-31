@@ -1,0 +1,10 @@
+{
+  "source_directory": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_structures/data/MolAS/protein_graphs_esmc_600m",
+  "files": 3179,
+  "logical_bytes": 14985036224,
+  "cloud_placeholders": 2414,
+  "raw_ids_exactly_covered": true,
+  "payloads_copied": false,
+  "payload_hashes_not_available": true,
+  "reason": "14985036224 logical bytes exceeds available local capacity; 2414 cloud placeholders"
+}

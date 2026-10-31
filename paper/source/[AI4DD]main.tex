@@ -1,0 +1,156 @@
+\documentclass{article}
+\usepackage[final,dblblindworkshop]{neurips_2026}
+\workshoptitle{AI for Drug Discovery: Bridging the Translation Gap}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{figures/}{../}}
+
+\title{Active Learning for Molecular-Docking Algorithm Selection under Heterogeneous Runtime}
+\author{Sean Wan \qquad Jiabao Brad Wang \qquad Mustafa Misir\\
+Duke Kunshan University}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Training an algorithm selector for structure-based drug discovery typically requires evaluating every docking method on every protein--ligand complex.
+We formulate this costly matrix construction as closed-loop active learning, where each retrospective query reveals a recorded docking outcome and runtime.
+Using MolAS, we evaluate cell-wise active acquisition and compare five predicted-runtime transformations of Mean-UCB, fitting runtime models only to previously observed training-pool runtimes.
+Across seven docking methods and five held-out folds, selective acquisition recovers decision-useful training data without exhaustive evaluation.
+No evaluated formulation consistently leads across the reported endpoints and budgets: runtime transformations reshape algorithm allocation and can defer expensive evidence, while matrix-quality metrics do not consistently track held-out performance.
+These results provide an empirical reference for resource-aware active learning in molecular docking.
+\end{abstract}
+
+\noindent\textbf{Keywords:} active learning; algorithm selection; molecular docking; protein--ligand interactions; drug discovery; runtime-aware acquisition; structure-based virtual screening.
+
+\section{Introduction}
+AI-driven structure-based drug discovery increasingly orchestrates portfolios of classical and learned docking methods whose performance varies across protein--ligand complexes. Automated algorithm selection (AS) exploits this complementarity by choosing a suitable method for each complex~\citep{rice1976algorithm,kerschke2019automated}, using molecular descriptors, graphs, or pretrained representations~\citep{chen2023algorithm,cao2025mc,wang2026molecular}. Training a selector, however, ordinarily requires executing every docking method on every training complex to construct a complete performance matrix. We instead formulate this process as resource-constrained computational experimental design: active learning (AL) selects a complex--algorithm cell, acquires its docking outcome, updates the matrix model, and repeats~\citep{cohn1996active,tharwat2023survey,huseljic2026refine}.
+
+This setting differs from docking AL under a fixed workflow~\citep{graff2021accelerating,marin2024regression}: each query identifies both the protein--ligand complex and the docking method, and the resulting partial matrix must support decisions on unseen complexes. Our technical basis is active matrix completion~\citep{misir2019active}. Previous studies explored uncertainty-guided and runtime-aware acquisitions for AS in combinatorial optimization~\citep{volpato2019active,kus2026frugal}; here, we investigate cell-wise acquisition for molecular-docking AS.
+
+\noindent\textbf{RQ1.} To what extent can cell-wise AL reduce molecular-docking evaluations while preserving held-out MolAS decision quality?
+
+Query count alone is insufficient because docking runtime varies by complex and algorithm and is unknown before execution. Cost-blind AL may select informative but slow runs, whereas utility-per-cost rules may defer expensive yet selector-relevant evidence.
+
+\noindent\textbf{RQ2.} How do alternative predicted-runtime transformations change algorithm allocation and the downstream performance--cost frontier?
+
+We empirically evaluate cell-wise acquisition on MolAS~\citep{wang2026molecular} through historical replay, comparing Mean-UCB with five predicted-runtime acquisition-score formulations. Our results address a translation challenge in AI for drug discovery: partial acquisition can support useful selectors, but the effect of cost awareness depends on formulation and budget, and computational proxies do not consistently track downstream molecular decisions. Code and data are being prepared for public release.
+
+\section{Background}
+\paragraph{Active performance acquisition for algorithm selection.}
+Standard AL generally treats an instance-level label as the query unit~\citep{tharwat2023survey}, whereas AS admits instance--algorithm outcomes. Active matrix completion (AMC) selects entries of an incomplete performance matrix to reveal~\citep{chakraborty2013active}, and supervised AMC can incorporate acquisition cost~\citep{huang2018afasmc}. AMC has been applied directly to AS~\citep{misir2019active}; related work studies instance-level active acquisition for time-expensive AS~\citep{volpato2019active}, while Frugal AS combines uncertainty-based acquisition with learned timeout models~\citep{kus2026frugal}. These studies motivate selective acquisition under limited computational budgets. Recent AL work also highlights the influence of pool management and evaluation protocols on observed performance~\citep{huseljic2026refine}. Low reconstruction error need not preserve algorithm rankings or downstream molecular decisions; MolAS provides a structure-based virtual-screening backend for evaluating this distinction~\citep{wang2026molecular}.
+
+\paragraph{Cost-aware acquisition under heterogeneous runtime.}
+Cost-sensitive AL trades informativeness against annotation or execution cost~\citep{tomanek2010comparison,gao2020cost}. Return-on-investment rules rank queries by estimated benefit per unit cost~\citep{haertel2015analytic}; more generally, $U/C^\gamma$ interpolates between cost-blind utility ($\gamma=0$) and direct utility per cost ($\gamma=1$). Pareto analyses characterize utility--cost trade-offs~\citep{guinet2020pareto}, while budgeted Bayesian optimization studies non-myopic acquisition under unknown evaluation costs~\citep{astudillo2021multi}. Batch acquisition adds potential redundancy among individually attractive queries, motivating joint strategies such as BatchBALD~\citep{kirsch2019batchbald}. In molecular docking, favoring inexpensive cells can systematically reshape which algorithms contribute training outcomes. We therefore evaluate runtime-aware acquisition through realized cost, allocation, and held-out MolAS performance, alongside matrix diagnostics.
+
+\section{Methodology}
+\subsection{Closed-loop active acquisition of AS training data}
+Let $\mathcal I=\{i_1,\ldots,i_n\}$ denote training-pool protein--ligand complexes and $\mathcal A=\{a_1,\ldots,a_m\}$ a portfolio of $m$ docking algorithms. Their strict performance and acquisition cost matrices are
+\begin{equation}
+\mathbf Y\in[0,1]^{n\times m},
+\qquad
+\mathbf C\in\mathbb R_{+}^{n\times m}.
+\end{equation}
+In our retrospective evaluation, querying $q=(i,a)$ reveals its recorded docking score and runtime, $(Y_{ia},C_{ia})$. At round $t$, only cells in $\Omega_t$ are observed; the remaining pool is $\mathcal U_t=(\mathcal I\times\mathcal A)\setminus\Omega_t$. Paired trajectories share a runtime-blind $1\%$ warm start, distributed as evenly as possible across algorithms.
+
+Given $\Omega_t$, iterative low-rank SVD completion~\citep{mazumder2010spectral} estimates unobserved performance. An ensemble of ranks $\mathcal K=\{1,2,3,5\}$ produces
+\begin{equation}
+\mu^Y_{ia}=\frac{1}{|\mathcal K|}\sum_{k\in\mathcal K}\widehat Y^{(k)}_{ia},
+\qquad
+\sigma^Y_{ia}=\operatorname{SD}_{k\in\mathcal K}\bigl(\widehat Y^{(k)}_{ia}\bigr).
+\end{equation}
+These ranks provide different low-rank hypotheses for the seven-column matrix. An acquisition rule assigns $\alpha_t(i,a)$ to each unqueried cell. Selected cells are revealed, and the completion and runtime models are updated. Scores are reranked after batches of at most 50 queries, truncated at checkpoint boundaries; this reduces refitting frequency while holding scores fixed within a batch. A completed training matrix is exported at every integer acquisition percentage from $1\%$ to $100\%$. No new docking jobs are executed.
+
+We evaluate 3,179 Binding-MOAD complexes~\citep{hu2005binding}, as in MolAS~\citep{wang2026molecular}, with seven algorithms: Smina~\citep{koes2013smina}, AutoDock Vina~\citep{trott2010vina}, DiffDock and DiffDock-L~\citep{corso2023diffdock,corso2024diffdockl}, SurfDock~\citep{cao2025surfdock}, GNINA~\citep{mcnutt2021gnina}, and Uni-Mol Docking V2~\citep{alcaide2025unimol}. MolAS combines RMSD with a PoseBusters-validity gate~\citep{buttenschoen2024posebusters}. We retain the original five outer folds. At each evaluated acquisition checkpoint, MolAS is trained on the completed matrix for that fold's training complexes: queried cells retain observed scores, while unqueried cells receive SVD estimates. Completion and supervised model fitting use the $80\%$ training split; the held-out fold is reserved for evaluation. The downstream comparison uses the seed-0 acquisition archive with matched warm starts; summaries are over outer folds, not independent acquisition/selector-seed replications.
+
+We report valid-pose success below $1$ and $2$~\AA, an AS composite score, and closure of the single-best-solver (SBS) to virtual-best-solver (VBS) gap. Matrix MAE, row-wise Spearman $\rho$, pairwise concordance, NDCG@$3$, and decision regret are diagnostics. Reported cost sums recorded docking-job runtimes, including the warm start, and excludes feature/model-fitting overhead and parallel scheduling. Fold summaries are descriptive, without confidence intervals or significance tests; overlapping training splits are not independent replications.
+
+\subsection{Mean-UCB acquisition utility}
+To examine runtime handling within a common acquisition framework, we use Mean-UCB throughout the comparison. Adapted from \citet{qin2025active}, it combines predicted performance with ensemble dispersion:
+\begin{equation}
+U_t(i,a)=\mu^Y_{ia}+\beta\sigma^Y_{ia}.
+\end{equation}
+We fix $\beta=1$ and the predictive model class across policies; each policy updates its predictions from its own acquired observations. Dispersion across SVD ranks is a heuristic uncertainty measure, not a calibrated confidence bound.
+
+\subsection{Runtime-aware acquisition from observed costs}
+Unqueried runtime is predicted from information available before revealing that cell:
+\begin{equation}
+\widehat C_{ia}=h_t(\mathbf x_i,\mathbf d_i,\mathbf e_a),
+\end{equation}
+where $\mathbf x_i$ concatenates protein and ligand representations, $\mathbf d_i$ contains four physical descriptors, and $\mathbf e_a$ is a one-hot algorithm identifier. A two-hidden-layer MLP with widths $(32,16)$ is trained on $\log(1+C_{ia})$ using only runtimes revealed in $\Omega_t$. Predictions are transformed back to seconds and clipped to the observed-runtime 5th--95th percentile bounds $[\ell_t,u_t]$, with numerical safeguards. Clipping limits extreme predictions but can also underrepresent runtime tails. Unqueried runtimes and full-matrix runtime statistics are excluded from acquisition. Ranks, reranking interval, $\beta$, and clipping define the evaluated configuration; their sensitivity has not been established.
+
+All utility ranks and cost normalizations use the current unqueried training pool $\mathcal U_t$, across algorithms, separately for each policy. Let $\widetilde U_t=\max\{10^{-3},\operatorname{rank}_{\mathrm{avg}}(U_t)/|\mathcal U_t|\}$, using ascending ranks with averaged ties. For a candidate-cost vector $c$, define
+\begin{equation}
+\mathcal S_t[c](q)=1+4\frac{c(q)-\min_{r\in\mathcal U_t}c(r)}
+{\max_{r\in\mathcal U_t}c(r)-\min_{r\in\mathcal U_t}c(r)}.
+\end{equation}
+If the extrema are numerically equal, $\mathcal S_t[c]=1$. Set $\widetilde C=\mathcal S_t[\widehat C]$. With cell indices suppressed, we compare
+\begin{align}
+\alpha_{\mathrm{plain}}&=U_t,
+&
+\alpha_{\mathrm{direct}}&=\frac{U_t}{\widehat C+\epsilon},
+&
+\alpha_{\mathrm{sqrt}}&=\frac{\widetilde U_t}{\sqrt{\widetilde C}},
+\nonumber\\
+\alpha_{\mathrm{log}}&=\frac{\widetilde U_t}{\log(1+\widetilde C)},
+&
+\alpha_{\mathrm{tier}}&=\frac{\widetilde U_t}{g_5(\widehat C)},
+&
+\alpha_{\mathrm{unc}}&=\frac{\widetilde U_t}{\sqrt{\widetilde C^+}}.
+\end{align}
+Here $\epsilon=10^{-6}$, and $g_5$ assigns costs to five candidate-pool quantile tiers, with boundary ties assigned to the lower tier. For runtime uncertainty, three predictors are individually transformed and clipped; their mean $\mu^C$ and population SD $\sigma^C$ give $C^+=\operatorname{clip}(\mu^C+\sigma^C,\ell_t,u_t)$ and $\widetilde C^+=\mathcal S_t[C^+]$. Other cost-aware policies use one predictor. The mean-plus-SD penalty is heuristic, not a calibrated runtime bound.
+
+Direct cost-utility uses raw $U_t$ and predicted seconds; the other cost-aware variants use percentile utility and transformed costs. We therefore compare complete acquisition-score formulations sharing a Mean-UCB definition, rather than isolating the denominator alone. The acquisition logarithm is distinct from the log-runtime regression target.
+
+\section{Results}
+\subsection{Partial active acquisition produces decision-useful AS data}
+Figure~\ref{fig:gap-closure} reports held-out SBS--VBS gap closure against cumulative realized docking runtime. Across the three endpoints, acquisition recovers substantial decision quality before exhaustive matrix completion. Plain Mean-UCB is competitive at low and intermediate realized cost, while runtime-aware variants exhibit different trajectories for valid RMSD below $1$~\AA, valid RMSD below $2$~\AA, and the AS composite score.
+
+No evaluated policy leads across all endpoints and budget regions. Some partial-matrix checkpoints match or exceed full-matrix MolAS, although fold trajectories vary substantially, particularly at small budgets. These comparisons do not establish that omitting labels improves generalization.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{Fig1.png}
+\caption{Held-out MolAS SBS--VBS gap closure versus cumulative realized runtime. Bold curves show descriptive five-fold summaries; light curves show fold trajectories. Dashed lines denote SBS and full-matrix MolAS.}
+\label{fig:gap-closure}
+\end{figure}
+
+\subsection{Cost awareness changes the frontier, but not uniformly}
+Despite sharing a Mean-UCB definition, folds, warm starts, completion model, and update schedule, the formulations yield different performance--cost trajectories. Because utility and cost scalings differ, denominator transformations alone do not establish an ordering of cost pressure. None consistently leads across the reported endpoints and budgets. Runtime-aware policies bring inexpensive algorithms forward and defer some expensive queries (Appendix~\ref{app:acquisition-allocation}); greater acquisition volume does not consistently yield better held-out performance.
+
+Figure~\ref{fig:metric-association} shows that associations between matrix diagnostics and held-out MolAS gap closure vary with acquisition stage and endpoint. Decision regret exhibits a positive association over several intermediate-cost regions, particularly for valid RMSD below $1$~\AA, whereas row-wise Spearman $\rho$ is frequently weak or negative. NDCG@$3$ is informative in some regions but unstable across endpoints. Fold-level trajectories also vary, especially early in acquisition. No evaluated diagnostic consistently tracks downstream quality across this comparison.
+
+Runtime prediction adds another source of uncertainty. Appendix~\ref{app:predicted-runtime} documents early underprediction for Uni-Mol and both DiffDock variants, and a long positive error tail for AutoDock Vina. Realized runtime, allocation, matrix diagnostics, and held-out quality provide complementary evidence; these associations do not isolate the causal contribution of prediction errors.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{Fig2.png}
+\caption{Within-fold Spearman associations across available acquisition policies between matrix diagnostics and held-out MolAS gap closure over realized runtime. Colors identify diagnostics; light curves show fold-level associations and bold curves summarize their trends.}
+\label{fig:metric-association}
+\end{figure}
+
+\section{Discussion, Limitations, and Conclusion}
+\noindent\textbf{Discussion.}
+Runtime-aware acquisition changes both how many cells can be queried within a budget and which docking algorithms contribute evidence. In the evaluated portfolio, cost-aware policies bring inexpensive algorithms forward and defer some expensive queries, increasing acquisition volume without consistently improving held-out MolAS quality. Bridging computational benchmarks to drug-discovery decisions requires evaluation by realized runtime, allocation, matrix fidelity, and held-out molecular decision quality. Reconstruction diagnostics remain useful for assessing imputation but are insufficient proxies for selector quality.
+
+For practical use, specify the endpoint and budget in advance; choose acquisition and stopping settings on separate validation complexes, counting their labeling cost, and reserve test folds for final evaluation. Monitor per-engine runtime errors and acquisition coverage alongside selector quality. These recommendations are not a validated deployment procedure.
+
+\noindent\textbf{Limitations and Future Work.}
+We study one curated benchmark and seven algorithms, using SVD completion and myopic Mean-UCB formulations. Random-cell, pure-uncertainty, and joint-batch baselines are absent; completion-induced bias is not separately assessed. Runtime is hardware-dependent; our sequential cost model does not address parallel scheduling, failures, or timeouts. Unqueried outcomes remain hidden during acquisition. Broader baselines, completion models, statistical characterization, sensitivity studies, runtime calibration, additional datasets/portfolios, and prospective validation are detailed in Appendix~\ref{app:next-steps}.
+
+\noindent\textbf{Conclusion.}
+Partial docking evaluations can construct decision-useful AS training data. No evaluated formulation consistently leads across the reported endpoints and budgets. Cost awareness changes both computation and the evidence available to the selector. Observed-runtime fitting, realized-cost reporting, allocation audits, and held-out MolAS evaluation together provide an empirical reference for runtime-aware acquisition in molecular docking.
+
+\bibliographystyle{plainnat}
+\bibliography{citations}
+\clearpage
+\input{sections/appendix}
+\end{document}

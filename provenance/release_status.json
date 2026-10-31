@@ -1,0 +1,39 @@
+{
+  "snapshot_date": "2026-10-31",
+  "publication_ready": true,
+  "full_reproduction_ready": false,
+  "new_scientific_experiments_executed": false,
+  "paper_pdf_preserved_unchanged": true,
+  "core_acquisition_inputs_complete": true,
+  "primary_acquisition_original_csvs_verified": 27000,
+  "historical_downstream_adapter_and_notebooks_recovered": true,
+  "source_integrity_and_software_checks": "passed; see component validation reports and final_verification.json",
+  "remaining_items": [
+    "Publish the large structural dataset separately and add its verified, versioned download reference. This does not block the current GitHub code and archived-results release."
+  ],
+  "interpretation": "Publication readiness covers the GitHub artifact scope authorized by the author. Exact historical end-to-end reproduction remains separately unverified; documented provenance limitations remain applicable.",
+  "local_snapshot_frozen": true,
+  "local_assembly_complete": true,
+  "downstream_csvs_packaged": 4508,
+  "downstream_csvs_expected_from_existing_archive": 4508,
+  "downstream_csvs_pending_cloud_recovery": 0,
+  "downstream_missing_bytes": 0,
+  "git_branch": "codex/release-preparation",
+  "original_software_license": "MIT",
+  "original_software_license_authorized_by_user": true,
+  "historical_provenance_limitations": [
+    "Per-run training configurations were not recovered for every historical downstream output; recovered launcher settings are not asserted to prove every invocation.",
+    "Source correspondence is documented for all eight paper figures, but not every final export/layout command has an exact recovered identity.",
+    "The native evaluation target is explicitly reconstructed and independently checked against saved outputs; the original server-side CSV byte stream was not recovered."
+  ],
+  "primary_result_recovery_complete": true,
+  "assembly_status": "Complete GitHub artifact package with author-confirmed redistribution terms; large structural data retained locally for a separate release.",
+  "downstream_original_archive_member_hashes_verified": 4508,
+  "github_publication_ready": true,
+  "author_redistribution_terms_confirmed": true,
+  "author_confirmation_record": "provenance/author_redistribution_confirmation.json",
+  "github_repository": "https://github.com/SeanWan514/MolAS_Active_Learning",
+  "release_version": "1.0.0",
+  "publication_state": "prepared_for_initial_push",
+  "separate_dataset_release_published": false
+}

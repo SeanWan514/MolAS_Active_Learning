@@ -1,0 +1,569 @@
+{
+  "source_repository": "git@github.com:SeanWan514/PORT-AS_cost_aware.git",
+  "pinned_commit": "f11931c704650b8ecf5ad86a0ae69d87c82a89ec",
+  "recovered_from": "original supplied cost_aware_relaxed_six_methods.zip; every recovered CSV verified against pinned Git tree",
+  "original_csv_files_verified": 27000,
+  "completed_matrices": 9000,
+  "incremental_query_logs": 9000,
+  "cumulative_query_logs": 9000,
+  "runs": 90,
+  "methods": [
+    "cost_tiers_5",
+    "direct_cost_uc",
+    "log_cost",
+    "plain_mean_ucb",
+    "relaxed_cost_power_05",
+    "runtime_uncertainty"
+  ],
+  "acquisition_seeds": [
+    0,
+    1,
+    2
+  ],
+  "downstream_acquisition_seed": 0,
+  "cumulative_prefix_mismatches_fetched_original": [],
+  "archive_bytes": 335727308,
+  "archives": [
+    {
+      "path": "results/acquisition/cost_tiers_5/fold0_seed0.tar.xz",
+      "bytes": 3719656,
+      "sha256": "8ad7c770cc210887ea5bfdbb13a06372c288c4220579392aacf256b9bcadfe39",
+      "members": 311
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold0_seed1.tar.xz",
+      "bytes": 3782640,
+      "sha256": "6017dd87f04f25b3779cbaafbfca26106202356d8bcadca1d17beda609e383f6",
+      "members": 299
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold0_seed2.tar.xz",
+      "bytes": 3786260,
+      "sha256": "f01edc97c365765cb7d55347068d894d1c8ae0c0572623b3226adc89414e423a",
+      "members": 311
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold1_seed0.tar.xz",
+      "bytes": 3783228,
+      "sha256": "e089a32ed2620e08cb9b1f15bd2467b9b71b77db367ebd8c9a31320713e88c0b",
+      "members": 314
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold1_seed1.tar.xz",
+      "bytes": 3502768,
+      "sha256": "872d1b2507eda0e54ac3b58d5abf64434ff4489f31809e63e523302ee05c9fa6",
+      "members": 297
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold1_seed2.tar.xz",
+      "bytes": 3792792,
+      "sha256": "d9bbf93f17a5d6f6468bf77715f07c6accf7793c94e1af040bce20b000ee6b61",
+      "members": 308
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold2_seed0.tar.xz",
+      "bytes": 3754440,
+      "sha256": "172ed76b2273b9e004a5306cc326f16147e2d333bc4d8a2346ac60571b423150",
+      "members": 306
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold2_seed1.tar.xz",
+      "bytes": 3809192,
+      "sha256": "102bb2feb277aac501f244f91dd62b3986b1dd7537de832945089cca699813cf",
+      "members": 313
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold2_seed2.tar.xz",
+      "bytes": 3758232,
+      "sha256": "562a5070583341625d629f6a8b409aa152f9d1256f1914f9e2d1297ffad069ed",
+      "members": 315
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold3_seed0.tar.xz",
+      "bytes": 3709780,
+      "sha256": "2277e73e3232ff514a14106afcebb2b0f3e628f004dddbe3a484f2a7d8c94a0d",
+      "members": 303
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold3_seed1.tar.xz",
+      "bytes": 3763764,
+      "sha256": "4beb2d174f68921a793dca4b64a2e14481a36a1299b99fcd9810b417f56a8703",
+      "members": 324
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold3_seed2.tar.xz",
+      "bytes": 3586840,
+      "sha256": "59eec5f1ece00f73388246d5cab5d060503905b74ba7fafba68c6b4f61137b90",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold4_seed0.tar.xz",
+      "bytes": 3796044,
+      "sha256": "d2b3815e39ace5df7c0c688aac2992b904db43f66e969fbd40530d2434a225bf",
+      "members": 307
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold4_seed1.tar.xz",
+      "bytes": 3667052,
+      "sha256": "2716a5b44781cdce31bc6b55e1fb9c3caf359799262ada158979c474020ec725",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/cost_tiers_5/fold4_seed2.tar.xz",
+      "bytes": 3672708,
+      "sha256": "1c4ed02e86234dbe8cbe5ccafb4bde96c61fde1d853667339da51fa0a02af309",
+      "members": 298
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold0_seed0.tar.xz",
+      "bytes": 3775984,
+      "sha256": "545f9490b433dd031ff562ff819299f032073622729688c0e243bcb38b63915a",
+      "members": 314
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold0_seed1.tar.xz",
+      "bytes": 3861696,
+      "sha256": "ead8eb52141eb7df30f0bd1deff60c44479a112fe50711e9016e08861cf0bcbe",
+      "members": 319
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold0_seed2.tar.xz",
+      "bytes": 3819196,
+      "sha256": "0433b974001a8de9080fafb4fe3982e966ea724ec4291ab78bcebe33865032c4",
+      "members": 319
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold1_seed0.tar.xz",
+      "bytes": 3878232,
+      "sha256": "2fc44e2609cc54736aa00ed26b932c01ace3214614695d3e60c81a8fc259342e",
+      "members": 310
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold1_seed1.tar.xz",
+      "bytes": 3832804,
+      "sha256": "34b6f8a3f429c4c238f88aaa51807cd42b9bb008873847ea43c49028b7635e7b",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold1_seed2.tar.xz",
+      "bytes": 3866992,
+      "sha256": "c060699fdef6efb8ab49c02b349ba78412017fcf45249d4ca9710524c14d3eb7",
+      "members": 312
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold2_seed0.tar.xz",
+      "bytes": 3813460,
+      "sha256": "2e32fcd2dd3c078896a57b9877654a8ebe69afa22d7d8ba135a1976d2fbba4b2",
+      "members": 316
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold2_seed1.tar.xz",
+      "bytes": 3892292,
+      "sha256": "5b81dda911f531f2eec5c2b7b6dd030338364e2dff5d8a7fc9b71e3b08d1e9da",
+      "members": 315
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold2_seed2.tar.xz",
+      "bytes": 3842132,
+      "sha256": "f2f55f5f46df93eef70ef7d33dac08add51bafaa5a3177214e92ed90baba66e1",
+      "members": 305
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold3_seed0.tar.xz",
+      "bytes": 3881940,
+      "sha256": "9a1782e3bb6c619d3182e197c593a5b42003d856bc63f2e8bf74b2fe8abb572a",
+      "members": 293
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold3_seed1.tar.xz",
+      "bytes": 3826056,
+      "sha256": "3451927f317528e42c0955ae7654e26db3664a54a67ced9f6eb9e9f43de8f6bd",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold3_seed2.tar.xz",
+      "bytes": 3761188,
+      "sha256": "06338a611342bcdbc53254cd2093541adb3b2333c1c8c08e1ee2a96be09b171e",
+      "members": 285
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold4_seed0.tar.xz",
+      "bytes": 3821088,
+      "sha256": "5eed7790eb86a72824e152248fef0061504524e48dc164f6c4281898f8c28063",
+      "members": 301
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold4_seed1.tar.xz",
+      "bytes": 3798700,
+      "sha256": "122b709b776d361b5d3bb32874f8609a4696dbec51c0590d5e67e03da5a9822d",
+      "members": 306
+    },
+    {
+      "path": "results/acquisition/direct_cost_uc/fold4_seed2.tar.xz",
+      "bytes": 3861484,
+      "sha256": "c881676c164cbb4ff162d4104830686427718f109365955bbefba82917e5b177",
+      "members": 296
+    },
+    {
+      "path": "results/acquisition/log_cost/fold0_seed0.tar.xz",
+      "bytes": 3809156,
+      "sha256": "efcaf362aa49de4925783cc970b8bea2459d39874b106b8fb05f90547f183439",
+      "members": 303
+    },
+    {
+      "path": "results/acquisition/log_cost/fold0_seed1.tar.xz",
+      "bytes": 3841608,
+      "sha256": "c3c5aef7eceef9c21f999452369621a7416813ff2bce2c664258d9f4f2e81e89",
+      "members": 292
+    },
+    {
+      "path": "results/acquisition/log_cost/fold0_seed2.tar.xz",
+      "bytes": 3713880,
+      "sha256": "e7a9e5602a18a02b90709c930b0ed24d262dae40784ac869a5dc10de060279c6",
+      "members": 314
+    },
+    {
+      "path": "results/acquisition/log_cost/fold1_seed0.tar.xz",
+      "bytes": 3793064,
+      "sha256": "4d603fcc6689bfef93b9427e199a1c9dd51fe24e99771cfc31eb0e565b89f637",
+      "members": 316
+    },
+    {
+      "path": "results/acquisition/log_cost/fold1_seed1.tar.xz",
+      "bytes": 3719876,
+      "sha256": "2f2858c5e18c55e2d906a4f754764f19f85babc32b60d8a8ad6939d457198a7a",
+      "members": 303
+    },
+    {
+      "path": "results/acquisition/log_cost/fold1_seed2.tar.xz",
+      "bytes": 3737148,
+      "sha256": "a9dc7c3e858c270a71e3410cef775a1f905f572a905802dddb4c4916183abb39",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/log_cost/fold2_seed0.tar.xz",
+      "bytes": 3772232,
+      "sha256": "e5d58d0b77783756a7b17b2a31b6527bf57a6b87599cb9e5adf25cc4255ccc2c",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/log_cost/fold2_seed1.tar.xz",
+      "bytes": 3768624,
+      "sha256": "f14b49744c63ff7fff3e91617c246790c48a66ccf5ac92633663a39dfcbf537c",
+      "members": 318
+    },
+    {
+      "path": "results/acquisition/log_cost/fold2_seed2.tar.xz",
+      "bytes": 3710268,
+      "sha256": "a905e811dec0ceb35e8e06359d04f47fd35dd653288b28cfc31089aec0d9fffa",
+      "members": 293
+    },
+    {
+      "path": "results/acquisition/log_cost/fold3_seed0.tar.xz",
+      "bytes": 3754756,
+      "sha256": "312fdb309d2f8ac1e57228b4e0da80ae5a0b9f7419e7fc49a761a87d0223cf11",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/log_cost/fold3_seed1.tar.xz",
+      "bytes": 3717984,
+      "sha256": "cb68140f46f8b508517d4b1ec52336e3726fc28c56c76154f7735f809297367b",
+      "members": 308
+    },
+    {
+      "path": "results/acquisition/log_cost/fold3_seed2.tar.xz",
+      "bytes": 3639184,
+      "sha256": "54dceaa8dc2d5c9da41159f2e3af7a10c8204f28eecd7eb3db39f6fe9dcbc520",
+      "members": 292
+    },
+    {
+      "path": "results/acquisition/log_cost/fold4_seed0.tar.xz",
+      "bytes": 3770540,
+      "sha256": "970d34aae3a314ccc2c4ee0714be70f55cc0be5378af0d5a9ab54e51328f2031",
+      "members": 289
+    },
+    {
+      "path": "results/acquisition/log_cost/fold4_seed1.tar.xz",
+      "bytes": 3727984,
+      "sha256": "a37e0697864e84dfcd839223f65a0da4d6be2f5eac5f3405b5c6a556686d7920",
+      "members": 310
+    },
+    {
+      "path": "results/acquisition/log_cost/fold4_seed2.tar.xz",
+      "bytes": 3661236,
+      "sha256": "c3ce9447bcea4ab188a76ccbf52f9c62e8c0d72f63d5d11e8a7c42bc22c4ef40",
+      "members": 317
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold0_seed0.tar.xz",
+      "bytes": 3509528,
+      "sha256": "ab5d4cd05608b18cc908566430032d20c475ed9b09c3fe447c0867daa048898f",
+      "members": 298
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold0_seed1.tar.xz",
+      "bytes": 3784756,
+      "sha256": "bdea5f3193c9ffacbc4dc4a343da94297334aac0dc82403edcba33971028e10c",
+      "members": 323
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold0_seed2.tar.xz",
+      "bytes": 3478588,
+      "sha256": "ea47b1d789202f9098a601ceaea723defbcf5dbaaf3def7095f823ec03e6a8b4",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold1_seed0.tar.xz",
+      "bytes": 3675972,
+      "sha256": "ec06995697cb3e2300cde690f8c1727a504c066b8efc0fee5ef86e9a1f3cdafe",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold1_seed1.tar.xz",
+      "bytes": 3197600,
+      "sha256": "d9911a39ad2840305bbce24f6572b7daf2b206417b10807aa420ffc85704a389",
+      "members": 315
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold1_seed2.tar.xz",
+      "bytes": 3586388,
+      "sha256": "03c315bb7b2ad420658f425d6943417b921cbfeda862cd09506bb7af301bf2f6",
+      "members": 297
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold2_seed0.tar.xz",
+      "bytes": 3588376,
+      "sha256": "bf3d90e5692acbe522b7d701c6196af19e1ed42ec1ae253151cea318f174257c",
+      "members": 305
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold2_seed1.tar.xz",
+      "bytes": 3617208,
+      "sha256": "7e8c92b74cc089d2e8d095e5c985d5ca87a1a15772b09311dd1c0a3654e6c7a7",
+      "members": 280
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold2_seed2.tar.xz",
+      "bytes": 3408716,
+      "sha256": "509446ce584eff0ef9a6ce53aa94ee2c36b6859b07bb92f2b753939128962c9f",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold3_seed0.tar.xz",
+      "bytes": 3467320,
+      "sha256": "ae212458d461fb31f665ed0ebdb96183db8cce6f54a974272126835c0e834333",
+      "members": 306
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold3_seed1.tar.xz",
+      "bytes": 3687776,
+      "sha256": "bbaadcded2f239bdaa5cbf198abf5c34685dd734540fc773b35f338fcf8d3327",
+      "members": 297
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold3_seed2.tar.xz",
+      "bytes": 3505176,
+      "sha256": "0029b440e571da657ff911b657673daf6b1e1ef91903a50c03c8bf46672a3472",
+      "members": 308
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold4_seed0.tar.xz",
+      "bytes": 3682720,
+      "sha256": "45aceddc222475620181410af4a91465a82decde918808db80cbb68c188c5ba7",
+      "members": 321
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold4_seed1.tar.xz",
+      "bytes": 3322504,
+      "sha256": "8207daa0dd6dcc62207e7d7ea3cd855c282f12f5782026d9f42f3a8a20e7a1eb",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/plain_mean_ucb/fold4_seed2.tar.xz",
+      "bytes": 3296528,
+      "sha256": "a188c2f6445fdf283e357038b17be01b102e833b76465f492b49d8ff79694a82",
+      "members": 321
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold0_seed0.tar.xz",
+      "bytes": 3684472,
+      "sha256": "ec44fe66e9ab792ca900cb4a32c01ed1d808e9cd216673984f3ecff24eeca58c",
+      "members": 324
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold0_seed1.tar.xz",
+      "bytes": 3791944,
+      "sha256": "b626f889da7adc34158d78632e5d093cbc8f2dafa6eac9ec684686ed05c4bf41",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold0_seed2.tar.xz",
+      "bytes": 3723920,
+      "sha256": "171ce7b6c93a11f083caa647807f014853475f13222b5b0ceb1f7827c2fee74f",
+      "members": 307
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold1_seed0.tar.xz",
+      "bytes": 3775352,
+      "sha256": "97b41a3ed03bcc349cf15c4399e4fcc3991c1913bf1ba34c08f4fa50650b842d",
+      "members": 316
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold1_seed1.tar.xz",
+      "bytes": 3695640,
+      "sha256": "a3bbfe19b1da0997940cbd15c699b2da0b3156edf01d423885e905b67de4d2d8",
+      "members": 330
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold1_seed2.tar.xz",
+      "bytes": 3698592,
+      "sha256": "be2f145216d750771b47e7473af85cc982da6e4c7834a58dcd380f829ed61c61",
+      "members": 306
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold2_seed0.tar.xz",
+      "bytes": 3733972,
+      "sha256": "2455694bc2cdcf97ac194a06d537dfa3fccc3cef2a0034c5eb77677a6a0e43c7",
+      "members": 324
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold2_seed1.tar.xz",
+      "bytes": 3739264,
+      "sha256": "058d511ecbd74369907b63bdf06e428f9473e119e2115baa70df0e94f2f3cece",
+      "members": 313
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold2_seed2.tar.xz",
+      "bytes": 3674552,
+      "sha256": "244a17dea77cd25b2156eeee8e159b4bd8b373bb20bea7d307f4ee2af6009669",
+      "members": 310
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold3_seed0.tar.xz",
+      "bytes": 3666780,
+      "sha256": "bde96b0f9443c98511eb978fc788b4ebd0ad99e1571af9683fc08e18fbb43cb9",
+      "members": 307
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold3_seed1.tar.xz",
+      "bytes": 3707964,
+      "sha256": "f1c277c615f53d0e27e258f5f03670eefa5ca8aff09f355293d17895183d8ee0",
+      "members": 314
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold3_seed2.tar.xz",
+      "bytes": 3605916,
+      "sha256": "84c40ce88f12d485f97dacd4b2ebb59dfcf93ba8472819d4e5e466851000d945",
+      "members": 284
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold4_seed0.tar.xz",
+      "bytes": 3802644,
+      "sha256": "17c948e5766351a60ffe90ec09ccbd902df04349874bd55e341c1d6a2248f6f8",
+      "members": 322
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold4_seed1.tar.xz",
+      "bytes": 3635276,
+      "sha256": "0f53dad80c0aca57f16ac2c1bb63d41da2910c406ca19711c0bc478e9c7ddf49",
+      "members": 303
+    },
+    {
+      "path": "results/acquisition/relaxed_cost_power_05/fold4_seed2.tar.xz",
+      "bytes": 3684312,
+      "sha256": "38ff51a8b9e58955ac2495ebab2b1342048d5416165fa98660526ceb76f9b914",
+      "members": 297
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold0_seed0.tar.xz",
+      "bytes": 3834712,
+      "sha256": "35c3ebb15208992b620d207b72262ff1ac088acf42168f506d665896d67f44df",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold0_seed1.tar.xz",
+      "bytes": 3894872,
+      "sha256": "037cd9081cd8f4eaf149bd0779734559eb7b8bcc46b1df4952b912fc55ca0614",
+      "members": 305
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold0_seed2.tar.xz",
+      "bytes": 3896320,
+      "sha256": "0359d04bd2bd910f054ad83783a237f8d092d138c0fce538cfe0cda2bef06719",
+      "members": 318
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold1_seed0.tar.xz",
+      "bytes": 3901352,
+      "sha256": "ff14b0d65b7c6b6515f2957f294927f0aa4002eb1f1a35577a707faca183a3fc",
+      "members": 304
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold1_seed1.tar.xz",
+      "bytes": 3782336,
+      "sha256": "f562cf65ade943c9bb1b2613435ccdd40ee9de3f89c6b3e65ef0c09d965ec0f0",
+      "members": 307
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold1_seed2.tar.xz",
+      "bytes": 3876536,
+      "sha256": "035efadc0598640cdb8570aaec3919fe511719fcc9181976c6d032b9fc56efcb",
+      "members": 305
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold2_seed0.tar.xz",
+      "bytes": 3847924,
+      "sha256": "2ca02185b51a8657f44850dd7c91f94370a4b402c1a164194704f7448d525819",
+      "members": 310
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold2_seed1.tar.xz",
+      "bytes": 3880040,
+      "sha256": "a997476c3c2ed52c8a80fee58bc44b85b93c44c779a425d93dffa9cdf9df910e",
+      "members": 312
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold2_seed2.tar.xz",
+      "bytes": 3799868,
+      "sha256": "d0fc3c935e84127880b7c59587c2e1c12aee5d127e2bbc59fc183d6f0cb5a6d2",
+      "members": 320
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold3_seed0.tar.xz",
+      "bytes": 3818332,
+      "sha256": "f7c7b4cbd50acbe708bb17ac6089d4ec466f1d7e000d8f1cd0470d04f13a3de4",
+      "members": 310
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold3_seed1.tar.xz",
+      "bytes": 3921380,
+      "sha256": "810f44e69ec057c5b50b7132ee04bc4fa43ca410a5e985b159f279984a1ee59a",
+      "members": 300
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold3_seed2.tar.xz",
+      "bytes": 3737692,
+      "sha256": "768e9e588c36baf3f52d3ce6b94f4a8789d15276d68f770f959d6b6fa280ee15",
+      "members": 305
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold4_seed0.tar.xz",
+      "bytes": 3973804,
+      "sha256": "199b644cdae6dcd7d54b3e4e4e1134fc9e38e1b74fac7e3853fe945363b7886d",
+      "members": 307
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold4_seed1.tar.xz",
+      "bytes": 3784620,
+      "sha256": "2fa191a4e301c9081a4e2e96254379e239bb825e7c1757c265f5b2086bf2999c",
+      "members": 321
+    },
+    {
+      "path": "results/acquisition/runtime_uncertainty/fold4_seed2.tar.xz",
+      "bytes": 3791584,
+      "sha256": "1bdbc1aae08aab63cf6097d530f207379fb238b06385e6cf7d8f874a021c51af",
+      "members": 309
+    }
+  ],
+  "note": "Original CSV bytes checked against Git blob identities. Cumulative checkpoint files stored losslessly as verified prefixes of final ledgers. Original incremental-log defects preserved. Auxiliary local diagnostics may remain incomplete; see local inventory. No experiments or numerical scientific results regenerated."
+}

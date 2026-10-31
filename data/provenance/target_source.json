@@ -1,0 +1,11 @@
+{
+  "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL/data/processed/pilot1a/strict_score_matrix.csv",
+  "destination": "data/targets/strict_score_matrix.csv",
+  "sha256": "a420521fe5fcd3cf646f4b3c5742d809ec454ea291e62c70e7200620eb6283fa",
+  "bytes": 361227,
+  "status": "legacy_target_exact_copy_formula_verified",
+  "maximum_absolute_formula_error": 1.1102230246251565e-16,
+  "source_restart_ground_truth_not_readable": false,
+  "original_restart_target_now_available": "data/targets/full_strict_score_matrix.csv",
+  "original_header_has_strict_score_suffix": true
+}

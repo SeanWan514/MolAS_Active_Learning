@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-31",
+  "original_missing_downstream_csvs": 1808,
+  "recovered_by_cloud_download": 686,
+  "recovered_from_original_zip": 1122,
+  "remaining_missing_downstream_csv_payloads": 0,
+  "source_workspace_cloud_placeholders_at_last_check": 1122,
+  "original_archive": "port_as_results_260829.zip",
+  "original_archive_recovery_report": "downstream_original_archive_recovery.json",
+  "readable_workspace_csvs_compared": 3386,
+  "readable_workspace_mismatches": 0,
+  "method": "Previously hydrated payloads were retained; the complete original result ZIP supplied all six paper policies. All readable workspace CSVs matched the ZIP byte for byte.",
+  "finder_check": "After the user unlocked the Mac, Finder download requests were made for the affected folders. Archive recovery completed independently of those pending downloads.",
+  "source_contents_changed": false,
+  "scientific_experiments_rerun": false,
+  "interpretation": "The packaged result payloads are fully recovered; original workspace placeholders need not be hydrated for use of this repository."
+}

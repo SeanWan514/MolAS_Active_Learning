@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/data/raw/moad_rmsd_trimmed.csv",
+    "destination": "data/raw/moad_rmsd_trimmed.csv",
+    "logical_bytes": 458442,
+    "dataless_before": true,
+    "status": "unavailable_read_timed_out_5s"
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/ground_truth/full_strict_score_matrix.csv",
+    "destination": "data/targets/full_strict_score_matrix.csv",
+    "logical_bytes": 366953,
+    "dataless_before": true,
+    "status": "unavailable_read_timed_out_5s"
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_5fold_split_seed42.csv",
+    "destination": "data/splits/moad_5fold_split_seed42.csv",
+    "logical_bytes": 117682,
+    "dataless_before": true,
+    "status": "unavailable_read_timed_out_5s"
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/mean_ucb_cost_5fold_paper/inputs/moad_physical_descriptors_filtered.csv",
+    "destination": "data/descriptors/moad_physical_descriptors_filtered.csv",
+    "logical_bytes": 90348,
+    "dataless_before": true,
+    "status": "unavailable_read_timed_out_5s"
+  },
+  {
+    "source": "/Users/wanweilin/Documents/PORT-AS/MolAS_AL_restart/AL_MolAS/cost_aware_design2/outputs/cache/complex_features_ligand_protein_d256_seed0.npy",
+    "destination": "data/features/complex_features_ligand_protein_d256_seed0.npy",
+    "logical_bytes": 3255424,
+    "dataless_before": true,
+    "status": "unavailable_read_timed_out_5s"
+  }
+]

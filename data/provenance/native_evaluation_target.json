@@ -1,0 +1,84 @@
+{
+  "status": "deterministic reconstruction from unchanged raw matrices; not recovered original moad_score_trimmed.csv",
+  "destination": "data/targets/moad_score_native_reconstructed.csv",
+  "sha256": "90a9c27006c2b7ab59a93b0452a14b54a6aef9c60e369cac6ad4ed19ae51cb83",
+  "source_code": "/Users/wanweilin/Downloads/MolAS_AL-main/data/dataset.py",
+  "source_code_sha256": "f48f62990388448dcfc89a996776bae5409f0aa7c50cb7438f3d0825d055d74a",
+  "source_functions": {
+    "pb_score": {
+      "start": 97,
+      "end": 100
+    },
+    "rmsd_score": {
+      "start": 103,
+      "end": 107
+    },
+    "prepare_data_composite": {
+      "start": 248,
+      "end": 294
+    }
+  },
+  "rule": "score=0 when RMSD>5 or RMSD<0; otherwise ((1+exp(-6))/(1+exp(3*(RMSD-2))))*(pb_ratio==1.0)",
+  "threshold_boundary": "RMSD==5 retains sigmoid value",
+  "raw_sources": [
+    {
+      "path": "data/raw/moad_rmsd_trimmed.csv",
+      "sha256": "ef6eb247fa499fd11072ef966a265b76e3c06903cbb1339ce58f4cd8cc2de92c"
+    },
+    {
+      "path": "data/raw/moad_pb_ratio_trimmed.csv",
+      "sha256": "b73d1a864675e2f30b2be2261981b50df3af050dae51d455b2f5fc9e638f7500"
+    }
+  ],
+  "saved_downstream_validation": {
+    "complete_unique_complexes": 3179,
+    "engine_score_values_checked": 22253,
+    "maximum_absolute_difference": 1.1102230246251565e-16,
+    "tolerance": 1e-12,
+    "mismatches": 0,
+    "sources": [
+      {
+        "fold": 0,
+        "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_0/best-epoch=005-val_loss=0.5432-val_as_acc=0.9970_descriptive.csv",
+        "sha256": "74431702b8d33ca230618ffbd1e3e96ba61c55d7312f077001a6568508db2691",
+        "rows": 636
+      },
+      {
+        "fold": 1,
+        "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_1/best-epoch=016-val_loss=0.5322-val_as_acc=0.9951_descriptive.csv",
+        "sha256": "2365740f607b93bbe9a26db6372d76d344bd34a968c429ec51cbb84f9f8e6dcb",
+        "rows": 636
+      },
+      {
+        "fold": 2,
+        "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_2/best-epoch=004-val_loss=0.5346-val_as_acc=0.9943_descriptive.csv",
+        "sha256": "5e490fd81946724b1cc6c3d0d964265da99e7a15ac037ceed58d625f80876cc5",
+        "rows": 636
+      },
+      {
+        "fold": 3,
+        "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_3/best-epoch=011-val_loss=0.5446-val_as_acc=0.9928_descriptive.csv",
+        "sha256": "e2337e4fd050319acbcf08cd206b1beaca2f0418c903d00c58296bc7daf16020",
+        "rows": 636
+      },
+      {
+        "fold": 4,
+        "source": "/Users/wanweilin/Documents/PORT-AS/port_as_results_260829/cost_tiers_5/seed0/b001_pct/test_composite/default/fold_4/best-epoch=025-val_loss=0.5457-val_as_acc=0.9944_descriptive.csv",
+        "sha256": "3590ed472e8e625aac5d4274dea1eeeaa877f0dcaae93bbf12ff1012ba21ab7c",
+        "rows": 635
+      }
+    ]
+  },
+  "difference_from_acquisition_target": {
+    "nonzero_differences": 9206,
+    "differences_above_1e-12": 2032,
+    "maximum_absolute_difference": 0.0001209706346153
+  },
+  "notebook_historical_path": "/data1/home/jw1017/AS_Dock/data/MolAS/moad_score_trimmed.csv",
+  "original_csv_bytes_not_recovered": true,
+  "no_existing_outputs_modified": true,
+  "source_function_excerpt": {
+    "path": "data/provenance/native_score_functions.py.txt",
+    "sha256": "39d2a6fc9d2fbe475b3528cb2c40a1038c1f1329766439aa030ef211df731678"
+  }
+}
