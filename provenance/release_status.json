@@ -34,6 +34,10 @@
   "author_confirmation_record": "provenance/author_redistribution_confirmation.json",
   "github_repository": "https://github.com/SeanWan514/MolAS_Active_Learning",
   "release_version": "1.0.0",
-  "publication_state": "prepared_for_initial_push",
-  "separate_dataset_release_published": false
+  "publication_state": "publicly_verified",
+  "separate_dataset_release_published": false,
+  "verified_initial_main_commit": "99a98af01d6185de1b31cf4dba9ec64317d4120e",
+  "initial_publication_verification_record": "provenance/initial_github_publication.json",
+  "public_repository_access_verified": true,
+  "isolated_checkout_validation_passed": true
 }

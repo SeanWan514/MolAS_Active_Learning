@@ -6,5 +6,7 @@
   "unchanged_validated_acquisition_sources": 8,
   "validated_source_hash_mismatches": [],
   "scan_scope": "Git-visible source, documentation, provenance, and notebook source/text outputs; binary outputs excluded.",
-  "publication_check_date": "2026-10-31"
+  "publication_check_date": "2026-10-31",
+  "additional_huggingface_google_and_credential_literal_matches": 0,
+  "initial_committed_git_blob_bytes_verified": 2075
 }

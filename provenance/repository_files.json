@@ -5,9 +5,14 @@
     "provenance/final_verification.json",
     "provenance/repository_files.json"
   ],
-  "total_files": 2073,
-  "total_bytes": 461846902,
+  "total_files": 2076,
+  "total_bytes": 461849474,
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 237,
+      "sha256": "b0ea49c8ad82b8406259226da70723aaa1f0e03d006573f9eccfefbb6bdd8f16"
+    },
     {
       "path": ".gitignore",
       "bytes": 544,
@@ -739,6 +744,11 @@
       "sha256": "295fc41306f9a1cc8194f207bbb19265e60b2740e80b6717730d9e9a58a2d342"
     },
     {
+      "path": "provenance/github_checkout_validation.json",
+      "bytes": 340,
+      "sha256": "cbbfbb00b77ec092dd22178d5bb5bf2a4374facfc7d14e99e4505894e0809d0f"
+    },
+    {
       "path": "provenance/historical_acquisition_source/EXPERIMENT_REPORT.md",
       "bytes": 2987,
       "sha256": "5be35be167d6bac8fd882f0345373fee38a11b6ce2dbb667a6808a7c5c9e0504"
@@ -814,6 +824,11 @@
       "sha256": "2744fa59f3f56f57159e730b15ba00a961ee818d021db20587fe52c8b3d8cb6f"
     },
     {
+      "path": "provenance/initial_github_publication.json",
+      "bytes": 1620,
+      "sha256": "08b3da37ef1c84d4ba12c3867ae61938eca22398c2d51105ebfc73ade5f37525"
+    },
+    {
       "path": "provenance/notebook_figure_pixel_comparison.json",
       "bytes": 4071,
       "sha256": "f427b3d4f99036624a4561ce089fad190338e5460dcf78bce35afa6a32a9d393"
@@ -825,8 +840,8 @@
     },
     {
       "path": "provenance/packaging_hygiene.json",
-      "bytes": 409,
-      "sha256": "590ece5b09fbdd7b27731d76b30f0ff27baed62237b48fb8997e66440ba1a85f"
+      "bytes": 531,
+      "sha256": "3de2955a787e97e289835bb82c95036afcfa536a64c8b4b37a7fd070ba3d725f"
     },
     {
       "path": "provenance/paper_files.json",
@@ -850,8 +865,8 @@
     },
     {
       "path": "provenance/release_status.json",
-      "bytes": 2469,
-      "sha256": "835a0dc02555dfc59c5dfb8eb0fef237e78a83f171cc5f011764bfefb17d44fe"
+      "bytes": 2722,
+      "sha256": "a3124f081e50572e2009d4d9c5ace4e905f37c62c78b91ef632e61a3cf1f553d"
     },
     {
       "path": "requirements.txt",

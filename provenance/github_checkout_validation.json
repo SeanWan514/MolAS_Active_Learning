@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "checkout_from_git_index": true,
+  "core_autocrlf_during_checkout": true,
+  "large_structural_dataset_present": false,
+  "frozen_file_hashes_passed": true,
+  "acquisition_inputs_passed": true,
+  "missing_acquisition_inputs": [],
+  "scientific_experiments_executed": false,
+  "temporary_checkout_removed": true
+}

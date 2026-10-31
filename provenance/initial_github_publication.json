@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-31",
+  "repository": "https://github.com/SeanWan514/MolAS_Active_Learning",
+  "repository_public": true,
+  "verified_main_commit": "99a98af01d6185de1b31cf4dba9ec64317d4120e",
+  "all_git_blob_paths_and_ids_match": true,
+  "verified_git_blob_files": 2075,
+  "large_structural_graphs_excluded": true,
+  "anonymous_download_checks": [
+    {
+      "path": "README.md",
+      "bytes": 8880,
+      "sha256": "5b1f2320501041cc7aaa7ff33a304c3b0a18115d02af4e42f2c70929d89df8f7",
+      "anonymous_download_matches_local": true
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1098,
+      "sha256": "d7e2a35a4412988a0b0cc5c6283d3479c94efce479d7f2e5b05096070fe1e0e9",
+      "anonymous_download_matches_local": true
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1196,
+      "sha256": "d6d3823c2849959c5d504e395e05810d01f0159bc4b9cc602f63c11159f1b2a0",
+      "anonymous_download_matches_local": true
+    },
+    {
+      "path": "scripts/verify_repository.py",
+      "bytes": 2289,
+      "sha256": "9a250cf8c95a76ecf7d0149a3d5fca954408ae551aa3e77abf74b2a28f45ab3d",
+      "anonymous_download_matches_local": true
+    },
+    {
+      "path": "paper/AI4DD52_camera_ready.pdf",
+      "bytes": 5730579,
+      "sha256": "bf1cbf5f3533a3ec07c09817c035fbbc532ff3c47facd0e00b92c1a46cb79a11",
+      "anonymous_download_matches_local": true
+    }
+  ],
+  "verification_scope": "Anonymous GitHub API tree/ref and raw content checks; no scientific experiments.",
+  "record_scope": "Initial public commit verification. Later metadata and line-ending-preservation additions are versioned in the final release tag."
+}

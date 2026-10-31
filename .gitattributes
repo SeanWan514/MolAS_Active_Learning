@@ -1,0 +1,11 @@
+# Keep the frozen file hashes stable on every checkout, including Windows.
+* -text
+
+# Binary research artifacts should not be treated as text diffs.
+*.png binary
+*.pdf binary
+*.pt binary
+*.npy binary
+*.zip binary
+*.xz binary
+*.gz binary
