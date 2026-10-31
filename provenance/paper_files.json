@@ -1,5 +1,5 @@
 {
-  "note": "User-supplied PDF. Source copy has matching normalized substantive PDF text in the prior audit; exact source used for the user recompilation is not separately attested. No new abstract edit applied.",
+  "note": "The current PDF is the final author-supplied Camera_Ready_PDF.pdf, copied byte-for-byte on 2026-10-31. The archived LaTeX source and bibliography preserve an earlier manuscript snapshot and have not been synchronized with this final PDF. Historical publication records retain the original PDF identity.",
   "files": [
     {
       "source": "camera_ready_final_2026-10-31/[AI4DD]main.tex",
@@ -52,9 +52,9 @@
       "sha256": "7c3fc08411db94c0e77154036f933d76f7f35285a8783952747331b1dfb5318d"
     },
     {
-      "source": "user-supplied SRS_2026_AL_MolAS_Docking-8.pdf",
+      "source": "user-supplied Camera_Ready_PDF.pdf (final camera-ready, previously named SRS_2026_AL_MolAS_Docking-11.pdf)",
       "destination": "paper/AI4DD52_camera_ready.pdf",
-      "sha256": "bf1cbf5f3533a3ec07c09817c035fbbc532ff3c47facd0e00b92c1a46cb79a11"
+      "sha256": "a7cde6c3dfdaad89201a91fd59a55f048dec9d53fbdb96f4bdb15191d9b1004d"
     },
     {
       "source": "camera_ready_final_2026-10-31/Fig1.png",

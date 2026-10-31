@@ -6,7 +6,7 @@
     "provenance/repository_files.json"
   ],
   "total_files": 2077,
-  "total_bytes": 461856244,
+  "total_bytes": 461911699,
   "files": [
     {
       "path": ".gitattributes",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14341,
-      "sha256": "e31ca4c567c05c932ea3271e7547c1c84fdd1538d79d412080f7cd1054c23012"
+      "bytes": 14442,
+      "sha256": "9640477972dbbb030d3fe6c135233bd3e9089f34f62889d181d0077b7c17843d"
     },
     {
       "path": "code/acquisition/README.md",
@@ -620,8 +620,8 @@
     },
     {
       "path": "paper/AI4DD52_camera_ready.pdf",
-      "bytes": 5730579,
-      "sha256": "bf1cbf5f3533a3ec07c09817c035fbbc532ff3c47facd0e00b92c1a46cb79a11"
+      "bytes": 5785768,
+      "sha256": "a7cde6c3dfdaad89201a91fd59a55f048dec9d53fbdb96f4bdb15191d9b1004d"
     },
     {
       "path": "paper/source/Fig1.png",
@@ -850,8 +850,8 @@
     },
     {
       "path": "provenance/paper_files.json",
-      "bytes": 3246,
-      "sha256": "a695104b5c94de23ee53f422b3ad8ab77e9bea8e61d71699cae6e1562fcef7d3"
+      "bytes": 3411,
+      "sha256": "f1fcb4815bd2f32897d5f92930a930ec4dc48ccc3df1f2752160ddaa9022b34e"
     },
     {
       "path": "provenance/pinned_acquisition_files.jsonl.gz",

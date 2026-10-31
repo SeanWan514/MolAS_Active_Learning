@@ -71,7 +71,7 @@ The main findings in the reported setting are:
 | Original acquisition CSVs | **27,000 verified CSV identities**, recoverable from the compressed run archives |
 | Downstream saved results | **4,508 original CSVs** in six policy ZIPs, plus readable summary mirrors |
 | Downstream seed scope | Reported saved folders use **acquisition seed 0**; other acquisition seeds are not additional downstream replications |
-| Paper assets | Camera-ready PDF, LaTeX source, bibliography, and **8 unchanged figure assets** |
+| Paper assets | Latest camera-ready PDF, archived LaTeX source and bibliography, and **8 unchanged figure assets** |
 
 Each policy updates its predictions from its own acquired observations. The five outer folds are not independent selector-seed replications. See the [downstream protocol and saved-output coverage](docs/downstream_reproduction.md) for the evidence behind these counts and the distinction between acquisition and selector seeds.
 
@@ -151,7 +151,7 @@ MolAS_Active_Learning/
 ├── results/
 │   ├── acquisition/       # compressed original matrices and query records
 │   └── downstream/        # original predictions, metrics, and summary mirrors
-├── paper/                 # camera-ready PDF, LaTeX source, and figure assets
+├── paper/                 # latest camera-ready PDF, archived LaTeX source, figures
 ├── provenance/            # historical source, hashes, figure lineage, verification
 ├── scripts/               # packaging, extraction, and integrity utilities
 ├── docs/                  # data card, reproduction records, and source attribution
@@ -188,7 +188,7 @@ The repository preserves historical outputs and documents the available source e
 - The historical adapter, launcher, analysis notebooks, runtime-probe source, and plotting scripts are included. Launcher defaults do not establish the exact configuration of every archived invocation.
 - All eight paper figure assets are included, with source correspondence documented to the extent supported by the recovered records. Some final export/layout details and per-run training configurations remain unpinned.
 - The known incremental-log resume defect is documented; original records have not been silently repaired. The corrected portable runner is identified separately.
-- The supplied PDF remains unchanged, including its original availability statement. LaTeX source is at [paper/source/[AI4DD]main.tex](paper/source/%5BAI4DD%5Dmain.tex), with the original style, bibliography, appendix, and figures.
+- The [camera-ready PDF](paper/AI4DD52_camera_ready.pdf) is the latest author-supplied version. The [archived LaTeX source](paper/source/%5BAI4DD%5Dmain.tex), including its style, bibliography, appendix, and figures, preserves an earlier manuscript snapshot and has not been synchronized with the final PDF.
 
 </details>
 
