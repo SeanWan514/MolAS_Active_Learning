@@ -23,6 +23,7 @@
 
 <p align="center">
   <a href="paper/AI4DD52_camera_ready.pdf">📄 Paper</a> ·
+  <a href="https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning">🤗 Dataset</a> ·
   <a href="https://openreview.net/forum?id=tSz3wBLABm">📝 OpenReview</a> ·
   <a href="#quickstart">🚀 Quick start</a> ·
   <a href="#repository">🗂️ Repository map</a> ·
@@ -36,7 +37,7 @@
 
 GitHub repository: https://github.com/SeanWan514/MolAS_Active_Learning
 
-HuggingFace repository: 
+HuggingFace repository: https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning
 
 ---
 
@@ -166,7 +167,7 @@ The recovered historical MolAS adapter and the pinned official upstream referenc
 
 **Included now:** original score/runtime tables, strict targets, fixed folds, physical descriptors, small feature artifacts, archived acquisition matrices/query records, and saved downstream predictions/metrics.
 
-**Separate release in preparation:** the **3,179 original protein graphs**, totaling **14,985,036,224 bytes (about 15 GB)**. They are Git-ignored and absent from this GitHub release. Their actual versioned dataset URL will be added after publication; the [graph checksum manifest](provenance/external_graph_checksums.json) is already included.
+**Complete dataset:** [SeanWan05/MolAS-Active-Learning](https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning) · [dataset snapshot v1.0.0](https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning/tree/v1.0.0). The companion release includes all **3,179 original protein graphs** (**14,985,036,224 bytes**, about 15 GB), the small inputs/features, original research archives, and nine Dataset Viewer configurations. The graphs remain Git-ignored in this code repository. Anonymous access, file identities, and Viewer row counts were verified; see the [dataset publication record](provenance/hf_dataset_publication.json) and [graph checksum manifest](provenance/external_graph_checksums.json).
 
 The small feature cache supports the acquisition input contract. The historical downstream MolAS workflow additionally requires the structural data. See the [data card](docs/data_card.md) for sources, schemas, units, and checks, and [data/README.md](data/README.md) for the input layout.
 
@@ -191,7 +192,7 @@ The repository preserves historical outputs and documents the available source e
 
 </details>
 
-Read the [reproduction record](docs/downstream_reproduction.md), [release verification guide](docs/release_workflow.md), and [machine-readable status](provenance/release_status.json) for the detailed evidence and remaining dataset-publication work.
+Read the [reproduction record](docs/downstream_reproduction.md), [release verification guide](docs/release_workflow.md), and [machine-readable status](provenance/release_status.json) for the detailed evidence and published artifact snapshots and historical provenance limits.
 
 <a id="citation"></a>
 
@@ -213,7 +214,7 @@ If you use this code or its research artifacts, please cite the associated AI4DD
 
 Original software and associated software documentation are released under the **[MIT License](LICENSE)**. Third-party software retains its supplied notices. Data, research results, embeddings, model weights, the manuscript, and figures retain their separately applicable terms.
 
-The author confirmed the redistribution terms for this GitHub release; see [NOTICE.md](NOTICE.md), [third-party provenance](docs/third_party.md), and the [confirmation record](provenance/author_redistribution_confirmation.json). The separate dataset release will provide its own version and component terms.
+The author confirmed the redistribution terms for this GitHub release; see [NOTICE.md](NOTICE.md), [third-party provenance](docs/third_party.md), and the [confirmation record](provenance/author_redistribution_confirmation.json). The [dataset release](https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning) provides its version and component-specific terms: CC BY 4.0 for author-owned data contributions, with separate upstream terms preserved.
 
 <p align="center">
   <a href="#overview">↑ Back to overview</a>

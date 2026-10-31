@@ -39,9 +39,7 @@ source snapshots, configuration helpers, and historical execution limits.
 
 The complete original graph set comprises 3,179 files and 14,985,036,224 bytes.
 It is retained locally under `data/external/protein_graphs_esmc_600m/` and excluded
-by `.gitignore`. The separate dataset release is pending. Once available, add its
-actual immutable version/download URL and verify anonymous access and the graph
-hashes recorded in `provenance/external_graph_checksums.json`.
+by `.gitignore`. The complete dataset is published at [https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning](https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning) with snapshot `v1.0.0`. Anonymous access, all uploaded file identities, and all nine Viewer configurations have been verified. Its immutable revision is recorded in `provenance/hf_dataset_publication.json`; graph hashes remain in `provenance/external_graph_checksums.json`.
 
 ## Frozen artifacts and future updates
 

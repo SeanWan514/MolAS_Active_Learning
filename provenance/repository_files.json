@@ -5,8 +5,8 @@
     "provenance/final_verification.json",
     "provenance/repository_files.json"
   ],
-  "total_files": 2076,
-  "total_bytes": 461853982,
+  "total_files": 2077,
+  "total_bytes": 461856244,
   "files": [
     {
       "path": ".gitattributes",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13388,
-      "sha256": "e083a3c1deee59196839b8d5b5c531eb900989fb525a31f84f0d57213ae9a1f5"
+      "bytes": 14341,
+      "sha256": "e31ca4c567c05c932ea3271e7547c1c84fdd1538d79d412080f7cd1054c23012"
     },
     {
       "path": "code/acquisition/README.md",
@@ -595,8 +595,8 @@
     },
     {
       "path": "docs/data_card.md",
-      "bytes": 14862,
-      "sha256": "065406a7df2c69037e4d7d61334482f8bff2354f1a519b93f67020d21d486b7c"
+      "bytes": 14922,
+      "sha256": "693546c188cdb456f464e37dab3633d6cf61442706209a0651b2a532eb6d9e8d"
     },
     {
       "path": "docs/downstream_reproduction.md",
@@ -605,13 +605,13 @@
     },
     {
       "path": "docs/release_workflow.md",
-      "bytes": 2870,
-      "sha256": "9dc74e8a027594689212d2a96c3dd93ea54d4a5d70c6d40704a0bd6c5db00b7e"
+      "bytes": 3104,
+      "sha256": "521b8aedad7e24428d02917e31ee0cc1c5fa93e6d4693c8cbf3eb9600f91da99"
     },
     {
       "path": "docs/third_party.md",
-      "bytes": 6181,
-      "sha256": "018bb1c4050b1c0d801a3bfb9c89830a0406e494b0382da85af641925130f636"
+      "bytes": 6329,
+      "sha256": "413d0299fe1773d94d31846c63bef446476d509d181fb32e9a7260e0f035072a"
     },
     {
       "path": "docs/workspace_audit.md",
@@ -730,8 +730,8 @@
     },
     {
       "path": "provenance/external_graph_checksums.json",
-      "bytes": 783098,
-      "sha256": "236cc3bd434bc9cdd37e59b5cd7f3d0f9b5ac7aa86079cbf8abea1ce10cad50d"
+      "bytes": 783287,
+      "sha256": "b77e7921d53689a88daad5bcd644fd9eefd35df998998bf99d382b2473b90f8d"
     },
     {
       "path": "provenance/figure_lineage.json",
@@ -747,6 +747,11 @@
       "path": "provenance/github_checkout_validation.json",
       "bytes": 340,
       "sha256": "cbbfbb00b77ec092dd22178d5bb5bf2a4374facfc7d14e99e4505894e0809d0f"
+    },
+    {
+      "path": "provenance/hf_dataset_publication.json",
+      "bytes": 591,
+      "sha256": "2bc9864d6b3cd8173f6ae6448b003a97fc488200ccde659afe9c0a126737d4d4"
     },
     {
       "path": "provenance/historical_acquisition_source/EXPERIMENT_REPORT.md",
@@ -865,8 +870,8 @@
     },
     {
       "path": "provenance/release_status.json",
-      "bytes": 2722,
-      "sha256": "a3124f081e50572e2009d4d9c5ace4e905f37c62c78b91ef632e61a3cf1f553d"
+      "bytes": 2809,
+      "sha256": "2693042463913862afbfcddd967dcdf7dcabf4cce0320cef2c66ccd1b5f5f6c5"
     },
     {
       "path": "requirements.txt",

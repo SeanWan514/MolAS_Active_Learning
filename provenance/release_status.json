@@ -8,9 +8,7 @@
   "primary_acquisition_original_csvs_verified": 27000,
   "historical_downstream_adapter_and_notebooks_recovered": true,
   "source_integrity_and_software_checks": "passed; see component validation reports and final_verification.json",
-  "remaining_items": [
-    "Publish the large structural dataset separately and add its verified, versioned download reference. This does not block the current GitHub code and archived-results release."
-  ],
+  "remaining_items": [],
   "interpretation": "Publication readiness covers the GitHub artifact scope authorized by the author. Exact historical end-to-end reproduction remains separately unverified; documented provenance limitations remain applicable.",
   "local_snapshot_frozen": true,
   "local_assembly_complete": true,
@@ -35,9 +33,14 @@
   "github_repository": "https://github.com/SeanWan514/MolAS_Active_Learning",
   "release_version": "1.0.0",
   "publication_state": "publicly_verified",
-  "separate_dataset_release_published": false,
+  "separate_dataset_release_published": true,
   "verified_initial_main_commit": "99a98af01d6185de1b31cf4dba9ec64317d4120e",
   "initial_publication_verification_record": "provenance/initial_github_publication.json",
   "public_repository_access_verified": true,
-  "isolated_checkout_validation_passed": true
+  "isolated_checkout_validation_passed": true,
+  "dataset_url": "https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning",
+  "dataset_version": "v1.0.0",
+  "dataset_revision": "0feae48aa4d548932e00bcc54325fcd79721e30c",
+  "dataset_anonymous_access_verified": true,
+  "all_nine_dataset_viewers_verified": true
 }

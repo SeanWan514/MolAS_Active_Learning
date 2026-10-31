@@ -1,7 +1,7 @@
 {
   "source": "original supplied moad_3179_protein_graphs_plus_ligand_chemberta download; extracted data/MolAS/protein_graphs_esmc_600m",
   "git_included": false,
-  "reason": "Large data assets staged locally for a separate data release; terms and destination pending.",
+  "reason": "Large structural inputs are published in the companion HF dataset; excluded from GitHub Git storage.",
   "files": [
     {
       "path": "data/external/protein_graphs_esmc_600m/pyg_graph_19gs_BSP_A_210_esmc_600m.pt",
@@ -19077,5 +19077,8 @@
       "sha256": "9cc6a986cb3f07632cae2141555d27966f312331031c935deeafc12ad09fcb7e",
       "source_identical": true
     }
-  ]
+  ],
+  "dataset_url": "https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning",
+  "dataset_version": "v1.0.0",
+  "dataset_revision": "0feae48aa4d548932e00bcc54325fcd79721e30c"
 }

@@ -1,0 +1,14 @@
+{
+  "dataset_url": "https://huggingface.co/datasets/SeanWan05/MolAS-Active-Learning",
+  "dataset_tag": "v1.0.0",
+  "verified_dataset_revision": "0feae48aa4d548932e00bcc54325fcd79721e30c",
+  "initial_complete_revision": "84a242a0e8a9acfbad27590da2c569230b142037",
+  "public_and_ungated": true,
+  "original_uploaded_files_verified": 5299,
+  "protein_graph_files": 3179,
+  "viewer_configurations_verified": 9,
+  "default_viewer_rows": 22253,
+  "all_configuration_row_counts_match": true,
+  "all_original_payload_content_identities_match": true,
+  "new_scientific_experiments_executed": false
+}

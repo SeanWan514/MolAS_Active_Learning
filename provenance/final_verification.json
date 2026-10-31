@@ -1,15 +1,13 @@
 {
-  "checked_files": 2076,
+  "checked_files": 2077,
   "integrity_passed": true,
   "errors": [],
   "publication_ready": true,
   "full_reproduction_ready": false,
-  "remaining_items": [
-    "Publish the large structural dataset separately and add its verified, versioned download reference. This does not block the current GitHub code and archived-results release."
-  ],
+  "remaining_items": [],
   "scope": "Frozen GitHub publication package integrity; prior large-graph verification is retained separately. No scientific experiments were rerun.",
-  "git_scope_files": 2076,
-  "git_scope_bytes": 461853982,
+  "git_scope_files": 2077,
+  "git_scope_bytes": 461856244,
   "python_source_files_parsed": 69,
   "python_syntax_errors": 0,
   "credential_signature_scan_matches": 0,
@@ -54,5 +52,7 @@
     "collapsible_details_rendered": true,
     "explicit_navigation_anchors_rendered": true,
     "scientific_experiments_run": false
-  }
+  },
+  "companion_dataset_published_and_verified": true,
+  "dataset_version": "v1.0.0"
 }
