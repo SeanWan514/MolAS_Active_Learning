@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="188" height="22" role="img" aria-label="research snapshot: v1.0.0">
-  <title>research snapshot: v1.0.0</title>
-  <clipPath id="rounded"><rect width="188" height="22" rx="4"/></clipPath>
-  <g clip-path="url(#rounded)"><path fill="#30363d" d="M0 0h129v22H0z"/><path fill="#475569" d="M129 0h59v22H129z"/></g>
-  <g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
-    <text x="64.5" y="15">research snapshot</text>
-    <text x="158.5" y="15">v1.0.0</text>
-  </g>
-</svg>

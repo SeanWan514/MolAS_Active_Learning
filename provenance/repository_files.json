@@ -5,8 +5,8 @@
     "provenance/final_verification.json",
     "provenance/repository_files.json"
   ],
-  "total_files": 2084,
-  "total_bytes": 461858447,
+  "total_files": 2076,
+  "total_bytes": 461853982,
   "files": [
     {
       "path": ".gitattributes",
@@ -35,48 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13471,
-      "sha256": "78e8587efb5b3db9786da55a59978645d34b72497cf616a62bbb6e9303cc382b"
-    },
-    {
-      "path": "assets/readme/acceptance.svg",
-      "bytes": 568,
-      "sha256": "97c2821a823b4a0d6394bfaac47cbe4bb8639b6afbc7e447d11d3241e5f53206"
-    },
-    {
-      "path": "assets/readme/complexes.svg",
-      "bytes": 529,
-      "sha256": "524ca8b18a309313a7e77d1c4e76abe2b525cd3b44209006dd81e8c7e80e9ea7"
-    },
-    {
-      "path": "assets/readme/engines.svg",
-      "bytes": 538,
-      "sha256": "0e2c98af5c588f6a636fbe2c1d1dbeee8dd3dfd3c04e206f5d53d094e7a7fe4a"
-    },
-    {
-      "path": "assets/readme/folds.svg",
-      "bytes": 535,
-      "sha256": "9e4ecf828114f673bf928a23fd7d6763739bcbe7c2298c0a60eb838e4cfe75bb"
-    },
-    {
-      "path": "assets/readme/integrity.svg",
-      "bytes": 568,
-      "sha256": "a12baba9d3814d383d067133338a88330f6374eddb7e850cf108e4e65bd4c274"
-    },
-    {
-      "path": "assets/readme/license.svg",
-      "bytes": 532,
-      "sha256": "2c24008b0ad0ed53ecbee07a88558a60122a39ed6bfa6b72fccc9bf23d06ec2f"
-    },
-    {
-      "path": "assets/readme/policies.svg",
-      "bytes": 553,
-      "sha256": "726fd3e958f76ecec1a9ad929b0128b5a0cfeb47e34cfbd8a8f2d6c5ca56d912"
-    },
-    {
-      "path": "assets/readme/snapshot.svg",
-      "bytes": 559,
-      "sha256": "92c58d52f38a04f2e6202305984943726d5ea701013e3e21485ff4c51a22fa63"
+      "bytes": 13388,
+      "sha256": "e083a3c1deee59196839b8d5b5c531eb900989fb525a31f84f0d57213ae9a1f5"
     },
     {
       "path": "code/acquisition/README.md",

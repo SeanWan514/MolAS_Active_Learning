@@ -11,15 +11,14 @@
 </p>
 
 <p align="center">
-  <a href="https://openreview.net/forum?id=tSz3wBLABm"><img alt="NeurIPS 2026 AI4DD: Accepted" src="assets/readme/acceptance.svg"></a>
-  <a href="#snapshot"><img alt="Benchmark: 3,179 complexes" src="assets/readme/complexes.svg"></a>
-  <a href="#snapshot"><img alt="Portfolio: 7 docking engines" src="assets/readme/engines.svg"></a>
-  <a href="#snapshot"><img alt="Evaluation: 5 held-out folds" src="assets/readme/folds.svg"></a>
-  <br>
-  <a href="#policies"><img alt="Acquisition: 6 policies" src="assets/readme/policies.svg"></a>
-  <a href="https://github.com/SeanWan514/MolAS_Active_Learning/tree/v1.0.0"><img alt="Research snapshot: v1.0.0" src="assets/readme/snapshot.svg"></a>
-  <a href="provenance/final_verification.json"><img alt="Artifact integrity: verified" src="assets/readme/integrity.svg"></a>
-  <a href="LICENSE"><img alt="Original code license: MIT" src="assets/readme/license.svg"></a>
+  <img alt="Evaluation: 3,179 complexes" src="https://img.shields.io/badge/evaluation-3%2C179_complexes-2ea44f">
+  <img alt="Docking portfolio: 7 engines" src="https://img.shields.io/badge/docking_portfolio-7_engines-6f42c1">
+  <img alt="Acquisition: 6 policies" src="https://img.shields.io/badge/acquisition-6_policies-f59e0b">
+  <img alt="Held-out evaluation: 5 folds" src="https://img.shields.io/badge/held--out_evaluation-5_folds-0ea5e9">
+  <img alt="Artifact integrity: verified" src="https://img.shields.io/badge/artifact_integrity-verified-16a34a">
+  <img alt="NeurIPS 2026 AI4DD: Accepted" src="https://img.shields.io/badge/NeurIPS_2026_AI4DD-Accepted-0B7A75">
+  <img alt="Research snapshot: v1.0.0" src="https://img.shields.io/badge/research_snapshot-v1.0.0-64748b">
+  <img alt="Original code license: MIT" src="https://img.shields.io/badge/code_license-MIT-64748b">
 </p>
 
 <p align="center">
@@ -136,7 +135,6 @@ The comparison fixes the base utility definition and model class while varying r
 
 ```text
 MolAS_Active_Learning/
-├── assets/readme/         # local README badges
 ├── code/
 │   ├── acquisition/       # portable six-policy acquisition and completion code
 │   └── downstream/        # historical MolAS adapter, analysis, and path helpers
