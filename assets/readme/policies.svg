@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="22" role="img" aria-label="acquisition policies: 6">
+  <title>acquisition policies: 6</title>
+  <clipPath id="rounded"><rect width="174" height="22" rx="4"/></clipPath>
+  <g clip-path="url(#rounded)"><path fill="#30363d" d="M0 0h148v22H0z"/><path fill="#b76d00" d="M148 0h26v22H148z"/></g>
+  <g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
+    <text x="74.0" y="15">acquisition policies</text>
+    <text x="161.0" y="15">6</text>
+  </g>
+</svg>
