@@ -30,7 +30,7 @@
   <a href="#citation">📚 Citation</a>
 </p>
 
-> **Accepted at [AI for Drug Discovery: Bridging the Translation Gap]([https://ai4dd-neurips2026.github.io]), workshop at NeurIPS 2026.**
+> **Accepted at [AI for Drug Discovery: Bridging the Translation Gap](https://ai4dd-neurips2026.github.io), workshop at NeurIPS 2026.**
 >
 > Submission **#52**
 
