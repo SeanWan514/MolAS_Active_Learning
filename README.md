@@ -34,6 +34,10 @@
 >
 > Submission **#52**
 
+GitHub repository: 
+
+HuggingFace repository: 
+
 ---
 
 <a id="overview"></a>
