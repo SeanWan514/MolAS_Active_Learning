@@ -1,7 +1,7 @@
 <h1 align="center">🧬 MolAS Active Learning</h1>
 
 <p align="center">
-  <strong>Active Learning for Molecular-Docking Algorithm Selection<br>under Heterogeneous Runtime</strong><br>
+  <strong>Active Learning for Molecular-Docking Algorithm Selection under Heterogeneous Runtime</strong><br>
   Accepted at the NeurIPS 2026 Workshop on AI for Drug Discovery (AI4DD)
 </p>
 
