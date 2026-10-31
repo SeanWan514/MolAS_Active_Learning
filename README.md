@@ -34,7 +34,7 @@
 >
 > Submission **#52**
 
-GitHub repository: 
+GitHub repository: https://github.com/SeanWan514/MolAS_Active_Learning
 
 HuggingFace repository: 
 
